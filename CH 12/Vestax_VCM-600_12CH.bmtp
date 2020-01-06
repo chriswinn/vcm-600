@@ -1,0 +1,1309 @@
+; ------- Bome MIDI Translator: Signed Project File
+; ------- You can modify this file as you like, but that will invalidate
+; ------- the signature so that it cannot be opened in MT Player anymore.
+;
+[Preset.0]
+Name=(CH 1-6)   VCM-600 to App (via Bome Midi Translator Pro)
+Active=1
+Comments=
+PresetSwitchIgnore=0
+DefaultInPorts=MIDA00010007VCM-600
+DefaultOutPorts=MIDA00010022Bome MIDI Translator 1 Virtual Out
+Name0=Play 1 ON
+Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="0" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing0=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90ntpp
+Options0=Actv01Stop00OutO00
+Name1=Play 2 ON
+Incoming1=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="1" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing1=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out91ntpp
+Options1=Actv01Stop00OutO00StMa00000001label0006__cmt>
+Name2=Play 3 ON
+Incoming2=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="2" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing2=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out92ntpp
+Options2=Actv01Stop00OutO00
+Name3=Play 4 ON
+Incoming3=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="3" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing3=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out93ntpp
+Options3=Actv01Stop00OutO00
+Name4=Play 5 ON
+Incoming4=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="4" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing4=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out94ntpp
+Options4=Actv01Stop00OutO00
+Name5=Play 6 ON
+Incoming5=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="5" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing5=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out95ntpp
+Options5=Actv01Stop00OutO00
+Name6=Stop 1 ON
+Incoming6=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="0" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing6=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90ntpp
+Options6=Actv01Stop00OutO00
+Name7=Stop 2 ON
+Incoming7=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="1" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing7=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out91ntpp
+Options7=Actv01Stop00OutO00
+Name8=Stop 3 ON
+Incoming8=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="2" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing8=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out92ntpp
+Options8=Actv01Stop00OutO00
+Name9=Stop 4 ON
+Incoming9=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="3" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing9=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out93ntpp
+Options9=Actv01Stop00OutO00
+Name10=Stop 5 ON
+Incoming10=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="4" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing10=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out94ntpp
+Options10=Actv01Stop00OutO00
+Name11=Stop 6 ON
+Incoming11=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="5" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing11=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out95ntpp
+Options11=Actv01Stop00OutO00
+Name12=CF ASN 1 ON
+Incoming12=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="0" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing12=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90ntpp
+Options12=Actv01Stop00OutO00
+Name13=CF ASN 2 ON
+Incoming13=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="1" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing13=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out91ntpp
+Options13=Actv01Stop00OutO00
+Name14=CF ASN 3 ON
+Incoming14=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="2" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing14=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out92ntpp
+Options14=Actv01Stop00OutO00
+Name15=CF ASN 4 ON
+Incoming15=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="3" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing15=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out93ntpp
+Options15=Actv01Stop00OutO00
+Name16=CF ASN 5 ON
+Incoming16=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="4" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing16=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out94ntpp
+Options16=Actv01Stop00OutO00
+Name17=CF ASN 6 ON
+Incoming17=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="5" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing17=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out95ntpp
+Options17=Actv01Stop00OutO00
+Name18=Clip 1 ON
+Incoming18=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="0" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing18=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90ntpp
+Options18=Actv01Stop00OutO00
+Name19=Clip 2 ON
+Incoming19=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="1" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing19=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out91ntpp
+Options19=Actv01Stop00OutO00
+Name20=Clip 3 ON
+Incoming20=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="2" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing20=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out92ntpp
+Options20=Actv01Stop00OutO00
+Name21=Clip 4 ON
+Incoming21=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="3" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing21=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out93ntpp
+Options21=Actv01Stop00OutO00
+Name22=Clip 5 ON
+Incoming22=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="4" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing22=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out94ntpp
+Options22=Actv01Stop00OutO00
+Name23=Clip 6 ON
+Incoming23=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="5" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing23=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out95ntpp
+Options23=Actv01Stop00OutO00
+Name24=Track 1 ON
+Incoming24=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="0" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing24=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90ntpp
+Options24=Actv01Stop00OutO00
+Name25=Track 2 ON
+Incoming25=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="1" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing25=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out91ntpp
+Options25=Actv01Stop00OutO00
+Name26=Track 3 ON
+Incoming26=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="2" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing26=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out92ntpp
+Options26=Actv01Stop00OutO00
+Name27=Track 4 ON
+Incoming27=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="3" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing27=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out93ntpp
+Options27=Actv01Stop00OutO00
+Name28=Track 5 ON
+Incoming28=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="4" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing28=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out94ntpp
+Options28=Actv01Stop00OutO00
+Name29=Track 6 ON
+Incoming29=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="5" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing29=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out95ntpp
+Options29=Actv01Stop00OutO00
+Name30=Solo 1 ON
+Incoming30=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="0" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing30=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90ntpp
+Options30=Actv01Stop00OutO00
+Name31=Solo 2 ON
+Incoming31=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="1" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing31=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out91ntpp
+Options31=Actv01Stop00OutO00
+Name32=Solo 3 ON
+Incoming32=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="2" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing32=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out92ntpp
+Options32=Actv01Stop00OutO00
+Name33=Solo 4 ON
+Incoming33=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="3" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing33=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out93ntpp
+Options33=Actv01Stop00OutO00
+Name34=Solo 5 ON
+Incoming34=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="4" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing34=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out94ntpp
+Options34=Actv01Stop00OutO00
+Name35=Solo 6 ON
+Incoming35=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="5" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing35=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out95ntpp
+Options35=Actv01Stop00OutO00
+Name36=Mute 1 ON
+Incoming36=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="0" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing36=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90ntpp
+Options36=Actv01Stop00OutO00
+Name37=Mute 2 ON
+Incoming37=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="1" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing37=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out91ntpp
+Options37=Actv01Stop00OutO00
+Name38=Mute 3 ON
+Incoming38=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="2" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing38=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out92ntpp
+Options38=Actv01Stop00OutO00
+Name39=Mute 4 ON
+Incoming39=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="3" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing39=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out93ntpp
+Options39=Actv01Stop00OutO00
+Name40=Mute 5 ON
+Incoming40=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="4" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing40=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out94ntpp
+Options40=Actv01Stop00OutO00
+Name41=Mute 6 ON
+Incoming41=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="5" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing41=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out95ntpp
+Options41=Actv01Stop00OutO00
+Name42=LOW 1 ON
+Incoming42=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="0" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing42=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90ntpp
+Options42=Actv01Stop00OutO00
+Name43=LOW 2 ON
+Incoming43=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="1" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing43=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out91ntpp
+Options43=Actv01Stop00OutO00
+Name44=LOW 3 ON
+Incoming44=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="2" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing44=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out92ntpp
+Options44=Actv01Stop00OutO00
+Name45=LOW 4 ON
+Incoming45=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="3" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing45=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out93ntpp
+Options45=Actv01Stop00OutO00
+Name46=LOW 5 ON
+Incoming46=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="4" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing46=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out94ntpp
+Options46=Actv01Stop00OutO00
+Name47=LOW 6 ON
+Incoming47=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="5" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing47=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out95ntpp
+Options47=Actv01Stop00OutO00
+Name48=MID 1 ON
+Incoming48=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="0" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing48=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90ntpp
+Options48=Actv01Stop00OutO00
+Name49=MID 2 ON
+Incoming49=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="1" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing49=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out91ntpp
+Options49=Actv01Stop00OutO00
+Name50=MID 3 ON
+Incoming50=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="2" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing50=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out92ntpp
+Options50=Actv01Stop00OutO00
+Name51=MID 4 ON
+Incoming51=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="3" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing51=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out93ntpp
+Options51=Actv01Stop00OutO00
+Name52=MID 5 ON
+Incoming52=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="4" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing52=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out94ntpp
+Options52=Actv01Stop00OutO00
+Name53=MID 6 ON
+Incoming53=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="5" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing53=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out95ntpp
+Options53=Actv01Stop00OutO00
+Name54=HI 1 ON
+Incoming54=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="0" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing54=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90ntpp
+Options54=Actv01Stop00OutO00
+Name55=HI 2 ON
+Incoming55=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="1" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing55=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out91ntpp
+Options55=Actv01Stop00OutO00
+Name56=HI 3 ON
+Incoming56=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="2" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing56=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out92ntpp
+Options56=Actv01Stop00OutO00
+Name57=HI 4 ON
+Incoming57=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="3" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing57=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out93ntpp
+Options57=Actv01Stop00OutO00
+Name58=HI 5 ON
+Incoming58=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="4" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing58=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out94ntpp
+Options58=Actv01Stop00OutO00
+Name59=HI 6 ON
+Incoming59=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="5" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing59=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out95ntpp
+Options59=Actv01Stop00OutO00
+Name60=MUTE RET A
+Incoming60=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="78" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing60=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options60=Actv01Stop00OutO00
+Name61=MUTE RET B
+Incoming61=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="79" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing61=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options61=Actv01Stop00OutO00
+Name62=MUTE VOL L
+Incoming62=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="80" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing62=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options62=Actv01Stop00OutO00
+Name63=MUTE VOL R
+Incoming63=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="81" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing63=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options63=Actv01Stop00OutO00
+Name64=Tempo -
+Incoming64=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="85" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing64=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options64=Actv01Stop00OutO00
+Name65=Tempo +
+Incoming65=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="86" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing65=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options65=Actv01Stop00OutO00
+Name66=FX-1
+Incoming66=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="70" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing66=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options66=Actv01Stop00OutO00
+Name67=FX-2
+Incoming67=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="71" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing67=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options67=Actv01Stop00OutO00
+Name68=FX-3
+Incoming68=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="72" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing68=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options68=Actv01Stop00OutO00
+Name69=FX-4
+Incoming69=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="73" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing69=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options69=Actv01Stop00OutO00
+Name70=FX-5
+Incoming70=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="74" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing70=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options70=Actv01Stop00OutO00
+Name71=FX-6
+Incoming71=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="75" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing71=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options71=Actv01Stop00OutO00
+Name72=FX-7
+Incoming72=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="76" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing72=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options72=Actv01Stop00OutO00
+Name73=FX-8
+Incoming73=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="77" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing73=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options73=Actv01Stop00OutO00
+Name74=LOOP IN
+Incoming74=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="82" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing74=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options74=Actv01Stop00OutO00
+Name75=LOOP OUT
+Incoming75=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="83" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing75=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options75=Actv01Stop00OutO00
+Name76=LOOP ON/OFF
+Incoming76=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="84" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing76=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options76=Actv01Stop00OutO00
+Name77=SCENE (Turn R)
+Incoming77=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="89" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing77=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options77=Actv01Stop00OutO00StMa000CLight Play 10001label0006__cmt>
+Name78=SCENE (Turn L)
+Incoming78=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="90" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing78=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options78=Actv01Stop00OutO00StMa00000001label0006__cmt>
+Name79=TRACK BANK
+Incoming79=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x00"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing79=None
+Options79=Actv01Stop00OutO00
+[Preset.1]
+Name=(CH 1-6)   VCM-600 to VCM-600 (for lights)
+Active=1
+Comments=
+PresetSwitchIgnore=0
+DefaultInPorts=MIDA00010007VCM-600
+DefaultOutPorts=MIDA00010007VCM-600
+Name0=Play 1 ON
+Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="0" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing0=MID2MIDA00010007VCM-60090ntpp
+Options0=Actv01Stop00OutO00StMa000CLight Play 10003ga=ga^1if(ga==1)pp=127if(ga==0)pp=0
+Name1=Play 2 ON
+Incoming1=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="1" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing1=MID2MIDA00010007VCM-60091ntpp
+Options1=Actv01Stop00OutO00StMa000CLight Play 10003gb=gb^1if(gb==1)pp=127if(gb==0)pp=0
+Name2=Play 3 ON
+Incoming2=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="2" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing2=MID2MIDA00010007VCM-60092ntpp
+Options2=Actv01Stop00OutO00StMa000CLight Play 10003gc=gc^1if(gc==1)pp=127if(gc==0)pp=0
+Name3=Play 4 ON
+Incoming3=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="3" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing3=MID2MIDA00010007VCM-60093ntpp
+Options3=Actv01Stop00OutO00StMa000CLight Play 10003gd=gd^1if(gd==1)pp=127if(gd==0)pp=0
+Name4=Play 5 ON
+Incoming4=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="4" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing4=MID2MIDA00010007VCM-60094ntpp
+Options4=Actv01Stop00OutO00StMa000CLight Play 10003ge=ge^1if(ge==1)pp=127if(ge==0)pp=0
+Name5=Play 6 ON
+Incoming5=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="5" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing5=MID2MIDA00010007VCM-60095ntpp
+Options5=Actv01Stop00OutO00StMa000CLight Play 10003gf=gf^1if(gf==1)pp=127if(gf==0)pp=0
+Name6=Stop 1 ON
+Incoming6=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="0" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing6=MID2MIDA00010007VCM-60090ntpp
+Options6=Actv01Stop00OutO00StMa000CLight Play 10003gg=gg^1if(gg==1)pp=127if(gg==0)pp=0
+Name7=Stop 2 ON
+Incoming7=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="1" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing7=MID2MIDA00010007VCM-60091ntpp
+Options7=Actv01Stop00OutO00StMa000CLight Play 10003gh=gh^1if(gh==1)pp=127if(gh==0)pp=0
+Name8=Stop 3 ON
+Incoming8=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="2" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing8=MID2MIDA00010007VCM-60092ntpp
+Options8=Actv01Stop00OutO00StMa000CLight Play 10003gi=gi^1if(gi==1)pp=127if(gi==0)pp=0
+Name9=Stop 4 ON
+Incoming9=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="3" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing9=MID2MIDA00010007VCM-60093ntpp
+Options9=Actv01Stop00OutO00StMa000CLight Play 10003gj=gj^1if(gj==1)pp=127if(gj==0)pp=0
+Name10=Stop 5 ON
+Incoming10=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="4" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing10=MID2MIDA00010007VCM-60094ntpp
+Options10=Actv01Stop00OutO00StMa000CLight Play 10003gk=gk^1if(gk==1)pp=127if(gk==0)pp=0
+Name11=Stop 6 ON
+Incoming11=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="5" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing11=MID2MIDA00010007VCM-60095ntpp
+Options11=Actv01Stop00OutO00StMa000CLight Play 10003gl=gl^1if(gl==1)pp=127if(gl==0)pp=0
+Name12=CF ASN 1 ON
+Incoming12=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="0" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing12=MID2MIDA00010007VCM-60091ntpp
+Options12=Actv01Stop00OutO00StMa000CLight Play 10003gn=gn^1if(gn==1)pp=127if(gn==0)pp=0
+Name13=CF ASN 2 ON
+Incoming13=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="1" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing13=MID2MIDA00010007VCM-60091ntpp
+Options13=Actv01Stop00OutO00StMa000CLight Play 10003gn=gn^1if(gn==1)pp=127if(gn==0)pp=0
+Name14=CF ASN 3 ON
+Incoming14=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="2" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing14=MID2MIDA00010007VCM-60092ntpp
+Options14=Actv01Stop00OutO00StMa000CLight Play 10003go=go^1if(go==1)pp=127if(go==0)pp=0
+Name15=CF ASN 4 ON
+Incoming15=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="3" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing15=MID2MIDA00010007VCM-60093ntpp
+Options15=Actv01Stop00OutO00StMa000CLight Play 10003gp=gp^1if(gp==1)pp=127if(gp==0)pp=0
+Name16=CF ASN 5 ON
+Incoming16=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="4" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing16=MID2MIDA00010007VCM-60094ntpp
+Options16=Actv01Stop00OutO00StMa000CLight Play 10003gq=gq^1if(gq==1)pp=127if(gq==0)pp=0
+Name17=CF ASN 6 ON
+Incoming17=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="5" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing17=MID2MIDA00010007VCM-60095ntpp
+Options17=Actv01Stop00OutO00StMa000CLight Play 10003gr=gr^1if(gr==1)pp=127if(gr==0)pp=0
+Name18=Clip 1 ON
+Incoming18=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="0" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing18=MID2MIDA00010007VCM-60090ntpp
+Options18=Actv01Stop00OutO00StMa000CLight Play 10003gs=gs^1if(gs==1)pp=127if(gs==0)pp=0
+Name19=Clip 2 ON
+Incoming19=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="1" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing19=MID2MIDA00010007VCM-60091ntpp
+Options19=Actv01Stop00OutO00StMa000CLight Play 10003gt=gt^1if(gt==1)pp=127if(gt==0)pp=0
+Name20=Clip 3 ON
+Incoming20=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="2" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing20=MID2MIDA00010007VCM-60092ntpp
+Options20=Actv01Stop00OutO00StMa000CLight Play 10003gu=gu^1if(gu==1)pp=127if(gu==0)pp=0
+Name21=Clip 4 ON
+Incoming21=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="3" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing21=MID2MIDA00010007VCM-60093ntpp
+Options21=Actv01Stop00OutO00StMa000CLight Play 10003gv=gv^1if(gv==1)pp=127if(gv==0)pp=0
+Name22=Clip 5 ON
+Incoming22=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="4" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing22=MID2MIDA00010007VCM-60094ntpp
+Options22=Actv01Stop00OutO00StMa000CLight Play 10003gw=gw^1if(gw==1)pp=127if(gw==0)pp=0
+Name23=Clip 6 ON
+Incoming23=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="5" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing23=MID2MIDA00010007VCM-60095ntpp
+Options23=Actv01Stop00OutO00StMa000CLight Play 10003gx=gx^1if(gx==1)pp=127if(gx==0)pp=0
+Name24=Track 1 ON
+Incoming24=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="0" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing24=MID2MIDA00010007VCM-60090ntpp
+Options24=Actv01Stop00OutO00StMa000CLight Play 10003gy=gy^1if(gy==1)pp=127if(gy==0)pp=0
+Name25=Track 2 ON
+Incoming25=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="1" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing25=MID2MIDA00010007VCM-60091ntpp
+Options25=Actv01Stop00OutO00StMa000CLight Play 10003gz=gz^1if(gz==1)pp=127if(gz==0)pp=0
+Name26=Track 3 ON
+Incoming26=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="2" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing26=MID2MIDA00010007VCM-60092ntpp
+Options26=Actv01Stop00OutO00StMa000CLight Play 10003g0=g0^1if(g0==1)pp=127if(g0==0)pp=0
+Name27=Track 4 ON
+Incoming27=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="3" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing27=MID2MIDA00010007VCM-60093ntpp
+Options27=Actv01Stop00OutO00StMa000CLight Play 10003g1=g1^1if(g1==1)pp=127if(g1==0)pp=0
+Name28=Track 5 ON
+Incoming28=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="4" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing28=MID2MIDA00010007VCM-60094ntpp
+Options28=Actv01Stop00OutO00StMa000CLight Play 10003g2=g2^1if(g2==1)pp=127if(g2==0)pp=0
+Name29=Track 6 ON
+Incoming29=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="5" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing29=MID2MIDA00010007VCM-60095ntpp
+Options29=Actv01Stop00OutO00StMa000CLight Play 10003g3=g3^1if(g3==1)pp=127if(g3==0)pp=0
+Name30=Solo 1 ON
+Incoming30=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="0" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing30=MID2MIDA00010007VCM-60090ntpp
+Options30=Actv01Stop00OutO00StMa000CLight Play 10003g4=g4^1if(g4==1)pp=127if(g4==0)pp=0
+Name31=Solo 2 ON
+Incoming31=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="1" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing31=MID2MIDA00010007VCM-60091ntpp
+Options31=Actv01Stop00OutO00StMa000CLight Play 10003g5=g5^1if(g5==1)pp=127if(g5==0)pp=0
+Name32=Solo 3 ON
+Incoming32=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="2" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing32=MID2MIDA00010007VCM-60092ntpp
+Options32=Actv01Stop00OutO00StMa000CLight Play 10003g6=g6^1if(g6==1)pp=127if(g6==0)pp=0
+Name33=Solo 4 ON
+Incoming33=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="3" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing33=MID2MIDA00010007VCM-60093ntpp
+Options33=Actv01Stop00OutO00StMa000CLight Play 10003g7=g7^1if(g7==1)pp=127if(g7==0)pp=0
+Name34=Solo 5 ON
+Incoming34=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="4" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing34=MID2MIDA00010007VCM-60094ntpp
+Options34=Actv01Stop00OutO00StMa000CLight Play 10003g8=g8^1if(g8==1)pp=127if(g8==0)pp=0
+Name35=Solo 6 ON
+Incoming35=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="5" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing35=MID2MIDA00010007VCM-60095ntpp
+Options35=Actv01Stop00OutO00StMa000CLight Play 10003g9=g9^1if(g9==1)pp=127if(g9==0)pp=0
+Name36=Mute 1 ON
+Incoming36=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="0" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing36=MID2MIDA00010007VCM-60090ntpp
+Options36=Actv01Stop00OutO00StMa000CLight Play 10003ha=ha^1if(ha==1)pp=127if(ha==0)pp=0
+Name37=Mute 2 ON
+Incoming37=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="1" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing37=MID2MIDA00010007VCM-60091ntpp
+Options37=Actv01Stop00OutO00StMa000CLight Play 10003hb=hb^1if(hb==1)pp=127if(hb==0)pp=0
+Name38=Mute 3 ON
+Incoming38=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="2" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing38=MID2MIDA00010007VCM-60092ntpp
+Options38=Actv01Stop00OutO00StMa000CLight Play 10003hc=hc^1if(hc==1)pp=127if(hc==0)pp=0
+Name39=Mute 4 ON
+Incoming39=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="3" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing39=MID2MIDA00010007VCM-60093ntpp
+Options39=Actv01Stop00OutO00StMa000CLight Play 10003hd=hd^1if(hd==1)pp=127if(hd==0)pp=0
+Name40=Mute 5 ON
+Incoming40=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="4" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing40=MID2MIDA00010007VCM-60094ntpp
+Options40=Actv01Stop00OutO00StMa000CLight Play 10003he=he^1if(he==1)pp=127if(he==0)pp=0
+Name41=Mute 6 ON
+Incoming41=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="5" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing41=MID2MIDA00010007VCM-60095ntpp
+Options41=Actv01Stop00OutO00StMa000CLight Play 10003hf=hf^1if(hf==1)pp=127if(hf==0)pp=0
+Name42=LOW 1 ON
+Incoming42=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="0" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing42=MID2MIDA00010007VCM-60090ntpp
+Options42=Actv01Stop00OutO00StMa000CLight Play 10003hs=hs^1if(hs==1)pp=127if(hs==0)pp=0
+Name43=LOW 2 ON
+Incoming43=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="1" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing43=MID2MIDA00010007VCM-60091ntpp
+Options43=Actv01Stop00OutO00StMa000CLight Play 10003ht=ht^1if(ht==1)pp=127if(ht==0)pp=0
+Name44=LOW 3 ON
+Incoming44=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="2" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing44=MID2MIDA00010007VCM-60092ntpp
+Options44=Actv01Stop00OutO00StMa000CLight Play 10003hu=hu^1if(hu==1)pp=127if(hu==0)pp=0
+Name45=LOW 4 ON
+Incoming45=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="3" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing45=MID2MIDA00010007VCM-60093ntpp
+Options45=Actv01Stop00OutO00StMa000CLight Play 10003hv=hv^1if(hv==1)pp=127if(hv==0)pp=0
+Name46=LOW 5 ON
+Incoming46=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="4" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing46=MID2MIDA00010007VCM-60094ntpp
+Options46=Actv01Stop00OutO00StMa000CLight Play 10003hw=hw^1if(hw==1)pp=127if(hw==0)pp=0
+Name47=LOW 6 ON
+Incoming47=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="5" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing47=MID2MIDA00010007VCM-60095ntpp
+Options47=Actv01Stop00OutO00StMa000CLight Play 10003hx=hx^1if(hx==1)pp=127if(hx==0)pp=0
+Name48=MID 1 ON
+Incoming48=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="0" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing48=MID2MIDA00010007VCM-60090ntpp
+Options48=Actv01Stop00OutO00StMa000CLight Play 10003hy=hy^1if(hy==1)pp=127if(hy==0)pp=0
+Name49=MID 2 ON
+Incoming49=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="1" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing49=MID2MIDA00010007VCM-60091ntpp
+Options49=Actv01Stop00OutO00StMa000CLight Play 10003hz=hz^1if(hz==1)pp=127if(hz==0)pp=0
+Name50=MID 3 ON
+Incoming50=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="2" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing50=MID2MIDA00010007VCM-60092ntpp
+Options50=Actv01Stop00OutO00StMa000CLight Play 10003h0=h0^1if(h0==1)pp=127if(h0==0)pp=0
+Name51=MID 4 ON
+Incoming51=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="3" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing51=MID2MIDA00010007VCM-60093ntpp
+Options51=Actv01Stop00OutO00StMa000CLight Play 10003h1=h1^1if(h1==1)pp=127if(h1==0)pp=0
+Name52=MID 5 ON
+Incoming52=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="4" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing52=MID2MIDA00010007VCM-60094ntpp
+Options52=Actv01Stop00OutO00StMa000CLight Play 10003h2=h2^1if(h2==1)pp=127if(h2==0)pp=0
+Name53=MID 6 ON
+Incoming53=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="5" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing53=MID2MIDA00010007VCM-60095ntpp
+Options53=Actv01Stop00OutO00StMa000CLight Play 10003h3=h3^1if(h3==1)pp=127if(h3==0)pp=0
+Name54=HI 1 ON
+Incoming54=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="0" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing54=MID2MIDA00010007VCM-60090ntpp
+Options54=Actv01Stop00OutO00StMa000CLight Play 10003h4=h4^1if(h4==1)pp=127if(h4==0)pp=0
+Name55=HI 2 ON
+Incoming55=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="1" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing55=MID2MIDA00010007VCM-60091ntpp
+Options55=Actv01Stop00OutO00StMa000CLight Play 10003h5=h5^1if(h5==1)pp=127if(h5==0)pp=0
+Name56=HI 3 ON
+Incoming56=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="2" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing56=MID2MIDA00010007VCM-60092ntpp
+Options56=Actv01Stop00OutO00StMa000CLight Play 10003h6=h6^1if(h6==1)pp=127if(h6==0)pp=0
+Name57=HI 4 ON
+Incoming57=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="3" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing57=MID2MIDA00010007VCM-60093ntpp
+Options57=Actv01Stop00OutO00StMa000CLight Play 10003h7=h7^1if(h7==1)pp=127if(h7==0)pp=0
+Name58=HI 5 ON
+Incoming58=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="4" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing58=MID2MIDA00010007VCM-60094ntpp
+Options58=Actv01Stop00OutO00StMa000CLight Play 10003h8=h8^1if(h8==1)pp=127if(h8==0)pp=0
+Name59=HI 6 ON
+Incoming59=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="5" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing59=MID2MIDA00010007VCM-60095ntpp
+Options59=Actv01Stop00OutO00StMa000CLight Play 10003h9=h9^1if(h9==1)pp=127if(h9==0)pp=0
+Name60=MUTE RET A
+Incoming60=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="78" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing60=MID2MIDA00010007VCM-6009Cntpp
+Options60=Actv01Stop00OutO00StMa000CLight Play 10003na=na^1if(na==1)pp=127if(na==0)pp=0
+Name61=MUTE RET B
+Incoming61=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="79" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing61=MID2MIDA00010007VCM-6009Cntpp
+Options61=Actv01Stop00OutO00StMa000CLight Play 10003nb=nb^1if(nb==1)pp=127if(nb==0)pp=0
+Name62=MUTE VOL L
+Incoming62=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="80" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing62=MID2MIDA00010007VCM-6009Cntpp
+Options62=Actv01Stop00OutO00StMa000CLight Play 10003nc=nc^1if(nc==1)pp=127if(nc==0)pp=0
+Name63=MUTE VOL R
+Incoming63=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="81" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing63=MID2MIDA00010007VCM-6009Cntpp
+Options63=Actv01Stop00OutO00StMa000CLight Play 10003nd=nd^1if(nd==1)pp=127if(nd==0)pp=0
+Name64=Tempo -
+Incoming64=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="85" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing64=MID2MIDA00010007VCM-6009Cntpp
+Options64=Actv01Stop00OutO00StMa000CLight Play 10003ne=ne^1if(ne==1)pp=127if(ne==0)pp=0
+Name65=Tempo +
+Incoming65=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="86" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing65=MID2MIDA00010007VCM-6009Cntpp
+Options65=Actv01Stop00OutO00StMa000CLight Play 10003nf=nf^1if(nf==1)pp=127if(nf==0)pp=0
+Name66=FX-1
+Incoming66=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="70" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing66=MID2MIDA00010007VCM-6009Cntpp
+Options66=Actv01Stop00OutO00StMa000CLight Play 10003ng=ng^1if(ng==1)pp=127if(ng==0)pp=0
+Name67=FX-2
+Incoming67=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="71" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing67=MID2MIDA00010007VCM-6009Cntpp
+Options67=Actv01Stop00OutO00StMa000CLight Play 10003nh=nh^1if(nh==1)pp=127if(nh==0)pp=0
+Name68=FX-3
+Incoming68=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="72" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing68=MID2MIDA00010007VCM-6009Cntpp
+Options68=Actv01Stop00OutO00StMa000CLight Play 10003ni=ni^1if(ni==1)pp=127if(ni==0)pp=0
+Name69=FX-4
+Incoming69=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="73" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing69=MID2MIDA00010007VCM-6009Cntpp
+Options69=Actv01Stop00OutO00StMa000CLight Play 10003nj=nj^1if(nj==1)pp=127if(nj==0)pp=0
+Name70=FX-5
+Incoming70=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="74" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing70=MID2MIDA00010007VCM-6009Cntpp
+Options70=Actv01Stop00OutO00StMa000CLight Play 10003nk=nk^1if(nk==1)pp=127if(nk==0)pp=0
+Name71=FX-6
+Incoming71=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="75" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing71=MID2MIDA00010007VCM-6009Cntpp
+Options71=Actv01Stop00OutO00StMa000CLight Play 10003nl=nl^1if(nl==1)pp=127if(nl==0)pp=0
+Name72=FX-7
+Incoming72=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="76" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing72=MID2MIDA00010007VCM-6009Cntpp
+Options72=Actv01Stop00OutO00StMa000CLight Play 10003nm=nm^1if(nm==1)pp=127if(nm==0)pp=0
+Name73=FX-8
+Incoming73=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="77" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing73=MID2MIDA00010007VCM-6009Cntpp
+Options73=Actv01Stop00OutO00StMa000CLight Play 10003nn=nn^1if(nn==1)pp=127if(nn==0)pp=0
+Name74=LOOP IN
+Incoming74=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="82" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing74=MID2MIDA00010007VCM-6009Cntpp
+Options74=Actv01Stop00OutO00StMa000CLight Play 10003no=no^1if(no==1)pp=127if(no==0)pp=0
+Name75=LOOP OUT
+Incoming75=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="83" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing75=MID2MIDA00010007VCM-6009Cntpp
+Options75=Actv01Stop00OutO00StMa000CLight Play 10003np=np^1if(np==1)pp=127if(np==0)pp=0
+Name76=LOOP ON/OFF
+Incoming76=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="84" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing76=MID2MIDA00010007VCM-6009Cntpp
+Options76=Actv01Stop00OutO00StMa000CLight Play 10003nq=nq^1if(nq==1)pp=127if(nq==0)pp=0
+Name77=TRACK BANK
+Incoming77=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x00"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing77=MID3<Outgoing Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x00"/><Value2 var="pp"/></Simple></Outgoing>
+Options77=Actv01Stop00OutO00
+[Preset.2]
+Name=(CH 7-12) VCM-600 to App (via Bome Midi Translator Pro)
+Active=1
+Comments=
+PresetSwitchIgnore=0
+DefaultInPorts=MIDA00010007VCM-600
+DefaultOutPorts=MIDA00010022Bome MIDI Translator 1 Virtual Out
+Name0=Play 7 ON
+Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing0=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90ntpp
+Options0=Actv01Stop00OutO00
+Name1=Play 8 ON
+Incoming1=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing1=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out91ntpp
+Options1=Actv01Stop00OutO00StMa00000001label0006__cmt>
+Name2=Play 9 ON
+Incoming2=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing2=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out92ntpp
+Options2=Actv01Stop00OutO00
+Name3=Play 10 ON
+Incoming3=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing3=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out93ntpp
+Options3=Actv01Stop00OutO00
+Name4=Play 11 ON
+Incoming4=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing4=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out94ntpp
+Options4=Actv01Stop00OutO00
+Name5=Play 12 ON
+Incoming5=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing5=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out95ntpp
+Options5=Actv01Stop00OutO00
+Name6=Stop 7 ON
+Incoming6=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing6=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90ntpp
+Options6=Actv01Stop00OutO00
+Name7=Stop 8 ON
+Incoming7=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing7=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out91ntpp
+Options7=Actv01Stop00OutO00
+Name8=Stop 9 ON
+Incoming8=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing8=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out92ntpp
+Options8=Actv01Stop00OutO00
+Name9=Stop 10 ON
+Incoming9=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing9=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out93ntpp
+Options9=Actv01Stop00OutO00
+Name10=Stop 11 ON
+Incoming10=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing10=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out94ntpp
+Options10=Actv01Stop00OutO00
+Name11=Stop 12 ON
+Incoming11=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing11=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out95ntpp
+Options11=Actv01Stop00OutO00
+Name12=CF ASN 7 ON
+Incoming12=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing12=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90ntpp
+Options12=Actv01Stop00OutO00
+Name13=CF ASN 8 ON
+Incoming13=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing13=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out91ntpp
+Options13=Actv01Stop00OutO00
+Name14=CF ASN 9 ON
+Incoming14=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing14=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out92ntpp
+Options14=Actv01Stop00OutO00
+Name15=CF ASN 10 ON
+Incoming15=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing15=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out93ntpp
+Options15=Actv01Stop00OutO00
+Name16=CF ASN 11 ON
+Incoming16=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing16=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out94ntpp
+Options16=Actv01Stop00OutO00
+Name17=CF ASN 12 ON
+Incoming17=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing17=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out95ntpp
+Options17=Actv01Stop00OutO00
+Name18=Clip 7 ON
+Incoming18=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing18=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90ntpp
+Options18=Actv01Stop00OutO00
+Name19=Clip 8 ON
+Incoming19=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing19=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out91ntpp
+Options19=Actv01Stop00OutO00
+Name20=Clip 9 ON
+Incoming20=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing20=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out92ntpp
+Options20=Actv01Stop00OutO00
+Name21=Clip 10 ON
+Incoming21=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing21=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out93ntpp
+Options21=Actv01Stop00OutO00
+Name22=Clip 11 ON
+Incoming22=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing22=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out94ntpp
+Options22=Actv01Stop00OutO00
+Name23=Clip 12 ON
+Incoming23=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing23=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out95ntpp
+Options23=Actv01Stop00OutO00
+Name24=Track 7 ON
+Incoming24=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing24=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90ntpp
+Options24=Actv01Stop00OutO00
+Name25=Track 8 ON
+Incoming25=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing25=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out91ntpp
+Options25=Actv01Stop00OutO00
+Name26=Track 9 ON
+Incoming26=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing26=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out92ntpp
+Options26=Actv01Stop00OutO00
+Name27=Track 10 ON
+Incoming27=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing27=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out93ntpp
+Options27=Actv01Stop00OutO00
+Name28=Track 11 ON
+Incoming28=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing28=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out94ntpp
+Options28=Actv01Stop00OutO00
+Name29=Track 12 ON
+Incoming29=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing29=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out95ntpp
+Options29=Actv01Stop00OutO00
+Name30=Solo 7 ON
+Incoming30=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing30=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90ntpp
+Options30=Actv01Stop00OutO00
+Name31=Solo 8 ON
+Incoming31=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing31=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out91ntpp
+Options31=Actv01Stop00OutO00
+Name32=Solo 9 ON
+Incoming32=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing32=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out92ntpp
+Options32=Actv01Stop00OutO00
+Name33=Solo 10 ON
+Incoming33=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing33=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out93ntpp
+Options33=Actv01Stop00OutO00
+Name34=Solo 11 ON
+Incoming34=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing34=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out94ntpp
+Options34=Actv01Stop00OutO00
+Name35=Solo 12 ON
+Incoming35=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing35=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out95ntpp
+Options35=Actv01Stop00OutO00
+Name36=Mute 7 ON
+Incoming36=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing36=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90ntpp
+Options36=Actv01Stop00OutO00
+Name37=Mute 8 ON
+Incoming37=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing37=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out91ntpp
+Options37=Actv01Stop00OutO00
+Name38=Mute 9 ON
+Incoming38=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing38=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out92ntpp
+Options38=Actv01Stop00OutO00
+Name39=Mute 10 ON
+Incoming39=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing39=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out93ntpp
+Options39=Actv01Stop00OutO00
+Name40=Mute 11 ON
+Incoming40=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing40=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out94ntpp
+Options40=Actv01Stop00OutO00
+Name41=Mute 12 ON
+Incoming41=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing41=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out95ntpp
+Options41=Actv01Stop00OutO00
+Name42=LOW 7 ON
+Incoming42=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing42=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90ntpp
+Options42=Actv01Stop00OutO00
+Name43=LOW 8 ON
+Incoming43=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing43=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out91ntpp
+Options43=Actv01Stop00OutO00
+Name44=LOW 9 ON
+Incoming44=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing44=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out92ntpp
+Options44=Actv01Stop00OutO00
+Name45=LOW 10 ON
+Incoming45=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing45=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out93ntpp
+Options45=Actv01Stop00OutO00
+Name46=LOW 11 ON
+Incoming46=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing46=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out94ntpp
+Options46=Actv01Stop00OutO00
+Name47=LOW 12 ON
+Incoming47=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing47=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out95ntpp
+Options47=Actv01Stop00OutO00
+Name48=MID 7 ON
+Incoming48=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing48=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90ntpp
+Options48=Actv01Stop00OutO00
+Name49=MID 8 ON
+Incoming49=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing49=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out91ntpp
+Options49=Actv01Stop00OutO00
+Name50=MID 9 ON
+Incoming50=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing50=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out92ntpp
+Options50=Actv01Stop00OutO00
+Name51=MID 10 ON
+Incoming51=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing51=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out93ntpp
+Options51=Actv01Stop00OutO00
+Name52=MID 11 ON
+Incoming52=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing52=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out94ntpp
+Options52=Actv01Stop00OutO00
+Name53=MID 12 ON
+Incoming53=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing53=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out95ntpp
+Options53=Actv01Stop00OutO00
+Name54=HI 7 ON
+Incoming54=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing54=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90ntpp
+Options54=Actv01Stop00OutO00
+Name55=HI 8 ON
+Incoming55=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing55=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out91ntpp
+Options55=Actv01Stop00OutO00
+Name56=HI 9 ON
+Incoming56=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing56=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out92ntpp
+Options56=Actv01Stop00OutO00
+Name57=HI 10 ON
+Incoming57=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing57=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out93ntpp
+Options57=Actv01Stop00OutO00
+Name58=HI 11 ON
+Incoming58=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing58=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out94ntpp
+Options58=Actv01Stop00OutO00
+Name59=HI 12 ON
+Incoming59=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing59=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out95ntpp
+Options59=Actv01Stop00OutO00
+Name60=MUTE RET A
+Incoming60=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="78" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing60=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options60=Actv01Stop00OutO00
+Name61=MUTE RET B
+Incoming61=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="79" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing61=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options61=Actv01Stop00OutO00
+Name62=MUTE VOL L
+Incoming62=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="80" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing62=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options62=Actv01Stop00OutO00
+Name63=MUTE VOL R
+Incoming63=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="81" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing63=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options63=Actv01Stop00OutO00
+Name64=Tempo -
+Incoming64=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="85" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing64=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options64=Actv01Stop00OutO00
+Name65=Tempo +
+Incoming65=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="86" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing65=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options65=Actv01Stop00OutO00
+Name66=FX-1
+Incoming66=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="70" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing66=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options66=Actv01Stop00OutO00
+Name67=FX-2
+Incoming67=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="71" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing67=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options67=Actv01Stop00OutO00
+Name68=FX-3
+Incoming68=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="72" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing68=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options68=Actv01Stop00OutO00
+Name69=FX-4
+Incoming69=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="73" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing69=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options69=Actv01Stop00OutO00
+Name70=FX-5
+Incoming70=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="74" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing70=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options70=Actv01Stop00OutO00
+Name71=FX-6
+Incoming71=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="75" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing71=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options71=Actv01Stop00OutO00
+Name72=FX-7
+Incoming72=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="76" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing72=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options72=Actv01Stop00OutO00
+Name73=FX-8
+Incoming73=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="77" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing73=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options73=Actv01Stop00OutO00
+Name74=LOOP IN
+Incoming74=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="82" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing74=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options74=Actv01Stop00OutO00
+Name75=LOOP OUT
+Incoming75=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="83" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing75=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options75=Actv01Stop00OutO00
+Name76=LOOP ON/OFF
+Incoming76=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="84" setvar="nt" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing76=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options76=Actv01Stop00OutO00
+Name77=SCENE (Turn R)
+Incoming77=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="89" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing77=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options77=Actv01Stop00OutO00StMa000CLight Play 10001label0006__cmt>
+Name78=SCENE (Turn L)
+Incoming78=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="90" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing78=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out9Cntpp
+Options78=Actv01Stop00OutO00StMa00000001label0006__cmt>
+Name79=TRACK BANK
+Incoming79=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x00"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing79=None
+Options79=Actv01Stop00OutO00
+[Preset.3]
+Name=(CH 7-12) VCM-600 to VCM-600 (for lights)
+Active=1
+Comments=
+PresetSwitchIgnore=0
+DefaultInPorts=MIDA00010007VCM-600
+DefaultOutPorts=MIDA00010007VCM-600
+Name0=Play 7 ON
+Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing0=MID2MIDA00010007VCM-60096ntpp
+Options0=Actv01Stop00OutO00StMa000CLight Play 10003ga=ga^1if(ga==1)pp=127if(ga==0)pp=0
+Name1=Play 8 ON
+Incoming1=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing1=MID2MIDA00010007VCM-60097ntpp
+Options1=Actv01Stop00OutO00StMa000CLight Play 10003gb=gb^1if(gb==1)pp=127if(gb==0)pp=0
+Name2=Play 9 ON
+Incoming2=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing2=MID2MIDA00010007VCM-60098ntpp
+Options2=Actv01Stop00OutO00StMa000CLight Play 10003gc=gc^1if(gc==1)pp=127if(gc==0)pp=0
+Name3=Play 10 ON
+Incoming3=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing3=MID2MIDA00010007VCM-60099ntpp
+Options3=Actv01Stop00OutO00StMa000CLight Play 10003gd=gd^1if(gd==1)pp=127if(gd==0)pp=0
+Name4=Play 11 ON
+Incoming4=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing4=MID2MIDA00010007VCM-6009Antpp
+Options4=Actv01Stop00OutO00StMa000CLight Play 10003ge=ge^1if(ge==1)pp=127if(ge==0)pp=0
+Name5=Play 12 ON
+Incoming5=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="69" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing5=MID2MIDA00010007VCM-6009Bntpp
+Options5=Actv01Stop00OutO00StMa000CLight Play 10003gf=gf^1if(gf==1)pp=127if(gf==0)pp=0
+Name6=Stop 7 ON
+Incoming6=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing6=MID2MIDA00010007VCM-60096ntpp
+Options6=Actv01Stop00OutO00StMa000CLight Play 10003gg=gg^1if(gg==1)pp=127if(gg==0)pp=0
+Name7=Stop 8 ON
+Incoming7=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing7=MID2MIDA00010007VCM-60097ntpp
+Options7=Actv01Stop00OutO00StMa000CLight Play 10003gh=gh^1if(gh==1)pp=127if(gh==0)pp=0
+Name8=Stop 9 ON
+Incoming8=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing8=MID2MIDA00010007VCM-60098ntpp
+Options8=Actv01Stop00OutO00StMa000CLight Play 10003gi=gi^1if(gi==1)pp=127if(gi==0)pp=0
+Name9=Stop 10 ON
+Incoming9=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing9=MID2MIDA00010007VCM-60099ntpp
+Options9=Actv01Stop00OutO00StMa000CLight Play 10003gj=gj^1if(gj==1)pp=127if(gj==0)pp=0
+Name10=Stop 11 ON
+Incoming10=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing10=MID2MIDA00010007VCM-6009Antpp
+Options10=Actv01Stop00OutO00StMa000CLight Play 10003gk=gk^1if(gk==1)pp=127if(gk==0)pp=0
+Name11=Stop 12 ON
+Incoming11=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="68" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing11=MID2MIDA00010007VCM-6009Bntpp
+Options11=Actv01Stop00OutO00StMa000CLight Play 10003gl=gl^1if(gl==1)pp=127if(gl==0)pp=0
+Name12=CF ASN 7 ON
+Incoming12=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing12=MID2MIDA00010007VCM-60096ntpp
+Options12=Actv01Stop00OutO00StMa000CLight Play 10003gn=gn^1if(gn==1)pp=127if(gn==0)pp=0
+Name13=CF ASN 8 ON
+Incoming13=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing13=MID2MIDA00010007VCM-60097ntpp
+Options13=Actv01Stop00OutO00StMa000CLight Play 10003gn=gn^1if(gn==1)pp=127if(gn==0)pp=0
+Name14=CF ASN 9 ON
+Incoming14=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing14=MID2MIDA00010007VCM-60098ntpp
+Options14=Actv01Stop00OutO00StMa000CLight Play 10003go=go^1if(go==1)pp=127if(go==0)pp=0
+Name15=CF ASN 10 ON
+Incoming15=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing15=MID2MIDA00010007VCM-60099ntpp
+Options15=Actv01Stop00OutO00StMa000CLight Play 10003gp=gp^1if(gp==1)pp=127if(gp==0)pp=0
+Name16=CF ASN 11 ON
+Incoming16=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing16=MID2MIDA00010007VCM-6009Antpp
+Options16=Actv01Stop00OutO00StMa000CLight Play 10003gq=gq^1if(gq==1)pp=127if(gq==0)pp=0
+Name17=CF ASN 12 ON
+Incoming17=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="65" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing17=MID2MIDA00010007VCM-6009Bntpp
+Options17=Actv01Stop00OutO00StMa000CLight Play 10003gr=gr^1if(gr==1)pp=127if(gr==0)pp=0
+Name18=Clip 7 ON
+Incoming18=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing18=MID2MIDA00010007VCM-60096ntpp
+Options18=Actv01Stop00OutO00StMa000CLight Play 10003gs=gs^1if(gs==1)pp=127if(gs==0)pp=0
+Name19=Clip 8 ON
+Incoming19=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing19=MID2MIDA00010007VCM-60097ntpp
+Options19=Actv01Stop00OutO00StMa000CLight Play 10003gt=gt^1if(gt==1)pp=127if(gt==0)pp=0
+Name20=Clip 9 ON
+Incoming20=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing20=MID2MIDA00010007VCM-60098ntpp
+Options20=Actv01Stop00OutO00StMa000CLight Play 10003gu=gu^1if(gu==1)pp=127if(gu==0)pp=0
+Name21=Clip 10 ON
+Incoming21=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing21=MID2MIDA00010007VCM-60099ntpp
+Options21=Actv01Stop00OutO00StMa000CLight Play 10003gv=gv^1if(gv==1)pp=127if(gv==0)pp=0
+Name22=Clip 11 ON
+Incoming22=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing22=MID2MIDA00010007VCM-6009Antpp
+Options22=Actv01Stop00OutO00StMa000CLight Play 10003gw=gw^1if(gw==1)pp=127if(gw==0)pp=0
+Name23=Clip 12 ON
+Incoming23=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="66" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing23=MID2MIDA00010007VCM-6009Bntpp
+Options23=Actv01Stop00OutO00StMa000CLight Play 10003gx=gx^1if(gx==1)pp=127if(gx==0)pp=0
+Name24=Track 7 ON
+Incoming24=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing24=MID2MIDA00010007VCM-60096ntpp
+Options24=Actv01Stop00OutO00StMa000CLight Play 10003gy=gy^1if(gy==1)pp=127if(gy==0)pp=0
+Name25=Track 8 ON
+Incoming25=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing25=MID2MIDA00010007VCM-60097ntpp
+Options25=Actv01Stop00OutO00StMa000CLight Play 10003gz=gz^1if(gz==1)pp=127if(gz==0)pp=0
+Name26=Track 9 ON
+Incoming26=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing26=MID2MIDA00010007VCM-60098ntpp
+Options26=Actv01Stop00OutO00StMa000CLight Play 10003g0=g0^1if(g0==1)pp=127if(g0==0)pp=0
+Name27=Track 10 ON
+Incoming27=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing27=MID2MIDA00010007VCM-60099ntpp
+Options27=Actv01Stop00OutO00StMa000CLight Play 10003g1=g1^1if(g1==1)pp=127if(g1==0)pp=0
+Name28=Track 11 ON
+Incoming28=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing28=MID2MIDA00010007VCM-6009Antpp
+Options28=Actv01Stop00OutO00StMa000CLight Play 10003g2=g2^1if(g2==1)pp=127if(g2==0)pp=0
+Name29=Track 12 ON
+Incoming29=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="67" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing29=MID2MIDA00010007VCM-6009Bntpp
+Options29=Actv01Stop00OutO00StMa000CLight Play 10003g3=g3^1if(g3==1)pp=127if(g3==0)pp=0
+Name30=Solo 7 ON
+Incoming30=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing30=MID2MIDA00010007VCM-60096ntpp
+Options30=Actv01Stop00OutO00StMa000CLight Play 10003g4=g4^1if(g4==1)pp=127if(g4==0)pp=0
+Name31=Solo 8 ON
+Incoming31=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing31=MID2MIDA00010007VCM-60097ntpp
+Options31=Actv01Stop00OutO00StMa000CLight Play 10003g5=g5^1if(g5==1)pp=127if(g5==0)pp=0
+Name32=Solo 9 ON
+Incoming32=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing32=MID2MIDA00010007VCM-60098ntpp
+Options32=Actv01Stop00OutO00StMa000CLight Play 10003g6=g6^1if(g6==1)pp=127if(g6==0)pp=0
+Name33=Solo 10 ON
+Incoming33=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing33=MID2MIDA00010007VCM-60099ntpp
+Options33=Actv01Stop00OutO00StMa000CLight Play 10003g7=g7^1if(g7==1)pp=127if(g7==0)pp=0
+Name34=Solo 11 ON
+Incoming34=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing34=MID2MIDA00010007VCM-6009Antpp
+Options34=Actv01Stop00OutO00StMa000CLight Play 10003g8=g8^1if(g8==1)pp=127if(g8==0)pp=0
+Name35=Solo 12 ON
+Incoming35=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="64" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing35=MID2MIDA00010007VCM-6009Bntpp
+Options35=Actv01Stop00OutO00StMa000CLight Play 10003g9=g9^1if(g9==1)pp=127if(g9==0)pp=0
+Name36=Mute 7 ON
+Incoming36=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing36=MID2MIDA00010007VCM-60096ntpp
+Options36=Actv01Stop00OutO00StMa000CLight Play 10003ha=ha^1if(ha==1)pp=127if(ha==0)pp=0
+Name37=Mute 8 ON
+Incoming37=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing37=MID2MIDA00010007VCM-60097ntpp
+Options37=Actv01Stop00OutO00StMa000CLight Play 10003hb=hb^1if(hb==1)pp=127if(hb==0)pp=0
+Name38=Mute 9 ON
+Incoming38=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing38=MID2MIDA00010007VCM-60098ntpp
+Options38=Actv01Stop00OutO00StMa000CLight Play 10003hc=hc^1if(hc==1)pp=127if(hc==0)pp=0
+Name39=Mute 10 ON
+Incoming39=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing39=MID2MIDA00010007VCM-60099ntpp
+Options39=Actv01Stop00OutO00StMa000CLight Play 10003hd=hd^1if(hd==1)pp=127if(hd==0)pp=0
+Name40=Mute 11 ON
+Incoming40=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing40=MID2MIDA00010007VCM-6009Antpp
+Options40=Actv01Stop00OutO00StMa000CLight Play 10003he=he^1if(he==1)pp=127if(he==0)pp=0
+Name41=Mute 12 ON
+Incoming41=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="63" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing41=MID2MIDA00010007VCM-6009Bntpp
+Options41=Actv01Stop00OutO00StMa000CLight Play 10003hf=hf^1if(hf==1)pp=127if(hf==0)pp=0
+Name42=LOW 7 ON
+Incoming42=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing42=MID2MIDA00010007VCM-60096ntpp
+Options42=Actv01Stop00OutO00StMa000CLight Play 10003hs=hs^1if(hs==1)pp=127if(hs==0)pp=0
+Name43=LOW 8 ON
+Incoming43=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing43=MID2MIDA00010007VCM-60097ntpp
+Options43=Actv01Stop00OutO00StMa000CLight Play 10003ht=ht^1if(ht==1)pp=127if(ht==0)pp=0
+Name44=LOW 9 ON
+Incoming44=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing44=MID2MIDA00010007VCM-60098ntpp
+Options44=Actv01Stop00OutO00StMa000CLight Play 10003hu=hu^1if(hu==1)pp=127if(hu==0)pp=0
+Name45=LOW 10 ON
+Incoming45=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing45=MID2MIDA00010007VCM-60099ntpp
+Options45=Actv01Stop00OutO00StMa000CLight Play 10003hv=hv^1if(hv==1)pp=127if(hv==0)pp=0
+Name46=LOW 11 ON
+Incoming46=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing46=MID2MIDA00010007VCM-6009Antpp
+Options46=Actv01Stop00OutO00StMa000CLight Play 10003hw=hw^1if(hw==1)pp=127if(hw==0)pp=0
+Name47=LOW 12 ON
+Incoming47=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="62" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing47=MID2MIDA00010007VCM-6009Bntpp
+Options47=Actv01Stop00OutO00StMa000CLight Play 10003hx=hx^1if(hx==1)pp=127if(hx==0)pp=0
+Name48=MID 7 ON
+Incoming48=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing48=MID2MIDA00010007VCM-60096ntpp
+Options48=Actv01Stop00OutO00StMa000CLight Play 10003hy=hy^1if(hy==1)pp=127if(hy==0)pp=0
+Name49=MID 8 ON
+Incoming49=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing49=MID2MIDA00010007VCM-60097ntpp
+Options49=Actv01Stop00OutO00StMa000CLight Play 10003hz=hz^1if(hz==1)pp=127if(hz==0)pp=0
+Name50=MID 9 ON
+Incoming50=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing50=MID2MIDA00010007VCM-60098ntpp
+Options50=Actv01Stop00OutO00StMa000CLight Play 10003h0=h0^1if(h0==1)pp=127if(h0==0)pp=0
+Name51=MID 10 ON
+Incoming51=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing51=MID2MIDA00010007VCM-60099ntpp
+Options51=Actv01Stop00OutO00StMa000CLight Play 10003h1=h1^1if(h1==1)pp=127if(h1==0)pp=0
+Name52=MID 11 ON
+Incoming52=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing52=MID2MIDA00010007VCM-6009Antpp
+Options52=Actv01Stop00OutO00StMa000CLight Play 10003h2=h2^1if(h2==1)pp=127if(h2==0)pp=0
+Name53=MID 12 ON
+Incoming53=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="61" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing53=MID2MIDA00010007VCM-6009Bntpp
+Options53=Actv01Stop00OutO00StMa000CLight Play 10003h3=h3^1if(h3==1)pp=127if(h3==0)pp=0
+Name54=HI 7 ON
+Incoming54=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing54=MID2MIDA00010007VCM-60096ntpp
+Options54=Actv01Stop00OutO00StMa000CLight Play 10003h4=h4^1if(h4==1)pp=127if(h4==0)pp=0
+Name55=HI 8 ON
+Incoming55=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing55=MID2MIDA00010007VCM-60097ntpp
+Options55=Actv01Stop00OutO00StMa000CLight Play 10003h5=h5^1if(h5==1)pp=127if(h5==0)pp=0
+Name56=HI 9 ON
+Incoming56=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing56=MID2MIDA00010007VCM-60098ntpp
+Options56=Actv01Stop00OutO00StMa000CLight Play 10003h6=h6^1if(h6==1)pp=127if(h6==0)pp=0
+Name57=HI 10 ON
+Incoming57=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing57=MID2MIDA00010007VCM-60099ntpp
+Options57=Actv01Stop00OutO00StMa000CLight Play 10003h7=h7^1if(h7==1)pp=127if(h7==0)pp=0
+Name58=HI 11 ON
+Incoming58=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing58=MID2MIDA00010007VCM-6009Antpp
+Options58=Actv01Stop00OutO00StMa000CLight Play 10003h8=h8^1if(h8==1)pp=127if(h8==0)pp=0
+Name59=HI 12 ON
+Incoming59=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="60" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing59=MID2MIDA00010007VCM-6009Bntpp
+Options59=Actv01Stop00OutO00StMa000CLight Play 10003h9=h9^1if(h9==1)pp=127if(h9==0)pp=0
+Name60=MUTE RET A
+Incoming60=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="78" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing60=MID2MIDA00010007VCM-6009Cntpp
+Options60=Actv01Stop00OutO00StMa000CLight Play 10003na=na^1if(na==1)pp=127if(na==0)pp=0
+Name61=MUTE RET B
+Incoming61=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="79" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing61=MID2MIDA00010007VCM-6009Cntpp
+Options61=Actv01Stop00OutO00StMa000CLight Play 10003nb=nb^1if(nb==1)pp=127if(nb==0)pp=0
+Name62=MUTE VOL L
+Incoming62=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="80" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing62=MID2MIDA00010007VCM-6009Cntpp
+Options62=Actv01Stop00OutO00StMa000CLight Play 10003nc=nc^1if(nc==1)pp=127if(nc==0)pp=0
+Name63=MUTE VOL R
+Incoming63=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="81" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing63=MID2MIDA00010007VCM-6009Cntpp
+Options63=Actv01Stop00OutO00StMa000CLight Play 10003nd=nd^1if(nd==1)pp=127if(nd==0)pp=0
+Name64=Tempo -
+Incoming64=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="85" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing64=MID2MIDA00010007VCM-6009Cntpp
+Options64=Actv01Stop00OutO00StMa000CLight Play 10003ne=ne^1if(ne==1)pp=127if(ne==0)pp=0
+Name65=Tempo +
+Incoming65=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="86" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing65=MID2MIDA00010007VCM-6009Cntpp
+Options65=Actv01Stop00OutO00StMa000CLight Play 10003nf=nf^1if(nf==1)pp=127if(nf==0)pp=0
+Name66=FX-1
+Incoming66=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="70" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing66=MID2MIDA00010007VCM-6009Cntpp
+Options66=Actv01Stop00OutO00StMa000CLight Play 10003ng=ng^1if(ng==1)pp=127if(ng==0)pp=0
+Name67=FX-2
+Incoming67=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="71" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing67=MID2MIDA00010007VCM-6009Cntpp
+Options67=Actv01Stop00OutO00StMa000CLight Play 10003nh=nh^1if(nh==1)pp=127if(nh==0)pp=0
+Name68=FX-3
+Incoming68=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="72" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing68=MID2MIDA00010007VCM-6009Cntpp
+Options68=Actv01Stop00OutO00StMa000CLight Play 10003ni=ni^1if(ni==1)pp=127if(ni==0)pp=0
+Name69=FX-4
+Incoming69=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="73" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing69=MID2MIDA00010007VCM-6009Cntpp
+Options69=Actv01Stop00OutO00StMa000CLight Play 10003nj=nj^1if(nj==1)pp=127if(nj==0)pp=0
+Name70=FX-5
+Incoming70=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="74" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing70=MID2MIDA00010007VCM-6009Cntpp
+Options70=Actv01Stop00OutO00StMa000CLight Play 10003nk=nk^1if(nk==1)pp=127if(nk==0)pp=0
+Name71=FX-6
+Incoming71=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="75" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing71=MID2MIDA00010007VCM-6009Cntpp
+Options71=Actv01Stop00OutO00StMa000CLight Play 10003nl=nl^1if(nl==1)pp=127if(nl==0)pp=0
+Name72=FX-7
+Incoming72=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="76" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing72=MID2MIDA00010007VCM-6009Cntpp
+Options72=Actv01Stop00OutO00StMa000CLight Play 10003nm=nm^1if(nm==1)pp=127if(nm==0)pp=0
+Name73=FX-8
+Incoming73=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="77" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing73=MID2MIDA00010007VCM-6009Cntpp
+Options73=Actv01Stop00OutO00StMa000CLight Play 10003nn=nn^1if(nn==1)pp=127if(nn==0)pp=0
+Name74=LOOP IN
+Incoming74=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="82" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing74=MID2MIDA00010007VCM-6009Cntpp
+Options74=Actv01Stop00OutO00StMa000CLight Play 10003no=no^1if(no==1)pp=127if(no==0)pp=0
+Name75=LOOP OUT
+Incoming75=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="83" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing75=MID2MIDA00010007VCM-6009Cntpp
+Options75=Actv01Stop00OutO00StMa000CLight Play 10003np=np^1if(np==1)pp=127if(np==0)pp=0
+Name76=LOOP ON/OFF
+Incoming76=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="84" setvar="nt" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing76=MID2MIDA00010007VCM-6009Cntpp
+Options76=Actv01Stop00OutO00StMa000CLight Play 10003nq=nq^1if(nq==1)pp=127if(nq==0)pp=0
+Name77=TRACK BANK
+Incoming77=MID3<Incoming Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x00"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing77=MID3<Outgoing Action="MIDI"><Ports><Port>VCM-600</Port></Ports><Simple Type=""/></Outgoing>
+Options77=Actv01Stop00OutO00
+[Project]
+Version=2
+Author=Chris Winn
+AuthorContact=chriswinn@gmail.com
+Comments=MIT License\n\nCopyright (c) 2020 Chris Winn\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the "Software"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.
+AuthorWWW=https://github.com/chriswinn/vcm-600
+AuthorCopyright=MIT License
+DefaultInPorts=MIDA00010007VCM-600
+DefaultOutPorts=MIDA00010022Bome MIDI Translator 1 Virtual Out
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=Wk5mO0Bx7oXQS5twk0K2aoBeifmuEd6XH3cL9ZPKRv7EWUvZFOroqmN/QbhC7lmJKw6JslUJozvtLK8A3nM28PUiklvhZ48n83yRs78vwt4BtKrD5IdQetw4aYwbZmF+MKpyuwyqqUvpC5NbL2TCoKPIIM7XMxfPI2nAdEkNDtM=
+SignedBy-1=Christopher Winn
