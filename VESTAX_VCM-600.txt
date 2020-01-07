@@ -1,0 +1,408 @@
+Project: Vestax VCM-600
+ Author:   VESTAX VCM-600
+ Project MIDI IN ports:   VCM-600, Bome Virtual Port 1
+ Project MIDI OUT ports:  Bome MIDI Translator 1 Virtual Out, Bome Virtual Port 1
+_____________________________________________________________
+[x] Preset 0: VESTAX VCM-600
+ Default MIDI IN ports:   VCM-600
+ Default MIDI OUT ports:  VCM-600, Bome Virtual Port 1
+
+[x] Translator 0.0: Play 1 ON
+Options: swallow
+Incoming: Note On on ch. 1 with note:69 (0x45) set 'pp' to velocity, on port VCM-600
+Rules: 'Light Play 1'
+  ga=1
+  if ga==1 then pp=3
+  if ga==3 then pp=1
+  ga=pp
+Outgoing: Control Change on ch. 1 with CC#:3 (0x03) and value:1 (0x01), to port Bome MIDI Translator 1 Virtual Out
+
+[x] Translator 0.1: Play 2 ON
+Options: swallow
+Incoming: Note On on ch. 2 with note:69 (0x45) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 2 with CC#:3 (0x03) and value:1 (0x01), to port Bome MIDI Translator 1 Virtual Out
+
+[x] Translator 0.2: Play 3 ON
+Options: swallow
+Incoming: Note On on ch. 3 with note:69 (0x45) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 3 with CC#:3 (0x03) and value:1 (0x01), to port Bome MIDI Translator 1 Virtual Out
+
+[x] Translator 0.3: Play 4 ON
+Options: swallow
+Incoming: Note On on ch. 4 with note:69 (0x45) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 4 with CC#:3 (0x03) and value:1 (0x01), to port Bome MIDI Translator 1 Virtual Out
+
+[x] Translator 0.4: Play 5 ON
+Options: swallow
+Incoming: Note On on ch. 5 with note:69 (0x45) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 5 with CC#:3 (0x03) and value:1 (0x01), to port Bome MIDI Translator 1 Virtual Out
+
+[x] Translator 0.5: Play 6 ON
+Options: swallow
+Incoming: Note On on ch. 6 with note:69 (0x45) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 6 with CC#:3 (0x03) and value:1 (0x01), to port Bome MIDI Translator 1 Virtual Out
+
+[x] Translator 0.6: Stop 1 ON
+Options: swallow
+Incoming: Note On on ch. 1 with note:68 (0x44) set 'pp' to velocity
+Outgoing: Control Change on ch. 1 with CC#:9 (0x09) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.7: Stop 2 ON
+Options: swallow
+Incoming: Note On on ch. 2 with note:68 (0x44) set 'pp' to velocity
+Outgoing: Control Change on ch. 2 with CC#:9 (0x09) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.8: Stop 3 ON
+Options: swallow
+Incoming: Note On on ch. 3 with note:68 (0x44) set 'pp' to velocity
+Outgoing: Control Change on ch. 3 with CC#:9 (0x09) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.9: Stop 4 ON
+Options: swallow
+Incoming: Note On on ch. 4 with note:68 (0x44) set 'pp' to velocity
+Outgoing: Control Change on ch. 4 with CC#:9 (0x09) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.10: Stop 5 ON
+Options: swallow
+Incoming: Note On on ch. 5 with note:68 (0x44) set 'pp' to velocity
+Outgoing: Control Change on ch. 5 with CC#:9 (0x09) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.11: Stop 6 ON
+Options: swallow
+Incoming: Note On on ch. 6 with note:68 (0x44) set 'pp' to velocity
+Outgoing: Control Change on ch. 6 with CC#:9 (0x09) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.12: CF ASN 1 ON
+Options: swallow
+Incoming: Note On on ch. 1 with note:65 (0x41) set 'pp' to velocity
+Outgoing: Control Change on ch. 1 with CC#:14 (0x0E) and value:1 (0x01)
+
+[x] Translator 0.13: CF ASN 2 ON
+Options: swallow
+Incoming: Note On on ch. 2 with note:65 (0x41) set 'pp' to velocity
+Outgoing: Control Change on ch. 2 with CC#:14 (0x0E) and value:1 (0x01)
+
+[x] Translator 0.14: CF ASN 3 ON
+Options: swallow
+Incoming: Note On on ch. 3 with note:65 (0x41) set 'pp' to velocity
+Outgoing: Control Change on ch. 3 with CC#:14 (0x0E) and value:1 (0x01)
+
+[x] Translator 0.15: CF ASN 4 ON
+Options: swallow
+Incoming: Note On on ch. 4 with note:65 (0x41) set 'pp' to velocity
+Outgoing: Control Change on ch. 4 with CC#:14 (0x0E) and value:1 (0x01)
+
+[x] Translator 0.16: CF ASN 5 ON
+Options: swallow
+Incoming: Note On on ch. 5 with note:65 (0x41) set 'pp' to velocity
+Outgoing: Control Change on ch. 5 with CC#:14 (0x0E) and value:1 (0x01)
+
+[x] Translator 0.17: CF ASN 6 ON
+Options: swallow
+Incoming: Note On on ch. 6 with note:65 (0x41) set 'pp' to velocity
+Outgoing: Control Change on ch. 6 with CC#:14 (0x0E) and value:1 (0x01)
+
+[x] Translator 0.18: Clip1 ON
+Options: swallow
+Incoming: Note On on ch. 1 with note:66 (0x42) set 'pp' to velocity
+Outgoing: Control Change on ch. 1 with CC#:15 (0x0F) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.19: Clip2 ON
+Options: swallow
+Incoming: Note On on ch. 2 with note:66 (0x42) set 'pp' to velocity
+Outgoing: Control Change on ch. 2 with CC#:15 (0x0F) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.20: Clip3 ON
+Options: swallow
+Incoming: Note On on ch. 3 with note:66 (0x42) set 'pp' to velocity
+Outgoing: Control Change on ch. 3 with CC#:15 (0x0F) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.21: Clip 4 ON
+Options: swallow
+Incoming: Note On on ch. 4 with note:66 (0x42) set 'pp' to velocity
+Outgoing: Control Change on ch. 4 with CC#:15 (0x0F) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.22: Clip5 ON
+Options: swallow
+Incoming: Note On on ch. 5 with note:66 (0x42) set 'pp' to velocity
+Outgoing: Control Change on ch. 5 with CC#:15 (0x0F) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.23: Clip6 ON
+Options: swallow
+Incoming: Note On on ch. 6 with note:66 (0x42) set 'pp' to velocity
+Outgoing: Control Change on ch. 6 with CC#:15 (0x0F) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.24: Track 1 ON
+Options: swallow
+Incoming: Note On on ch. 1 with note:67 (0x43) set 'pp' to velocity
+Outgoing: Control Change on ch. 1 with CC#:85 (0x55) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.25: Track 2 ON
+Options: swallow
+Incoming: Note On on ch. 2 with note:67 (0x43) set 'pp' to velocity
+Outgoing: Control Change on ch. 2 with CC#:85 (0x55) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.26: Track 3 ON
+Options: swallow
+Incoming: Note On on ch. 3 with note:67 (0x43) set 'pp' to velocity
+Outgoing: Control Change on ch. 3 with CC#:85 (0x55) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.27: Track 4 ON
+Options: swallow
+Incoming: Note On on ch. 4 with note:67 (0x43) set 'pp' to velocity
+Outgoing: Control Change on ch. 4 with CC#:85 (0x55) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.28: Track 5 ON
+Options: swallow
+Incoming: Note On on ch. 5 with note:67 (0x43) set 'pp' to velocity
+Outgoing: Control Change on ch. 5 with CC#:85 (0x55) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.29: Track 6 ON
+Options: swallow
+Incoming: Note On on ch. 6 with note:67 (0x43) set 'pp' to velocity
+Outgoing: Control Change on ch. 6 with CC#:85 (0x55) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.30: Solo 1 ON
+Options: swallow
+Incoming: Note On on ch. 1 with note:64 (0x40) set 'pp' to velocity, on port VCM-600
+Rules: 'SOLO 1'
+  ga=ga^0
+  if ga!=0 then pp=1
+  if ga==0 then pp=0
+Outgoing: Control Change on ch. 1 with CC#:26 (0x1A) and value:pp, to port Bome Virtual Port 1
+
+[x] Translator 0.31: Solo 2 ON
+Options: swallow
+Incoming: Note On on ch. 2 with note:64 (0x40) set 'pp' to velocity
+Outgoing: Control Change on ch. 2 with CC#:26 (0x1A) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.32: Solo 3 ON
+Options: swallow
+Incoming: Note On on ch. 3 with note:64 (0x40) set 'pp' to velocity
+Outgoing: Control Change on ch. 3 with CC#:26 (0x1A) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.33: Solo 4 ON
+Options: swallow
+Incoming: Note On on ch. 4 with note:64 (0x40) set 'pp' to velocity
+Outgoing: Control Change on ch. 4 with CC#:26 (0x1A) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.34: Solo 5 ON
+Options: swallow
+Incoming: Note On on ch. 5 with note:64 (0x40) set 'pp' to velocity
+Outgoing: Control Change on ch. 5 with CC#:26 (0x1A) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.35: Solo 6 ON
+Options: swallow
+Incoming: Note On on ch. 6 with note:64 (0x40) set 'pp' to velocity
+Outgoing: Control Change on ch. 6 with CC#:26 (0x1A) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.36: Mute 1 ON
+Options: swallow
+Incoming: Note On on ch. 1 with note:63 (0x3F) set 'pp' to velocity
+Outgoing: Control Change on ch. 1 with CC#:27 (0x1B) and value:127 (0x7F), to port Bome Virtual Port 1
+
+[x] Translator 0.37: Mute 2 ON
+Options: swallow
+Incoming: Note On on ch. 2 with note:63 (0x3F) set 'pp' to velocity
+Outgoing: Control Change on ch. 2 with CC#:27 (0x1B) and value:127 (0x7F), to port Bome Virtual Port 1
+
+[x] Translator 0.38: Mute 3 ON
+Options: swallow
+Incoming: Note On on ch. 3 with note:63 (0x3F) set 'pp' to velocity
+Outgoing: Control Change on ch. 3 with CC#:27 (0x1B) and value:127 (0x7F), to port Bome Virtual Port 1
+
+[x] Translator 0.39: Mute 4 ON
+Options: swallow
+Incoming: Note On on ch. 4 with note:63 (0x3F) set 'pp' to velocity
+Outgoing: Control Change on ch. 4 with CC#:27 (0x1B) and value:127 (0x7F), to port Bome Virtual Port 1
+
+[x] Translator 0.40: Mute 5 ON
+Options: swallow
+Incoming: Note On on ch. 5 with note:63 (0x3F) set 'pp' to velocity
+Outgoing: Control Change on ch. 5 with CC#:27 (0x1B) and value:127 (0x7F), to port Bome Virtual Port 1
+
+[x] Translator 0.41: Mute 6 ON
+Options: swallow
+Incoming: Note On on ch. 6 with note:63 (0x3F) set 'pp' to velocity
+Outgoing: Control Change on ch. 6 with CC#:27 (0x1B) and value:127 (0x7F), to port Bome Virtual Port 1
+
+[x] Translator 0.42: LOW BUT 1 ON
+Options: swallow
+Incoming: Note On on ch. 1 with note:62 (0x3E) set 'pp' to velocity
+Outgoing: Control Change on ch. 1 with CC#:28 (0x1C) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.43: LOW BUT 2 ON
+Options: swallow
+Incoming: Note On on ch. 2 with note:62 (0x3E) set 'pp' to velocity
+Outgoing: Control Change on ch. 2 with CC#:28 (0x1C) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.44: LOW BUT 3 ON
+Options: swallow
+Incoming: Note On on ch. 3 with note:62 (0x3E) set 'pp' to velocity
+Outgoing: Control Change on ch. 3 with CC#:28 (0x1C) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.45: LOW BUT 4 ON
+Options: swallow
+Incoming: Note On on ch. 4 with note:62 (0x3E) set 'pp' to velocity
+Outgoing: Control Change on ch. 4 with CC#:28 (0x1C) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.46: LOW BUT 5 ON
+Options: swallow
+Incoming: Note On on ch. 5 with note:62 (0x3E) set 'pp' to velocity
+Outgoing: Control Change on ch. 5 with CC#:28 (0x1C) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.47: LOW BUT 6 ON
+Options: swallow
+Incoming: Note On on ch. 6 with note:62 (0x3E) set 'pp' to velocity
+Outgoing: Control Change on ch. 6 with CC#:28 (0x1C) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.48: MID BUT 1 ON
+Options: swallow
+Incoming: Note On on ch. 1 with note:61 (0x3D) set 'pp' to velocity
+Outgoing: Control Change on ch. 1 with CC#:29 (0x1D) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.49: MID BUT 2 ON
+Options: swallow
+Incoming: Note On on ch. 2 with note:61 (0x3D) set 'pp' to velocity
+Outgoing: Control Change on ch. 2 with CC#:29 (0x1D) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.50: MID BUT 3 ON
+Options: swallow
+Incoming: Note On on ch. 3 with note:61 (0x3D) set 'pp' to velocity
+Outgoing: Control Change on ch. 3 with CC#:29 (0x1D) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.51: MID BUT 4 ON
+Options: swallow
+Incoming: Note On on ch. 4 with note:61 (0x3D) set 'pp' to velocity
+Outgoing: Control Change on ch. 4 with CC#:29 (0x1D) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.52: MID BUT 5 ON
+Options: swallow
+Incoming: Note On on ch. 5 with note:61 (0x3D) set 'pp' to velocity
+Outgoing: Control Change on ch. 5 with CC#:29 (0x1D) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.53: MID BUT 6 ON
+Options: swallow
+Incoming: Note On on ch. 6 with note:61 (0x3D) set 'pp' to velocity
+Outgoing: Control Change on ch. 6 with CC#:29 (0x1D) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.54: HI BUT 1 ON
+Options: swallow
+Incoming: Note On on ch. 1 with note:60 (0x3C) set 'pp' to velocity
+Outgoing: Control Change on ch. 1 with CC#:30 (0x1E) and value:1 (0x01)
+
+[x] Translator 0.55: HI BUT 2 ON
+Options: swallow
+Incoming: Note On on ch. 2 with note:60 (0x3C) set 'pp' to velocity
+Outgoing: Control Change on ch. 2 with CC#:30 (0x1E) and value:1 (0x01)
+
+[x] Translator 0.56: HI BUT 3 ON
+Options: swallow
+Incoming: Note On on ch. 3 with note:60 (0x3C) set 'pp' to velocity
+Outgoing: Control Change on ch. 3 with CC#:30 (0x1E) and value:1 (0x01)
+
+[x] Translator 0.57: HI BUT 4 ON
+Options: swallow
+Incoming: Note On on ch. 4 with note:60 (0x3C) set 'pp' to velocity
+Outgoing: Control Change on ch. 4 with CC#:30 (0x1E) and value:1 (0x01)
+
+[x] Translator 0.58: HI BUT 5 ON
+Options: swallow
+Incoming: Note On on ch. 5 with note:60 (0x3C) set 'pp' to velocity
+Outgoing: Control Change on ch. 5 with CC#:30 (0x1E) and value:1 (0x01)
+
+[x] Translator 0.59: HI BUT 6 ON
+Options: swallow
+Incoming: Note On on ch. 6 with note:60 (0x3C) set 'pp' to velocity
+Outgoing: Control Change on ch. 6 with CC#:30 (0x1E) and value:1 (0x01)
+
+[x] Translator 0.60: MUTE RET A
+Options: swallow
+Incoming: Note On on ch. 13 with note:78 (0x4E) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 8 with CC#:101 (0x65) and value:1 (0x01), to port Bome Virtual Port 1
+
+[x] Translator 0.61: MUTE RET B
+Options: swallow
+Incoming: Note On on ch. 13 with note:79 (0x4F) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 13 with CC#:102 (0x66) and value:2 (0x02), to port Bome Virtual Port 1
+
+[x] Translator 0.62: MUTE VOL L
+Options: swallow
+Incoming: Note On on ch. 13 with note:80 (0x50) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 7 with CC#:103 (0x67) and value:3 (0x03), to port Bome Virtual Port 1
+
+[x] Translator 0.63: MUTE VOL R
+Options: swallow
+Incoming: Note On on ch. 13 with note:81 (0x51) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 7 with CC#:104 (0x68) and value:4 (0x04), to port Bome Virtual Port 1
+
+[x] Translator 0.64: Tempo -
+Options: swallow
+Incoming: Note On on ch. 13 with note:85 (0x55) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 7 with CC#:106 (0x6A) and value:4 (0x04), to port Bome Virtual Port 1
+
+[x] Translator 0.65: Tempo +
+Options: swallow
+Incoming: Note On on ch. 13 with note:86 (0x56) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 7 with CC#:107 (0x6B) and value:4 (0x04), to port Bome Virtual Port 1
+
+[x] Translator 0.66: LOOP ON/OFF
+Options: swallow
+Incoming: Note On on ch. 13 with note:84 (0x54) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 7 with CC#:108 (0x6C) and value:4 (0x04), to port Bome Virtual Port 1
+
+[x] Translator 0.67: LOOP IN
+Options: swallow
+Incoming: Note On on ch. 13 with note:82 (0x52) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 7 with CC#:109 (0x6D) and value:4 (0x04), to port Bome Virtual Port 1
+
+[x] Translator 0.68: LOOP OUT
+Options: swallow
+Incoming: Note On on ch. 13 with note:83 (0x53) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 7 with CC#:110 (0x6E) and value:4 (0x04), to port Bome Virtual Port 1
+
+[x] Translator 0.69: FX-1
+Options: swallow
+Incoming: MIDI 9C 46 7F, on port VCM-600
+Outgoing: Control Change on ch. 13 with CC#:111 (0x6F) and value:4 (0x04), to port Bome Virtual Port 1
+
+[x] Translator 0.70: FX-2
+Options: swallow
+Incoming: Note On on ch. 13 with note:71 (0x47) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 13 with CC#:112 (0x70) and value:4 (0x04), to port Bome Virtual Port 1
+
+[x] Translator 0.71: FX-3
+Options: swallow
+Incoming: Note On on ch. 13 with note:72 (0x48) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 13 with CC#:113 (0x71) and value:4 (0x04), to port Bome Virtual Port 1
+
+[x] Translator 0.72: FX-4
+Options: swallow
+Incoming: Note On on ch. 13 with note:73 (0x49) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 13 with CC#:114 (0x72) and value:4 (0x04), to port Bome Virtual Port 1
+
+[x] Translator 0.73: FX-5
+Options: swallow
+Incoming: Note On on ch. 13 with note:74 (0x4A) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 13 with CC#:115 (0x73) and value:4 (0x04), to port Bome Virtual Port 1
+
+[x] Translator 0.74: FX-6
+Options: swallow
+Incoming: Note On on ch. 13 with note:75 (0x4B) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 13 with CC#:116 (0x74) and value:4 (0x04), to port Bome Virtual Port 1
+
+[x] Translator 0.75: FX-7
+Options: swallow
+Incoming: Note On on ch. 13 with note:76 (0x4C) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 13 with CC#:117 (0x75) and value:4 (0x04), to port Bome Virtual Port 1
+
+[x] Translator 0.76: FX-8
+Options: swallow
+Incoming: Note On on ch. 13 with note:77 (0x4D) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 13 with CC#:118 (0x76) and value:4 (0x04), to port Bome Virtual Port 1
+
+[x] Translator 0.77: SCENE
+Options: swallow
+Incoming: Note On on ch. 13 with note:90 (0x5A) set 'pp' to velocity, on port VCM-600
+Outgoing: Control Change on ch. 13 with CC#:119 (0x77) and value:4 (0x04), to port Bome Virtual Port 1
+
