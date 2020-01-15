@@ -1,0 +1,90 @@
+; ------- Bome MIDI Translator: Signed Project File
+; ------- You can modify this file as you like, but that will invalidate
+; ------- the signature so that it cannot be opened in MT Player anymore.
+;
+[Preset.0]
+Name=Init
+Active=1
+PresetSwitchIgnore=0
+Name0=Init Open
+Incoming0=EnDi02
+Outgoing0=Tim0TimS0004Init1:1000:1
+Options0=Actv01Stop00OutO00
+Name1=Init Esc
+Incoming1=KAM10000KSQ1000201B21B
+Outgoing1=Tim0TimS0004Init1:0:1
+Options1=Actv01Stop00OutO00
+Name2=Init Timer
+Incoming2=Tim0TimT0004Init
+Outgoing2=None
+Options2=Actv01Stop00OutO00StMa00000003label0028__cmt>// Initialize all global variableslabel0017__cmt>// Shift Functionga=0
+
+[Preset.1]
+Name=Process
+Active=1
+PresetSwitchIgnore=0
+DefaultInPorts=MIDA0001000ELaunch Control
+Name0=A 
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x3C"/><Value2 num="0x7F"/></Simple></Incoming>
+Outgoing0=KAM10100KSQ10002041241
+Options0=Actv01Stop00OutO00StMa00000001if(ga==1)noexecute
+Name1=B
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x3C"/><Value2 num="0x7F"/></Simple></Incoming>
+Outgoing1=KAM10100KSQ10002042242
+Options1=Actv01Stop00OutO00StMa00000001if(ga==0)noexecute
+
+[Preset.2]
+Name=Pirmary Midi Controller
+Active=1
+PresetSwitchIgnore=0
+DefaultInPorts=MIDA0001000ELaunch Control
+Name0=Shift Down Midi
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x3D"/><Value2 num="0x7F"/></Simple></Incoming>
+Outgoing0=None
+Options0=Actv01Stop00OutO00StMa00000001ga=1
+Name1=Shift Up MIdi
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 num="0x3D"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing1=None
+Options1=Actv01Stop00OutO00StMa00000001ga=0
+Name2=Shift Toggle Midi
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x3E"/><Value2 num="0x7F"/></Simple></Incoming>
+Outgoing2=None
+Options2=Actv01Stop00OutO00StMa00000006label0025__cmt>// Toggle Exclusive OR functionga=ga^1label0039__cmt>// Above is toggles and could also be done this waylabel001A__cmt>//if ga==0 then pp=1label001A__cmt>//if ga==1 then pp=0label000D__cmt>//ga=pp
+
+[Preset.3]
+Name=Alternate Midi Controller
+Active=1
+PresetSwitchIgnore=0
+DefaultInPorts=MIDA00010013WORLDE easy control
+Name0=Shift Toggle Midi - Separate Conrtroller
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x17"/><Value2 num="0x7F"/></Simple></Incoming>
+Outgoing0=None
+Options0=Actv01Stop00OutO00StMa00000006label0025__cmt>// Toggle Exclusive OR functionga=ga^1label0039__cmt>// Above is toggles and could also be done this waylabel001A__cmt>//if ga==0 then pp=1label001A__cmt>//if ga==1 then pp=0label000D__cmt>//ga=pp
+
+[Preset.4]
+Name=Computer Keyboard
+Active=1
+PresetSwitchIgnore=0
+Name0=Shift Down Keystroke
+Incoming0=KAM11000KSQ10001010
+Outgoing0=None
+Options0=Actv01Stop00OutO00StMa00000001ga=1
+Name1=Shift Up Keystroke
+Incoming1=KAM12000KSQ10001010
+Outgoing1=None
+Options1=Actv01Stop00OutO00StMa00000002ga=0label0006__cmt>
+
+[Project]
+Version=2
+Author=Steven Caldwell
+AuthorContact=bome@sniz.biz
+Comments=For custom Bome  programming, please email the author
+AuthorWWW=
+AuthorCopyright=2017
+DefaultInPorts=MIDA00020008My Input0013WORLDE easy control
+DefaultOutPorts=MIDA0000
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=rHXm/Pmpimn4HqxSIFXelyZQToAjxbmQgP9exNxpO91+2NI30vu4f4w8Oc023IOf3G7kgXOrMvG6pq3xzkrVntabP66MOryvttyzmgMgB9vdSbHOP6uhdFYSXMHSqDFKMDfzmyrekqrfuUhuofggGPzTDxd2qujIR7uhdTn+iAE=
+SignedBy-1=Steve Caldwell

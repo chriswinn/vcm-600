@@ -1,0 +1,53 @@
+; ------- Signed Project File: DO NOT MODIFY!
+; ------- Any modification in this file will invalidate the signature,
+; ------- so that it cannot be opened in MT Player anymore.
+;
+[Preset.0]
+Name=defaulting
+Active=1
+PresetSwitchIgnore=0
+Name0=Ignore velocity=0
+Incoming0=MID190oo00
+Outgoing0=None
+Options0=Actv01Stop01OutO00
+Name1=default EQs and sends 1&2 on channel gt
+Incoming1=MID19007oo
+Outgoing1=MID1qq0100qq0200qq036Bqq046Bqq056B
+Options1=Actv01Stop01OutO00StMa00000001qq=176+gt
+Name2=cc's from channel 1 to gt
+Incoming2=MID1B0ppoo
+Outgoing2=MID1qqppoo
+Options2=Actv01Stop01OutO00StMa00000001qq=176+gt
+Name3=select 1
+Incoming3=MID19001oo
+Outgoing3=MID1B000oo
+Options3=Actv01Stop01OutO00StMa00000002gt=0if(gs==1)noexecute
+Name4=select 2
+Incoming4=MID19002oo
+Outgoing4=MID1B100oo
+Options4=Actv01Stop01OutO00StMa00000002gt=1if(gs==1)noexecute
+Name5=select 3
+Incoming5=MID19003oo
+Outgoing5=MID1B200oo
+Options5=Actv01Stop01OutO00StMa00000002gt=2if(gs==1)noexecute
+Name6=select 4
+Incoming6=MID19004oo
+Outgoing6=MID1B300oo
+Options6=Actv01Stop01OutO00StMa00000002gt=3if(gs==1)noexecute
+Name7=switch to selecting/non selecting
+Incoming7=MID19008oo
+Outgoing7=None
+Options7=Actv01Stop01OutO00StMa00000001gs=gs^1
+
+[Project]
+Version=2
+Author=Ben Blue
+AuthorContact=
+Comments=
+DefaultInPorts=MIDA00010016MIDI Controller device
+DefaultOutPorts=MIDA0001000ETo Application
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=Is1qwnjXv+AxHJPIEzDrxcnIBngegGxvtmXmiC8JzhQKAVOjdkfQTlSYR9QH0z/4imqLpABNfOSPqFHE0avWt/itJoKvQiKIWu7QYXouB9B9qI5CPVPgaGPIhPnLkjLX9Qk0U5zCgGTrqUQy5G6bI+LXKQBLfYbHg9pyDoYnTd8=
+SignedBy-1=Florian

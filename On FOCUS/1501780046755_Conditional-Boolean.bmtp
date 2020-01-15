@@ -1,0 +1,39 @@
+; ------- Bome MIDI Translator: Signed Project File
+; ------- You can modify this file as you like, but that will invalidate
+; ------- the signature so that it cannot be opened in MT Player anymore.
+;
+[Preset.0]
+Name=New Preset
+Active=1
+PresetSwitchIgnore=0
+Name0=Example AND Logic
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp" Type="SetVar"/><Value2 var="qq" Type="SetVar"/></Simple></Incoming>
+Outgoing0=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp"/><Value2 var="qq"/></Simple></Outgoing>
+Options0=Actv01Stop00OutO00StMa00000006label001A__cmt>// AND Logic Examplelabel0027__cmt>// If pp > 20 and pp < 30 (21-29)label0033__cmt>// Here is how it would be handled in BMT Proif(pp<=20)noexecuteif(pp>=30)noexecutelabel0035__cmt>// if you land here outgoing action will happen
+Name1=Example OR Logic
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp" Type="SetVar"/><Value2 var="qq" Type="SetVar"/></Simple></Incoming>
+Outgoing1=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp"/><Value2 var="qq"/></Simple></Outgoing>
+Options1=Actv01Stop00OutO00StMa00000006label0019__cmt>// OR Logic Examplelabel0040__cmt>// if pp > 100 or pp < 20 (range 0-19 or >100 NOT 20-100 )label0033__cmt>// Here is how it would be handled in BMT Proif(pp>100)executeif(pp<20)executenoexecute
+Name2=Example2 AND Logic
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp" Type="SetVar"/><Value2 var="qq" Type="SetVar"/></Simple></Incoming>
+Outgoing2=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp"/><Value2 var="qq"/></Simple></Outgoing>
+Options2=Actv01Stop00OutO00StMa00000007label001C__cmt>// AND Logic Example 2label0041__cmt>// If pp > 20 and pp < 30 (21-29) then qq = 21 else qq = 50label0033__cmt>// Here is how it would be handled in BMT Proqq=50if(pp<=20)sk2ipif(pp>=30)skipqq=21
+Name3=Example2 OR Logic
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp" Type="SetVar"/><Value2 var="qq" Type="SetVar"/></Simple></Incoming>
+Outgoing3=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp"/><Value2 var="qq"/></Simple></Outgoing>
+Options3=Actv01Stop00OutO00StMa00000006label001B__cmt>// OR Logic Example 2label0037__cmt>// if pp > 100 or pp < 20 then qq =21 else qq =50label0033__cmt>// Here is how it would be handled in BMT Proqq=50if(pp>100)qq=21if(pp<20)qq=21
+
+[Project]
+Version=2
+Author=
+AuthorContact=
+Comments=
+AuthorWWW=
+AuthorCopyright=
+DefaultInPorts=MIDA00010013Bome Virtual Port 1
+DefaultOutPorts=MIDA00010013Bome Virtual Port 2
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=BGAG8buXL+dViKb8dpPJ9UREqggLJp+va5vIW6fXc+r65+Lx9Q4ulcCpAkdaAvgop5gW5+q40S0RVmOUXJ8JxfAQs+6zQfWWVZE+bD6SDqSgoGAPJOxio5sE7qo+h+lmpN5LIQ/0A35UaozkEXkOYZJQD29cDBBPJisT9h59oXU=
+SignedBy-1=Steve Caldwell

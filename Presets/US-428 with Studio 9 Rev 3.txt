@@ -1,0 +1,92 @@
+Revision Date:			Rev 3 / Apr 17, 2005
+
+Author's Contact Info:		hans-artmann@t-online.de
+
+Notes:				Control Pinnacles Studio 9 with the US-428!
+
+				The data wheel for the slider's cannot be used
+				to brush the timeline. I use it to start Rewind and
+				FFW instead which is very convenient with the additional
+				Stop button in reach. I've -/+ 1 frame assigned to the
+				REW and F FW buttons instead.
+
+
+Language Depndencies:		Some shortcuts depend on the language of the GUI!
+				Values below are for German.
+				
+
+Channel Strip 1 Mute: 		-
+Channel Strip 1 Select: 	Cut				CTRL X
+Channel Strip 1 Fader:		-		
+
+Channel Strip 2 Mute:		-
+Channel Strip 2 Select:		Copy				CTRL C
+Channel Strip 2 Fader:		-
+
+Channel Strip 3 Mute:		-	
+Channel Strip 3 Select:		Paste				CTRL V
+Channel Strip 3 Fader:		-
+
+Channel Strip 4 Mute:
+Channel Strip 4 Select:
+Channel Strip 4 Fader:
+
+Channel Strip 5 Mute:
+Channel Strip 5 Select:
+Channel Strip 5 Fader:
+
+Channel Strip 6 Mute:
+Channel Strip 6 Select:
+Channel Strip 6 Fader:
+
+Channel Strip 7 Mute:
+Channel Strip 7 Select:		Previous Menu Chapter		CTRL Page-Up	
+Channel Strip 7 Fader:
+
+Channel Strip 8 Mute:
+Channel Strip 8 Select:		Next Menu Chapter		CTRL Page-Down
+Channel Strip 8 Fader:
+
+Solo:				Delete Menu Chapter		V
+Rec:				Back to Set Menu		M
+
+Master Fader:
+
+Gain:				Rolling Trim -/+ 1 Frame	CTRL LEFT/RIGHT
+Freq:				Trim End -/+ 1 Frame		ALT LEFT/RIGHT
+Q:				-/+ 1 Clip			LEFT/RIGHT
+Pan:				Timeline Zoom Out/In		NUM -/+
+
+High EQ:			Del Mark			G
+High-Mid EQ:			List View			ALT A DOWN L
+Low-Mid EQ:			Storyboard View			ALT A DOWN S
+Low EQ:				Timeline View			ALT A DOWN T
+
+Aux1:				- 1 Page			Page-Down
+Aux2:				+ 1 Page			Page-Up
+Aux3:				Delete				Del
+Aux4:				Split at selected position	Insert			
+
+Asgn:				Start				E
+F1:				- 1 Clip			LEFT
+F2:				+ 1 Clip			RIGHT
+F3:				End				R
+
+Null:				Stop				K
+Data Wheel:			F FW / REW			L/J
+
+Locate <-:			Goto Mark In			D			
+Locate ->:			Goto Mark Out			F
+Set:				Trim Tool			ALT T Return
+Bank <-:			Mark In				I
+Bank ->:			Mark Out			O
+Rew:				- 1 Frame			Y
+FFwd:				+ 1 Frame			X
+Stop:				Stop				K
+Play:				Play/Stop			Space
+Record:				Undo				CTRL Z
+
+Revision History:
+Rev1 / Jan 23, 2005		Basic setup
+Rev2 / Feb 10, 2005		Full Assignment
+Rev3 / Apr 17, 2005		Assignment of Data Wheel changed

@@ -1,0 +1,119 @@
+[Preset.0]
+Name=Itunes
+Active=1
+Name0=Mute
+Incoming0=MID1B06A00
+Outgoing0=KAM10100KSQ100060F10120282282F1212
+Options0=Actv01Stop00OutO00
+Name1=Jump to playlist top
+Incoming1=MID1B06B7F
+Outgoing1=Tim0TimS0009jumpToTop200:0:1
+Options1=Actv01Stop00OutO00
+Name2=Jump to playlist top
+Incoming2=Tim0TimT0009jumpToTop
+Outgoing2=KAM10100KSQ10002026226
+Options2=Actv01Stop00OutO00StMa00000002hz=hz+1if(hz>=198)noexecute
+Name3=Jump to playlist top
+Incoming3=Tim0TimT0009jumpToTop
+Outgoing3=KAM10100KSQ1000100D
+Options3=Actv01Stop00OutO00StMa00000004ss=hzif(hz>=198)hz=0if(ss>=198)executeif(ss<198)noexecute
+Name4=Play
+Incoming4=MID1B06D00
+Outgoing4=KAM10100KSQ10002020220
+Options4=Actv01Stop00OutO00
+Name5=Next
+Incoming5=MID1B0697F
+Outgoing5=KAM10100KSQ1000302822800D
+Options5=Actv01Stop00OutO00
+Name6=Previous
+Incoming6=MID1B0687F
+Outgoing6=KAM10100KSQ1000302622600D
+Options6=Actv01Stop00OutO00
+Name7=Volume up
+Incoming7=MID1B007pp
+Outgoing7=KAM10100KSQ100040F10262262F1
+Options7=Actv01Stop00OutO00StMa00000002if(gz>pp)noexecutegz=pp
+Name8=Volume down
+Incoming8=MID1B007pp
+Outgoing8=KAM10100KSQ100040F10282282F1
+Options8=Actv01Stop00OutO00StMa00000002if(gz<=pp)noexecutegz=pp
+Name9=Fast Forward
+Incoming9=MID1B06E7F
+Outgoing9=KAM11000KSQ100010F1
+Options9=Actv01Stop00OutO00
+Name10=Fast Forward
+Incoming10=MID1B06E7F
+Outgoing10=KAM11000KSQ10001012
+Options10=Actv01Stop00OutO00
+Name11=Fast Forward
+Incoming11=MID1B06E7F
+Outgoing11=KAM11000KSQ10001027
+Options11=Actv01Stop00OutO00
+Name12=Fast Forward
+Incoming12=MID1B06E00
+Outgoing12=KAM12100KSQ100010F1
+Options12=Actv01Stop00OutO00
+Name13=Fast Forward
+Incoming13=MID1B06E00
+Outgoing13=KAM12100KSQ10001012
+Options13=Actv01Stop00OutO00
+Name14=Fast Forward
+Incoming14=MID1B06E00
+Outgoing14=KAM12100KSQ10001027
+Options14=Actv01Stop00OutO00
+Name15=Fast Backward
+Incoming15=MID1B06C7F
+Outgoing15=KAM11000KSQ100010F1
+Options15=Actv01Stop00OutO00
+Name16=Fast Backward
+Incoming16=MID1B06C7F
+Outgoing16=KAM11000KSQ10001012
+Options16=Actv01Stop00OutO00
+Name17=Fast Backward
+Incoming17=MID1B06C7F
+Outgoing17=KAM11000KSQ10001025
+Options17=Actv01Stop00OutO00
+Name18=Fast Backward
+Incoming18=MID1B06C00
+Outgoing18=KAM12100KSQ10001012
+Options18=Actv01Stop00OutO00
+Name19=Fast Backward
+Incoming19=MID1B06C00
+Outgoing19=KAM12100KSQ100010F1
+Options19=Actv01Stop00OutO00
+Name20=Fast Backward
+Incoming20=MID1B06C00
+Outgoing20=KAM12100KSQ10001025
+Options20=Actv01Stop00OutO00
+Name21=Volume up 2
+Incoming21=MID1B018pp
+Outgoing21=KAM10100KSQ100040F10262262F1
+Options21=Actv01Stop00OutO00StMa00000002if(pp<=60)executeif(pp>60)noexecute
+Name22=Volume down 2
+Incoming22=MID1B018pp
+Outgoing22=KAM10100KSQ100040F10282282F1
+Options22=Actv01Stop00OutO00StMa00000002if(pp>60)executeif(pp<=60)noexecute
+Name23=Options
+Incoming23=MID1B0607F
+Outgoing23=KAM10100KSQ100040F10BC2BC2F1
+Options23=Actv01Stop00OutO00StMa00000001iz=iz+1
+Name24=Options
+Incoming24=MID1B0607F
+Outgoing24=KAM10100KSQ1000100D
+Options24=Actv01Stop00OutO00StMa00000004tt=izif(tt>=2)iz=0if(tt>=2)executeif(tt<2)noexecute
+Name25=Track Info
+Incoming25=MID1B0637F
+Outgoing25=KAM10100KSQ100040F10492492F1
+Options25=Actv01Stop00OutO00
+Name26=EQ
+Incoming26=MID1B06700
+Outgoing26=KAM10100KSQ100060120F10322322122F1
+Options26=Actv01Stop00OutO00
+Name27=Enter
+Incoming27=MID1B06F7F
+Outgoing27=KAM10100KSQ1000100D
+Options27=Actv01Stop00OutO00
+
+[Project]
+Version=1
+

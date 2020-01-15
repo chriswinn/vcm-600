@@ -1,0 +1,61 @@
+; ------- Bome MIDI Translator: Signed Project File
+; ------- You can modify this file as you like, but that will invalidate
+; ------- the signature so that it cannot be opened in MT Player anymore.
+;
+[Preset.0]
+Name=Init
+Active=1
+PresetSwitchIgnore=0
+Name0=Init Open
+Incoming0=EnDi02
+Outgoing0=Tim0TimS0004Init1:1000:1
+Options0=Actv01Stop00OutO00
+Name1=Init Esc
+Incoming1=KAM10000KSQ1000201B21B
+Outgoing1=Tim0TimS0004Init1:0:1
+Options1=Actv01Stop00OutO00
+Name2=Set Global Variables
+Incoming2=Tim0TimT0004Init
+Outgoing2=None
+Options2=Actv01Stop00OutO00StMa00000008label0024__cmt>// Initialize Global Variableslabel0049__cmt>// ga - Global control channel and performance input MIDI Channel 2ga=11label0040__cmt>// g1 - Channel 1 enable Controller CC1 any non-zero valueg1=1label002D__cmt>// g2 - Channel 2 enable Controller CC2g2=1label0006__cmt>
+
+[Preset.1]
+Name=Control
+Active=1
+PresetSwitchIgnore=0
+Name0=Control Channel 1
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel var="ga"/><Value1 num="0x01"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing0=None
+Options0=Actv01Stop00OutO00StMa00000001g1=pp
+Name1=Control Channel 2
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel var="ga"/><Value1 num="0x02"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing1=None
+Options1=Actv01Stop00OutO00StMa00000001g2=pp
+
+[Preset.2]
+Name=Performance
+Active=1
+PresetSwitchIgnore=0
+Name0=Channel 1 Performance
+Incoming0=MID1ppqqrr
+Outgoing0=MID1uuqqrr
+Options0=Actv01Stop00OutO00StMa00000011label002E__cmt>// establish channel mask channel numbertt=pp&15label0021__cmt>// check for global channelif(tt!=ga)noexecutelabel0020__cmt>// is this channel enabledif(g1==0)noexecutelabel002A__cmt>// process note on-off messages onlyuu=pp&240label0019__cmt>// Look for note-onif(uu==144)sk2iplabel001A__cmt>// Look for note-offif(uu==128)skiplabel0035__cmt>// neither note on or note off, exit translatornoexecutelabel0038__cmt>// If we arrive here we know it was a note messagelabel0045__cmt>// Set outoing channel to MIDI 1 (0) - Already set in this caseexecute
+Name1=Channel 2 Performance
+Incoming1=MID1ppqqrr
+Outgoing1=MID1uuqqrr
+Options1=Actv01Stop00OutO00StMa00000012label002E__cmt>// establish channel mask channel numbertt=pp&15label0021__cmt>// check for global channelif(tt!=ga)noexecutelabel0020__cmt>// is this channel enabledif(g2==0)noexecutelabel002A__cmt>// process note on-off messages onlyuu=pp&240label0019__cmt>// Look for note-onif(uu==144)sk2iplabel001A__cmt>// Look for note-offif(uu==128)skiplabel0035__cmt>// neither note on or note off, exit translatornoexecutelabel0038__cmt>// If we arrive here we know it was a note messagelabel002A__cmt>// Set outoing channel to MIDI 2 (1)uu=uu|1execute
+
+[Project]
+Version=2
+Author=Steven Caldwell
+AuthorContact=bome@sniz.biz
+Comments=For custom Bome  programming, please email the author
+AuthorWWW=
+AuthorCopyright=2017
+DefaultInPorts=MIDA00010008My Input
+DefaultOutPorts=MIDA00020006synth10006synth2
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=M0m+kb8zHo3loCyNftvOH2va50c4j4LPY35tytlgbFU4+a8MP7nRbAgJcgy4kGQwhTeGrhbt3VfG1qF5LjRnbSlDvwXgT/zd8qUiSJ9clfOTGovnK9wzJwrbVS0OvuU10OJTiHAbIoC91E+q6bfLxy1xkhvrgb0hV5i9cPoP0IE=
+SignedBy-1=Steve Caldwell

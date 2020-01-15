@@ -1,0 +1,8 @@
+Preset for "Kid Beyond style" usage:
+Foot Controller
+  -> Bome's Midi Translator Pro/Author/Player
+    -> Ableton Live
+
+NOTE: This preset will not work with Midi Translator Classic.
+
+In the help section, see the Ableton tutorial for more info.

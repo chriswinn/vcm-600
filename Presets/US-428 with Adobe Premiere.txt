@@ -1,0 +1,4 @@
+by James Thomas - jthomas@zvsmedia.com
+
+This  version  has  only  very  basic  transport  support  -  please  email with
+suggestions on which commands you'd like implemented on which buttons.

@@ -1,0 +1,656 @@
+; ------- Signed Project File: DO NOT MODIFY!
+; ------- Any modification in this file will invalidate the signature,
+; ------- so that it cannot be opened in MT Player anymore.
+;
+[Preset.0]
+Name=(always active)
+Active=1
+PresetSwitchIgnore=1
+Name0=Initialize AlphaTrack Unit
+Incoming0=EnDi02
+Outgoing0=MID1MIDD0011Force Native Modef0000140200100f7
+Options0=Actv01Stop00OutO00
+Name1=Display Midi Translator
+Incoming1=EnDi02
+Outgoing1=MID1F00001402000004D696469205472616E736C61746F722020202020202020202020202020202020F7
+Options1=Actv01Stop00OutO00
+Name2=Shift down/up [set gz]
+Incoming2=MID1MIDD000DShift down/up9046gz
+Outgoing2=None
+Options2=Actv01Stop00OutO00
+Name3=PAN: activate Winamp preset
+Incoming3=MID1MIDD0008PAN down902A7F
+Outgoing3=Pres02001CPAN: Winamp 5 Global Hotkeys
+Options3=Actv01Stop00OutO00
+Name4=SEND: activate Media Player preset
+Incoming4=MID1MIDD0009SEND down90297F
+Outgoing4=Pres02001ASEND: Windows Media Player
+Options4=Actv01Stop00OutO00
+Name5=EQ: activate Premiere Elements preset
+Incoming5=MID1MIDD0007EQ down902C7F
+Outgoing5=Pres020019EQ: Premiere Elements 3.0
+Options5=Actv01Stop00OutO00
+Name6=PLUG-IN: activate Powerpoint preset
+Incoming6=MID1MIDD000CPLUG-IN down902B7F
+Outgoing6=Pres020013PLUG-IN: Powerpoint
+Options6=Actv01Stop00OutO00
+Name7=AUTO: activate Generic preset
+Incoming7=MID1MIDD0009AUTO down904A7F
+Outgoing7=Pres02001BAUTO: Generic Media Control
+Options7=Actv01Stop00OutO00
+Name8=Handle LEDs (not needed)
+Incoming8=MID1MIDD0013Any top row buttons90pp7F
+Outgoing8=MID1MIDD0030turn off all LEDs, then turn on the selected one902a0029002c002b004a00pp7f
+Options8=Actv00Stop01OutO00StMa00000007if(pp==42)goto0002OKif(pp==41)goto0002OKif(pp==44)goto0002OKif(pp==43)goto0002OKif(pp==74)goto0002OKnoexecutelabel0002OK
+Name9=Little animation at start
+Incoming9=EnDi02
+Outgoing9=Tim0TimS0009Animation20:400:30
+Options9=Actv01Stop00OutO00StMa00000001ga=0
+Name10=Animation: light up
+Incoming10=Tim0TimT0009Animation
+Outgoing10=MID190vv7F
+Options10=Actv01Stop00OutO00StMa0000000Fif(ga>=20)ga=0ww=gaga=ga+1pp=ww&1if(pp!=0)noexecutexx=ww/2if(xx>7)noexecuteif(xx==0)vv=54if(xx==1)vv=55if(xx==2)vv=56if(xx==3)vv=57if(xx==4)vv=87if(xx==5)vv=88if(xx==6)vv=86if(xx==7)vv=50
+Name11=Animation: light up
+Incoming11=Tim0TimT0009Animation
+Outgoing11=MID190vv00
+Options11=Actv01Stop00OutO00StMa0000000Epp=ww&1if(pp==0)noexecutexx=ww-5if(xx<0)noexecutexx=xx/2if(xx>7)noexecuteif(xx==0)vv=54if(xx==1)vv=55if(xx==2)vv=56if(xx==3)vv=57if(xx==4)vv=87if(xx==5)vv=88if(xx==6)vv=86if(xx==7)vv=50
+
+[Preset.1]
+Name=PAN: Winamp 5 Global Hotkeys
+Active=0
+PresetSwitchIgnore=0
+Name0=Activation: display Winamp
+Incoming0=Pres080000
+Outgoing0=MID1f00001402000004D696469205472616E736C61746F722057696E616D7020202020202020202020F7
+Options0=Actv01Stop00OutO00
+Name1=Activation: Select PAN LED
+Incoming1=Pres080000
+Outgoing1=MID1MIDD000Fturn on PAN LED902A7F
+Options1=Actv01Stop00OutO00
+Name2=Deactivation: Unselect PAN LED
+Incoming2=Pres090000
+Outgoing2=MID1MIDD0010turn off PAN LED902a00
+Options2=Actv01Stop00OutO00
+Name3=Play
+Incoming3=MID1MIDD0010Play button down905E7F
+Outgoing3=KAM10000KSQ1000501101212D212211
+Options3=Actv01Stop01OutO00
+Name4=Stop
+Incoming4=MID1MIDD0010Stop button down905D7F
+Outgoing4=KAM10000KSQ10006011012123323212211
+Options4=Actv01Stop01OutO00
+Name5=FFwr button down (1)
+Incoming5=MID1MIDD000E>> button down905C7F
+Outgoing5=KAM10000KSQ10006011012127327212211
+Options5=Actv01Stop00OutO00
+Name6=FFwr button down (2) [set timer]
+Incoming6=MID1MIDD000E>> button down905C7F
+Outgoing6=Tim0TimS000DSlide Forward0:500:70
+Options6=Actv01Stop00OutO00
+Name7=FFwr button up [kill timer]
+Incoming7=MID1MIDD000C>> button up905C00
+Outgoing7=Tim0TimK000DSlide Forward
+Options7=Actv01Stop00OutO00
+Name8=Rwd button down (1)
+Incoming8=MID1MIDD000E<< button down905B7F
+Outgoing8=KAM10000KSQ10006011012125325212211
+Options8=Actv01Stop00OutO00
+Name9=Rwd button down (2) set timer
+Incoming9=MID1MIDD000E<< button down905B7F
+Outgoing9=Tim0TimS000ESlide Backward0:500:70
+Options9=Actv01Stop00OutO00
+Name10=Rwd button up [kill timer]
+Incoming10=MID1MIDD000C<< button up905B00
+Outgoing10=Tim0TimK000ESlide Backward
+Options10=Actv01Stop00OutO00
+Name11=Next
+Incoming11=MID1MIDD0007Track >90587F
+Outgoing11=KAM10000KSQ10006011012122322212211
+Options11=Actv01Stop01OutO00
+Name12=Previous
+Incoming12=MID1MIDD0007< Track90577F
+Outgoing12=KAM10000KSQ10007210011012121321212211
+Options12=Actv01Stop01OutO00
+Name13=Lock Master Fader
+Incoming13=MID1MIDD0015Master Fader movementE0ppvv
+Outgoing13=MID1MIDD0011Move Master FaderE0ppvv
+Options13=Actv01Stop00OutO00
+Name14=Master Faster Up
+Incoming14=MID1MIDD0015Master Fader movementE0ppvv
+Outgoing14=Tim0TimS0009Volume Upxx:0:10
+Options14=Actv01Stop01OutO00StMa0000000Alabel0020Winamp supports 64 volume levelslabel0020Account for some lost keystrokesvv=vv*6vv=vv/10label0029Calculate number of volume up key pressesxx=vv-gvif(xx<=0)noexecutegv=vvlabel0006Unmutegm=0
+Name15=Master Faster Down
+Incoming15=MID1MIDD0015Master Fader movementE0ppvv
+Outgoing15=Tim0TimS000BVolume Downxx:0:10
+Options15=Actv01Stop01OutO00StMa0000000Alabel0020Winamp supports 64 volume levelslabel0020Account for some lost keystrokesvv=vv*6vv=vv/10label002BCalculate number of volume down key pressesxx=gv-vvif(xx<=0)noexecutegv=vvlabel0006Unmutegm=0
+Name16=Mute on [set gm]
+Incoming16=MID1MIDD0009Mute down90107F
+Outgoing16=Tim0TimS000BVolume Down64:0:10
+Options16=Actv01Stop01OutO00StMa00000006if(gm!=0)noexecutelabel001CRemember unmute volume in gmgm=gvgv=0label002Aif unmute level is 0, set to middle volumeif(gm==0)gm=32
+Name17=Mute off
+Incoming17=MID1MIDD0009Mute down90107F
+Outgoing17=Tim0TimS0009Volume Upgv:0:10
+Options17=Actv01Stop01OutO00StMa00000005if(gm==0)noexecutelabel0021set gv to remembered unmute levelgv=gmlabel0018Reset gm to mean unmutedgm=0
+Name18=On Timer Volume Up
+Incoming18=Tim0TimT0009Volume Up
+Outgoing18=KAM10100KSQ10006012011126326212211
+Options18=Actv01Stop01OutO00
+Name19=On Timer Volume Down
+Incoming19=Tim0TimT000BVolume Down
+Outgoing19=KAM10100KSQ10005011012128212211
+Options19=Actv01Stop01OutO00
+Name20=Ribbon strip: finger 1 touch/untouch [set g1]
+Incoming20=MID1MIDD00181st finger on/off ribbon9074g1
+Outgoing20=None
+Options20=Actv01Stop01OutO00StMa00000002label001Dinvalidate ribbon position grgr=-1
+Name21=Ribbon strip: finger 1 to right [set gr]
+Incoming21=MID1MIDD0011Ribbon Strip moveE900pp
+Outgoing21=Tim0TimS000DSlide Forwardxx:0:10
+Options21=Actv01Stop00OutO00StMa0000000Clabel0027g2 is flag that 2nd finger is on ribbonif(g2!=0)noexecutelabel001Cif initial move, just set grif(gr>=0)goto0027Calculate number of forward key pressesgr=ppnoexecutelabel0027Calculate number of forward key pressesxx=pp-grxx=xx/2if(xx<=0)noexecutelabel0021set gr to current ribbon positiongr=pp
+Name22=Ribbon strip: finger 1 to left [set gr]
+Incoming22=MID1MIDD0011Ribbon Strip moveE900pp
+Outgoing22=Tim0TimS000ESlide Backwardxx:0:10
+Options22=Actv01Stop00OutO00StMa0000000Clabel0027g2 is flag that 2nd finger is on ribbonif(g2!=0)noexecutelabel001Cif initial move, just set grif(gr>=0)goto0028Calculate number of backward key pressesgr=ppnoexecutelabel0028Calculate number of backward key pressesxx=gr-ppxx=xx/2if(xx<=0)noexecutelabel0021set gr to current ribbon positiongr=pp
+Name23=Ribbon strip: finger 2 touch/untouch [set g2]
+Incoming23=MID1MIDD00182nd finger on/off ribbon907Bg2
+Outgoing23=None
+Options23=Actv01Stop00OutO00StMa00000001gj=-1
+Name24=Ribbon strip: finger 2 to right [set gj]
+Incoming24=MID1MIDD0011Ribbon Strip moveE900pp
+Outgoing24=Tim0TimS000DSlide Forward0:0:xx
+Options24=Actv01Stop01OutO00StMa0000000Flabel0027g2 is flag that 2nd finger is on ribbonif(g2==0)noexecuteif(gj>=0)goto0026Calculate speed of forward key presseslabel0024gj is initial second finger positiongj=ppnoexecutelabel0026Calculate speed of forward key pressesxx=pp-gjlabel0022if xx<=0, the timer will be killedif(xx<=0)noexecutelabel0018scale xx to millisecondsxx=64-xxif(xx<0)xx=0xx=xx+10xx=xx*2
+Name25=Ribbon strip: finger 2 to left [set gj]
+Incoming25=MID1MIDD0011Ribbon Strip moveE900pp
+Outgoing25=Tim0TimS000ESlide Backward0:0:xx
+Options25=Actv01Stop01OutO00StMa0000000Flabel0027g2 is flag that 2nd finger is on ribbonif(g2==0)noexecuteif(gj>=0)goto0027Calculate speed of backward key presseslabel0024gj is initial second finger positiongj=ppnoexecutelabel0027Calculate speed of backward key pressesxx=gj-pplabel0022if xx<=0, the timer will be killedif(xx<=0)noexecutelabel0018scale xx to millisecondsxx=64-xxif(xx<0)xx=0xx=xx+10xx=xx*2
+Name26=Ribbon strip: finger 2 kill forward timer (1)
+Incoming26=MID1MIDD0011Ribbon Strip moveE900pp
+Outgoing26=Tim0TimK000DSlide Forward
+Options26=Actv01Stop00OutO00StMa00000007label0027g2 is flag that 2nd finger is on ribbonif(g2==0)noexecuteif(gj<0)executelabel0026Calculate speed of forward key pressesxx=pp-gjlabel0022if xx<=0, the timer will be killedif(xx>0)noexecute
+Name27=Ribbon strip: finger 2 kill forward timer (2)
+Incoming27=MID1MIDD0022Ribbon Strip untouch finger 1 or 290pp00
+Outgoing27=Tim0TimK000DSlide Forward
+Options27=Actv01Stop00OutO00StMa00000004label0020Kill timer if pp is 0x74 or 0x7Bif(pp==116)executeif(pp==123)executenoexecute
+Name28=Ribbon strip: finger 2 kill backward timer (1)
+Incoming28=MID1MIDD0011Ribbon Strip moveE900pp
+Outgoing28=Tim0TimK000ESlide Backward
+Options28=Actv01Stop00OutO00StMa00000007label0027g2 is flag that 2nd finger is on ribbonif(g2==0)noexecuteif(gj<0)executelabel0027Calculate speed of backward key pressesxx=gj-pplabel0022if xx<=0, the timer will be killedif(xx>0)noexecute
+Name29=Ribbon strip: finger 2 kill backward timer (2)
+Incoming29=MID1MIDD0022Ribbon Strip untouch finger 1 or 290pp00
+Outgoing29=Tim0TimK000ESlide Backward
+Options29=Actv01Stop00OutO00StMa00000004label0020Kill timer if pp is 0x74 or 0x7Bif(pp==116)executeif(pp==123)executenoexecute
+Name30=On Timer Forward
+Incoming30=Tim0TimT000DSlide Forward
+Outgoing30=KAM10000KSQ10006011012127327212211
+Options30=Actv01Stop01OutO00
+Name31=On Timer Backward
+Incoming31=Tim0TimT000ESlide Backward
+Outgoing31=KAM10000KSQ10006011012125325212211
+Options31=Actv01Stop01OutO00
+
+[Preset.2]
+Name=SEND: Windows Media Player
+Active=0
+PresetSwitchIgnore=0
+Name0=Activation: display Media Player
+Incoming0=Pres080000
+Outgoing0=MID1F00001402000004D696469205472616E736C61746F722057696e204d6564696120506C61796572F7
+Options0=Actv01Stop00OutO00
+Name1=Activation: Select SEND LED
+Incoming1=Pres080000
+Outgoing1=MID1MIDD0010turn on SEND LED90297F
+Options1=Actv01Stop00OutO00
+Name2=Deactivation: Unselect SEND LED
+Incoming2=Pres090000
+Outgoing2=MID1MIDD0011turn off SEND LED902900
+Options2=Actv01Stop00OutO00
+Name3=Activation, start WMP
+Incoming3=Pres080000
+Outgoing3=KAM10100KSQ10007012011010050212210211
+Options3=Actv01Stop00OutO00
+Name4=Master Faster Down
+Incoming4=MID1MIDD0015Master Fader movementE0ppvv
+Outgoing4=Tim0TimS000BVolume Downxx:0:10
+Options4=Actv01Stop01OutO00StMa00000008label0026Media Player supports 10 volume levelsvv=vv/10label002BCalculate number of volume down key pressesxx=gv-vvif(xx<=0)noexecutegv=vvlabel0006Unmutegm=0
+Name5=Play/Pause
+Incoming5=MID1MIDD0010Play button down905E7F
+Outgoing5=KAM10000KSQ10004011050250211
+Options5=Actv01Stop01OutO00
+Name6=Stop
+Incoming6=MID1MIDD0010Stop button down905D7F
+Outgoing6=KAM10000KSQ10004011053253211
+Options6=Actv01Stop01OutO00
+Name7=FFwr button down or up
+Incoming7=MID1MIDD0014>> button down or up905Cpp
+Outgoing7=KAM10000KSQ10006011010046246210211
+Options7=Actv01Stop00OutO00
+Name8=Rwd button down or up
+Incoming8=MID1MIDD0014<< button down or up905Bpp
+Outgoing8=KAM10000KSQ10006011010042242210211
+Options8=Actv01Stop00OutO00
+Name9=Next
+Incoming9=MID1MIDD0007Track >90587F
+Outgoing9=KAM10000KSQ10004011046246211
+Options9=Actv01Stop01OutO00
+Name10=Previous
+Incoming10=MID1MIDD0007< Track90577F
+Outgoing10=KAM10000KSQ10005210011042242211
+Options10=Actv01Stop01OutO00
+Name11=Lock Master Fader
+Incoming11=MID1MIDD0015Master Fader movementE0ppvv
+Outgoing11=MID1MIDD0011Move Master FaderE0ppvv
+Options11=Actv01Stop00OutO00
+Name12=Master Faster Up
+Incoming12=MID1MIDD0015Master Fader movementE0ppvv
+Outgoing12=Tim0TimS0009Volume Upxx:0:10
+Options12=Actv01Stop01OutO00StMa00000008label0026Media Player supports 10 volume levelsvv=vv/10label0029Calculate number of volume up key pressesxx=vv-gvif(xx<=0)noexecutegv=vvlabel0006Unmutegm=0
+Name13=Mute on/off
+Incoming13=MID1MIDD0009Mute down90107F
+Outgoing13=KAM10100KSQ10002077277
+Options13=Actv01Stop01OutO00
+Name14=On Timer Volume Up
+Incoming14=Tim0TimT0009Volume Up
+Outgoing14=KAM10100KSQ10002079279
+Options14=Actv01Stop01OutO00
+Name15=On Timer Volume Down
+Incoming15=Tim0TimT000BVolume Down
+Outgoing15=KAM10100KSQ10002078278
+Options15=Actv01Stop01OutO00
+Name16=Ribbon strip: finger 2 touch/untouch [set g2]
+Incoming16=MID1MIDD00182nd finger on/off ribbon907Bg2
+Outgoing16=KAM10100KSQ1000601101004E24E210211
+Options16=Actv01Stop00OutO00StMa00000004gj=-1gt=0label002COnly execute outgoing action when untouchingif(g2!=0)noexecute
+Name17=Ribbon strip: finger 2 move [set gj and xx]
+Incoming17=MID1MIDD0011Ribbon Strip moveE900pp
+Outgoing17=None
+Options17=Actv01Stop00OutO00StMa0000000Blabel0026temporarily set xx to impossible valuexx=-200label0027g2 is flag that 2nd finger is on ribbonif(g2==0)noexecuteif(gj>=0)goto0026Calculate speed of forward key presseslabel0024gj is initial second finger positiongj=ppnoexecutelabel0026Calculate speed of forward key pressesxx=pp-gjxx=xx*2
+Name18=Ribbon strip: finger 2 move: normal tempo
+Incoming18=MID1MIDD0011Ribbon Strip moveE900pp
+Outgoing18=KAM10100KSQ1000601001104E24E210211
+Options18=Actv01Stop00OutO00StMa00000004if(xx>=10)noexecuteif(xx<=-10)noexecuteif(gt==0)noexecutegt=0
+Name19=Ribbon strip: finger 2 move: fast tempo
+Incoming19=MID1MIDD0011Ribbon Strip moveE900pp
+Outgoing19=KAM10100KSQ10006011010047247211210
+Options19=Actv01Stop00OutO00StMa00000003if(xx<=10)noexecuteif(gt==1)noexecutegt=1
+Name20=Ribbon strip: finger 2 move: slow tempo
+Incoming20=MID1MIDD0011Ribbon Strip moveE900pp
+Outgoing20=KAM10100KSQ10006010011053253211210
+Options20=Actv01Stop00OutO00StMa00000004if(xx<=-200)noexecuteif(xx>=-10)noexecuteif(gt==-1)noexecutegt=-1
+Name21=Loop: Repeat
+Incoming21=MID1MIDD000BLoop button90567F
+Outgoing21=KAM10100KSQ10004011054254211
+Options21=Actv01Stop01OutO00
+Name22=Add Tracks
+Incoming22=MID1MIDD0010Flip button down90327F
+Outgoing22=KAM10100KSQ1000401104F24F211
+Options22=Actv01Stop01OutO00
+
+[Preset.3]
+Name=EQ: Premiere Elements 3.0
+Active=0
+PresetSwitchIgnore=0
+Name0=Activation: Display Premiere
+Incoming0=Pres080000
+Outgoing0=MID1f00001402000004D696469205472616E736C61746F72205072656D6965726520456C656D2E2020F7
+Options0=Actv01Stop00OutO00
+Name1=Activation: Select EQ LED
+Incoming1=Pres080000
+Outgoing1=MID1MIDD000Eturn on EQ LED902C7F
+Options1=Actv01Stop00OutO00
+Name2=Deactivation: Unselect EQ LED
+Incoming2=Pres090000
+Outgoing2=MID1MIDD000Fturn off EQ LED902C00
+Options2=Actv01Stop00OutO00
+Name3=Play
+Incoming3=MID1MIDD0010Play button down905E7F
+Outgoing3=KAM10000KSQ10002020220
+Options3=Actv01Stop01OutO00
+Name4=Stop
+Incoming4=MID1MIDD0010Stop button down905D7F
+Outgoing4=KAM10000KSQ1000204B24B
+Options4=Actv01Stop01OutO00
+Name5=Forward: Play Faster
+Incoming5=MID1MIDD000E>> button down905C7F
+Outgoing5=KAM10000KSQ1000204C24C
+Options5=Actv01Stop01OutO00
+Name6=Rewind: Reverse
+Incoming6=MID1MIDD000E<< button down905B7F
+Outgoing6=KAM10000KSQ1000204A24A
+Options6=Actv01Stop01OutO00
+Name7=Add: Set Unnumbered Marker
+Incoming7=MID1905200
+Outgoing7=KAM10000KSQ1000206A26A
+Options7=Actv00Stop01OutO00
+Name8=Prev: Go to Previous Marker
+Incoming8=MID1905400
+Outgoing8=KAM10000KSQ10004011125325211
+Options8=Actv00Stop01OutO00
+Name9=Next: Go to Next Marker
+Incoming9=MID1905500
+Outgoing9=KAM10000KSQ10004011127327211
+Options9=Actv00Stop01OutO00
+Name10=Zoom In (left knob)
+Incoming10=MID1MIDD00171st encoder: turn rightB01001
+Outgoing10=KAM10000KSQ100020BB2BB
+Options10=Actv01Stop01OutO00
+Name11=Zoom Out (left knob)
+Incoming11=MID1MIDD00161st encoder: turn leftB01041
+Outgoing11=KAM10000KSQ100020BD2BD
+Options11=Actv01Stop01OutO00
+Name12=Preview Video
+Incoming12=MID1MIDD000BFlip button90327F
+Outgoing12=KAM10000KSQ1000210D30D
+Options12=Actv01Stop01OutO00
+Name13=Undo
+Incoming13=MID1904C00
+Outgoing13=KAM10100KSQ1000401105A25A211
+Options13=Actv00Stop01OutO00
+Name14=Punch In
+Incoming14=MID1905700
+Outgoing14=KAM10100KSQ10002049249
+Options14=Actv00Stop01OutO00
+Name15=Punch Out
+Incoming15=MID1905800
+Outgoing15=KAM10100KSQ1000204F24F
+Options15=Actv00Stop01OutO00
+Name16=Go to previous Edit Point
+Incoming16=MID1MIDD0007< Track90577F
+Outgoing16=KAM10100KSQ10002121321
+Options16=Actv01Stop01OutO00
+Name17=Go to next Edit Point
+Incoming17=MID1MIDD0007Track >90587F
+Outgoing17=KAM10100KSQ10002122322
+Options17=Actv01Stop01OutO00
+Name18=Dial Next Frame: turn right
+Incoming18=MID1MIDD00163rd encoder turn rightB012pp
+Outgoing18=Tim0TimS000ANext Framepp:0:5
+Options18=Actv01Stop00OutO00StMa00000001if(pp>=64)noexecute
+Name19=Dial Previous Frame: turn left
+Incoming19=MID1MIDD00153rd encoder turn leftB012pp
+Outgoing19=Tim0TimS000EPrevious Framepp:0:5
+Options19=Actv01Stop00OutO00StMa00000002if(pp<=64)noexecutepp=pp-64
+Name20=Ribbon strip: finger 1 touch/untouch [set g1]
+Incoming20=MID1MIDD00181st finger on/off ribbon9074g1
+Outgoing20=None
+Options20=Actv01Stop01OutO00StMa00000002label001Dinvalidate ribbon position grgr=-1
+Name21=Ribbon strip: finger 1 to right [set gr]
+Incoming21=MID1MIDD0011Ribbon Strip moveE900pp
+Outgoing21=Tim0TimS000ANext Framexx:0:10
+Options21=Actv01Stop00OutO00StMa0000000Clabel0027g2 is flag that 2nd finger is on ribbonif(g2!=0)noexecutelabel001Cif initial move, just set grif(gr>=0)goto0027Calculate number of forward key pressesgr=ppnoexecutelabel0027Calculate number of forward key pressesxx=pp-grxx=xx/4if(xx<=0)noexecutelabel0021set gr to current ribbon positiongr=pp
+Name22=Ribbon strip: finger 1 to left [set gr]
+Incoming22=MID1MIDD0011Ribbon Strip moveE900pp
+Outgoing22=Tim0TimS000EPrevious Framexx:0:10
+Options22=Actv01Stop00OutO00StMa0000000Clabel0027g2 is flag that 2nd finger is on ribbonif(g2!=0)noexecutelabel001Cif initial move, just set grif(gr>=0)goto0028Calculate number of backward key pressesgr=ppnoexecutelabel0028Calculate number of backward key pressesxx=gr-ppxx=xx/4if(xx<=0)noexecutelabel0021set gr to current ribbon positiongr=pp
+Name23=Ribbon strip: finger 2 touch/untouch [set g2]
+Incoming23=MID1MIDD00182nd finger on/off ribbon907Bg2
+Outgoing23=KAM10100KSQ1000404B24B020220
+Options23=Actv01Stop00OutO00StMa00000003gj=-1if(g2!=0)noexecutelabel0027on untouch, go to normal playback speed
+Name24=Ribbon strip: finger 2 to right using timer [set gj]
+Incoming24=MID1MIDD0011Ribbon Strip moveE900pp
+Outgoing24=Tim0TimS000AAcceleratexx:0:40
+Options24=Actv01Stop01OutO00StMa0000000Cpp=pp/2label0027g2 is flag that 2nd finger is on ribbonif(g2==0)noexecuteif(gj>=0)goto0027Calculate number of forward key presseslabel0021gj is last second finger positiongj=ppnoexecutelabel0027Calculate number of forward key pressesxx=pp-gjlabel001Cif xx<=0, need to decelerateif(xx<=0)noexecutegj=pp
+Name25=Ribbon strip: finger 2 to left using timer [set gj]
+Incoming25=MID1MIDD0011Ribbon Strip moveE900pp
+Outgoing25=Tim0TimS000ADeceleratexx:0:40
+Options25=Actv01Stop01OutO00StMa0000000Cpp=pp/2label0027g2 is flag that 2nd finger is on ribbonif(g2==0)noexecuteif(gj>=0)goto0028Calculate number of backward key presseslabel0021gj is last second finger positiongj=ppnoexecutelabel0028Calculate number of backward key pressesxx=gj-pplabel001Cif xx<=0, need to accelerateif(xx<=0)noexecutegj=pp
+Name26=On Timer Next Frame
+Incoming26=Tim0TimT000ANext Frame
+Outgoing26=KAM10000KSQ10002127327
+Options26=Actv01Stop01OutO00
+Name27=On Timer Previous Frame
+Incoming27=Tim0TimT000EPrevious Frame
+Outgoing27=KAM10100KSQ10002125325
+Options27=Actv01Stop01OutO00
+Name28=Shuttle: Accelerate
+Incoming28=Tim0TimT000AAccelerate
+Outgoing28=KAM10100KSQ1000401004C24C210
+Options28=Actv01Stop01OutO00
+Name29=Shuttle: Decelerate
+Incoming29=Tim0TimT000ADecelerate
+Outgoing29=KAM10100KSQ1000401004A24A210
+Options29=Actv01Stop01OutO00
+
+[Preset.4]
+Name=Premiere 6
+Active=0
+PresetSwitchIgnore=0
+Name0=Activation: Display Premiere
+Incoming0=Pres080000
+Outgoing0=MID1f00001402000004D696469205472616E736C61746F72205072656D696572652020202020202020F7
+Options0=Actv01Stop00OutO00
+Name1=Play
+Incoming1=MID1MIDD0010Play button down905E7F
+Outgoing1=KAM10000KSQ10002020220
+Options1=Actv01Stop01OutO00
+Name2=Stop
+Incoming2=MID1MIDD0010Stop button down905D7F
+Outgoing2=KAM10000KSQ1000204B24B
+Options2=Actv01Stop01OutO00
+Name3=Forward: Play Faster
+Incoming3=MID1MIDD000E>> button down905C7F
+Outgoing3=KAM10000KSQ1000204C24C
+Options3=Actv01Stop01OutO00
+Name4=Rewind: Reverse
+Incoming4=MID1MIDD000E<< button down905B7F
+Outgoing4=KAM10000KSQ1000204A24A
+Options4=Actv01Stop01OutO00
+Name5=Add: Set Unnumbered Marker
+Incoming5=MID1905200
+Outgoing5=KAM10000KSQ1000206A26A
+Options5=Actv00Stop01OutO00
+Name6=Zoom In (left knob)
+Incoming6=MID1MIDD00171st encoder: turn rightB01001
+Outgoing6=KAM10000KSQ1000206B26B
+Options6=Actv01Stop01OutO00
+Name7=Zoom Out (left knob)
+Incoming7=MID1MIDD00161st encoder: turn leftB01041
+Outgoing7=KAM10000KSQ1000206D26D
+Options7=Actv01Stop01OutO00
+Name8=Preview Video
+Incoming8=MID1MIDD000BFlip button90327F
+Outgoing8=KAM10000KSQ1000210D30D
+Options8=Actv01Stop01OutO00
+Name9=Undo
+Incoming9=MID1904C00
+Outgoing9=KAM10100KSQ1000401105A25A211
+Options9=Actv00Stop01OutO00
+Name10=Go to previous Marker
+Incoming10=MID1MIDD0007< Track90577F
+Outgoing10=KAM10100KSQ10004010051251210
+Options10=Actv01Stop01OutO00
+Name11=Go to next Marker
+Incoming11=MID1MIDD0007Track >90587F
+Outgoing11=KAM10100KSQ10004010057257210
+Options11=Actv01Stop01OutO00
+Name12=Dial Next Frame: turn right
+Incoming12=MID1MIDD00163rd encoder turn rightB012pp
+Outgoing12=Tim0TimS000ANext Framepp:0:5
+Options12=Actv01Stop00OutO00StMa00000001if(pp>=64)noexecute
+Name13=Dial Previous Frame: turn left
+Incoming13=MID1MIDD00153rd encoder turn leftB012pp
+Outgoing13=Tim0TimS000EPrevious Framepp:0:5
+Options13=Actv01Stop00OutO00StMa00000002if(pp<=64)noexecutepp=pp-64
+Name14=Ribbon strip: finger 1 touch/untouch [set g1]
+Incoming14=MID1MIDD00181st finger on/off ribbon9074g1
+Outgoing14=None
+Options14=Actv01Stop01OutO00StMa00000002label001Dinvalidate ribbon position grgr=-1
+Name15=Ribbon strip: finger 1 to right [set gr]
+Incoming15=MID1MIDD0011Ribbon Strip moveE900pp
+Outgoing15=Tim0TimS000ANext Framexx:0:10
+Options15=Actv01Stop00OutO00StMa0000000Clabel0027g2 is flag that 2nd finger is on ribbonif(g2!=0)noexecutelabel001Cif initial move, just set grif(gr>=0)goto0027Calculate number of forward key pressesgr=ppnoexecutelabel0027Calculate number of forward key pressesxx=pp-grxx=xx/4if(xx<=0)noexecutelabel0021set gr to current ribbon positiongr=pp
+Name16=Ribbon strip: finger 1 to left [set gr]
+Incoming16=MID1MIDD0011Ribbon Strip moveE900pp
+Outgoing16=Tim0TimS000EPrevious Framexx:0:10
+Options16=Actv01Stop00OutO00StMa0000000Clabel0027g2 is flag that 2nd finger is on ribbonif(g2!=0)noexecutelabel001Cif initial move, just set grif(gr>=0)goto0028Calculate number of backward key pressesgr=ppnoexecutelabel0028Calculate number of backward key pressesxx=gr-ppxx=xx/4if(xx<=0)noexecutelabel0021set gr to current ribbon positiongr=pp
+Name17=Ribbon strip: finger 2 touch/untouch [set g2]
+Incoming17=MID1MIDD00182nd finger on/off ribbon907Bg2
+Outgoing17=KAM10100KSQ1000404B24B020220
+Options17=Actv01Stop00OutO00StMa00000003gj=-1if(g2!=0)noexecutelabel0027on untouch, go to normal playback speed
+Name18=Ribbon strip: finger 2 to right using timer [set gj]
+Incoming18=MID1MIDD0011Ribbon Strip moveE900pp
+Outgoing18=Tim0TimS000AAcceleratexx:0:40
+Options18=Actv01Stop01OutO00StMa0000000Cpp=pp/2label0027g2 is flag that 2nd finger is on ribbonif(g2==0)noexecuteif(gj>=0)goto0027Calculate number of forward key presseslabel0021gj is last second finger positiongj=ppnoexecutelabel0027Calculate number of forward key pressesxx=pp-gjlabel001Cif xx<=0, need to decelerateif(xx<=0)noexecutegj=pp
+Name19=Ribbon strip: finger 2 to left using timer [set gj]
+Incoming19=MID1MIDD0011Ribbon Strip moveE900pp
+Outgoing19=Tim0TimS000ADeceleratexx:0:40
+Options19=Actv01Stop01OutO00StMa0000000Cpp=pp/2label0027g2 is flag that 2nd finger is on ribbonif(g2==0)noexecuteif(gj>=0)goto0028Calculate number of backward key presseslabel0021gj is last second finger positiongj=ppnoexecutelabel0028Calculate number of backward key pressesxx=gj-pplabel001Cif xx<=0, need to accelerateif(xx<=0)noexecutegj=pp
+Name20=On Timer Next Frame
+Incoming20=Tim0TimT000ANext Frame
+Outgoing20=KAM10000KSQ10002127327
+Options20=Actv01Stop01OutO00
+Name21=On Timer Previous Frame
+Incoming21=Tim0TimT000EPrevious Frame
+Outgoing21=KAM10100KSQ10002125325
+Options21=Actv01Stop01OutO00
+Name22=Shuttle: Accelerate
+Incoming22=Tim0TimT000AAccelerate
+Outgoing22=KAM10100KSQ1000204C24C
+Options22=Actv01Stop01OutO00
+Name23=Shuttle: Decelerate
+Incoming23=Tim0TimT000ADecelerate
+Outgoing23=KAM10100KSQ1000204A24A
+Options23=Actv01Stop01OutO00
+
+[Preset.5]
+Name=PLUG-IN: Powerpoint
+Active=0
+PresetSwitchIgnore=0
+Name0=Activation: Display Powerpoint
+Incoming0=Pres080000
+Outgoing0=MID1F00001402000004D696469205472616E736C61746F7220506f776572706f696e74202020202020F7
+Options0=Actv01Stop00OutO00
+Name1=Activation: Select PLUG-IN LED
+Incoming1=Pres080000
+Outgoing1=MID1MIDD0013turn on PLUG-IN LED902B7F
+Options1=Actv01Stop00OutO00
+Name2=Deactivation: Unselect PLUG-IN LED
+Incoming2=Pres090000
+Outgoing2=MID1MIDD0014turn off PLUG-IN LED902B00
+Options2=Actv01Stop00OutO00
+Name3=Previous Page
+Incoming3=MID1MIDD000Ftouch left knob90787F
+Outgoing3=KAM10100KSQ10002121321
+Options3=Actv01Stop01OutO00
+Name4=Previous Page
+Incoming4=MID1MIDD0008press <<905B7F
+Outgoing4=KAM10100KSQ10002121321
+Options4=Actv01Stop01OutO00
+Name5=Next Page
+Incoming5=MID1MIDD0010touch right knob907A7F
+Outgoing5=KAM10100KSQ10002122322
+Options5=Actv01Stop01OutO00
+Name6=Next Page
+Incoming6=MID1MIDD0008press >>905C7F
+Outgoing6=KAM10100KSQ10002122322
+Options6=Actv01Stop01OutO00
+
+[Preset.6]
+Name=AUTO: Generic Media Control
+Active=0
+PresetSwitchIgnore=0
+Name0=Activation: Display Generic Control
+Incoming0=Pres080000
+Outgoing0=MID1F00001402000004D696469205472616E736C61746F722047656e6572696320436f6e74726f6cF7
+Options0=Actv01Stop00OutO00
+Name1=Activation: Select AUTO LED
+Incoming1=Pres080000
+Outgoing1=MID1MIDD0010turn on AUTO LED904A7F
+Options1=Actv01Stop00OutO00
+Name2=Deactivation: Unselect AUTO LED
+Incoming2=Pres090000
+Outgoing2=MID1MIDD0011turn off AUTO LED904A00
+Options2=Actv01Stop00OutO00
+Name3=Play/Pause
+Incoming3=MID1MIDD0010Play button down905E7F
+Outgoing3=KAM10000KSQ100011B3
+Options3=Actv01Stop01OutO00
+Name4=Stop
+Incoming4=MID1MIDD0010Stop button down905D7F
+Outgoing4=KAM10000KSQ100011B2
+Options4=Actv01Stop01OutO00
+Name5=Next
+Incoming5=MID1MIDD0007Track >90587F
+Outgoing5=KAM10000KSQ100011B0
+Options5=Actv01Stop01OutO00StMa00000001if(gz!=0)noexecute
+Name6=Previous
+Incoming6=MID1MIDD0007< Track90577F
+Outgoing6=KAM10000KSQ100011B1
+Options6=Actv01Stop01OutO00StMa00000001if(gz!=0)noexecute
+Name7=Lock Master Fader
+Incoming7=MID1MIDD0015Master Fader movementE0ppvv
+Outgoing7=MID1MIDD0011Move Master FaderE0ppvv
+Options7=Actv01Stop00OutO00
+Name8=Master Faster Up
+Incoming8=MID1MIDD0015Master Fader movementE0ppvv
+Outgoing8=Tim0TimS0009Volume Upxx:0:10
+Options8=Actv01Stop01OutO00StMa00000008label0030Generic volume control supports 25 volume levelslabel0020Account for some lost keystrokesvv=vv*11vv=vv/50label0029Calculate number of volume up key pressesxx=vv-gvif(xx<=0)noexecutegv=vv
+Name9=Master Faster Down
+Incoming9=MID1MIDD0015Master Fader movementE0ppvv
+Outgoing9=Tim0TimS000BVolume Downxx:0:10
+Options9=Actv01Stop01OutO00StMa00000008label0030Generic volume control supports 25 volume levelslabel0020Account for some lost keystrokesvv=vv*11vv=vv/50label002BCalculate number of volume down key pressesxx=gv-vvif(xx<=0)noexecutegv=vv
+Name10=Mute on toggle
+Incoming10=MID1MIDD0009Mute down90107F
+Outgoing10=KAM10100KSQ100021AD3AD
+Options10=Actv01Stop01OutO00
+Name11=On Timer Volume Up
+Incoming11=Tim0TimT0009Volume Up
+Outgoing11=KAM10100KSQ100021AF3AF
+Options11=Actv01Stop01OutO00
+Name12=On Timer Volume Down
+Incoming12=Tim0TimT000BVolume Down
+Outgoing12=KAM10100KSQ100021AE3AE
+Options12=Actv01Stop01OutO00
+Name13=Email Program
+Incoming13=MID1MIDD0002F190367F
+Outgoing13=KAM10100KSQ100021B43B4
+Options13=Actv01Stop01OutO00
+Name14=Web Browser
+Incoming14=MID1MIDD0002F290377F
+Outgoing14=KAM10100KSQ100021AC3AC
+Options14=Actv01Stop01OutO00
+Name15=Search Function
+Incoming15=MID1MIDD0002F390387F
+Outgoing15=KAM10100KSQ100021AA3AA
+Options15=Actv01Stop01OutO00
+Name16=Close current program
+Incoming16=MID1MIDD0008Shift+F490397F
+Outgoing16=KAM10100KSQ10004012073273212
+Options16=Actv01Stop01OutO00StMa00000001if(gz==0)noexecute
+Name17=Alt-Tab, press Alt
+Incoming17=MID1MIDD0012Shift+Track < or >90qq7F
+Outgoing17=KAM11000KSQ10001012
+Options17=Actv01Stop00OutO00StMa00000007if(gz==0)noexecuteif(gt!=0)noexecuteif(qq==87)goto0002OKif(qq==88)goto0002OKnoexecutelabel0002OKgt=1
+Name18=Alt-Tab next
+Incoming18=MID1MIDD000DShift+Track >90587F
+Outgoing18=KAM10000KSQ10002009209
+Options18=Actv01Stop00OutO00StMa00000001if(gz==0)noexecute
+Name19=Alt-Tab prev
+Incoming19=MID1MIDD000DShift+Track <90577F
+Outgoing19=KAM10000KSQ10004010009209210
+Options19=Actv01Stop00OutO00StMa00000001if(gz==0)noexecute
+Name20=Alt-Tab end
+Incoming20=MID1MIDD000FShift button up904600
+Outgoing20=KAM12100KSQ10001012
+Options20=Actv01Stop00OutO00StMa00000002if(gt==0)noexecutegt=0
+
+[Preset.7]
+Name=Convert To Absolute Controller
+Active=0
+PresetSwitchIgnore=0
+Name0=1st rotary encoder
+Incoming0=MID1B010pp
+Outgoing0=MID1B001ga
+Options0=Actv01Stop01OutO00StMa00000005if(pp<=64)ga=ga+pppp=pp-64if(pp>0)ga=ga-ppif(ga>127)ga=127if(ga<0)ga=0
+
+[Project]
+Version=2
+Author=Florian Bomers
+AuthorContact=www.bome.com
+Comments=
+DefaultInPorts=MIDA0001000AAlphaTrack
+DefaultOutPorts=MIDA0001000AAlphaTrack
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=bXEBwJYOq7sSZE0UhqwGdbeXxjnIr5f8RoFuLG91rU1kMaRKwSZOuPWMZj9F/CLZTM/yciXIJul+QvTtzjeCQfiQQPsIjMp5CV0Ys2LfM2m0wGjF2zv5HeWf4j50OztAOYdYXSH3uj8GlTF+tDy6YLiRBIqz+RmQDA94ns3ziow=
+SignedBy-1=Florian

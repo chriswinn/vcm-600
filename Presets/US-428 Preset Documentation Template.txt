@@ -1,0 +1,76 @@
+Revision Date:
+Author's Contact Info:
+Notes:
+
+Channel Strip 1 Mute:
+Channel Strip 1 Select:
+Channel Strip 1 Fader:
+
+Channel Strip 2 Mute:
+Channel Strip 2 Select:
+Channel Strip 2 Fader:
+
+Channel Strip 3 Mute:
+Channel Strip 3 Select:
+Channel Strip 3 Fader:
+
+Channel Strip 4 Mute:
+Channel Strip 4 Select:
+Channel Strip 4 Fader:
+
+Channel Strip 5 Mute:
+Channel Strip 5 Select:
+Channel Strip 5 Fader:
+
+Channel Strip 6 Mute:
+Channel Strip 6 Select:
+Channel Strip 6 Fader:
+
+Channel Strip 7 Mute:
+Channel Strip 7 Select:
+Channel Strip 7 Fader:
+
+Channel Strip 8 Mute:
+Channel Strip 8 Select:
+Channel Strip 8 Fader:
+
+Solo:
+
+Master Fader:
+
+Gain:
+Freq:
+Q:
+Pan:
+
+High EQ:
+High-Mid EQ:
+Low-Mid EQ:
+Low EQ:
+
+Aux1:
+Aux2:
+Aux3:
+Aux4:
+
+Asgn:
+F1:
+F2:
+F3:
+
+Null:
+
+Data Wheel:
+
+Locate <-:
+Locate ->:
+Set:
+Bank <-:
+Bank ->:
+Rew:
+FFwd:
+Stop:
+Play:
+Record:
+
+Revision History:

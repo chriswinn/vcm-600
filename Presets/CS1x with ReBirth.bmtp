@@ -1,0 +1,68 @@
+[Preset.0]
+Name=CS1x Synth 1
+Active=1
+PresetSwitchIgnore=0
+Name0=Tune
+Incoming0=MID1B049oo
+Outgoing0=MID1B015oo
+Options0=Actv01Stop01OutO00
+Name1=Cut Off
+Incoming1=MID1B048oo
+Outgoing1=MID1B016oo
+Options1=Actv01Stop01OutO00
+Name2=Resonance
+Incoming2=MID1B011oo
+Outgoing2=MID1B017oo
+Options2=Actv01Stop01OutO00
+Name3=Env Mod
+Incoming3=MID1B04Aoo
+Outgoing3=MID1B018oo
+Options3=Actv01Stop01OutO00
+Name4=Decay
+Incoming4=MID1B047oo
+Outgoing4=MID1B019oo
+Options4=Actv01Stop01OutO00
+Name5=Accent
+Incoming5=MID1B012oo
+Outgoing5=MID1B01Aoo
+Options5=Actv01Stop01OutO00
+
+[Preset.1]
+Name=CS1x Synth 2
+Active=0
+PresetSwitchIgnore=0
+Name0=Tune
+Incoming0=MID1B049oo
+Outgoing0=MID1B01Coo
+Options0=Actv01Stop01OutO00
+Name1=Cut Off
+Incoming1=MID1B048oo
+Outgoing1=MID1B01Doo
+Options1=Actv01Stop01OutO00
+Name2=Resonance
+Incoming2=MID1B011oo
+Outgoing2=MID1B01Eoo
+Options2=Actv01Stop01OutO00
+Name3=Env Mod
+Incoming3=MID1B04Aoo
+Outgoing3=MID1B01Foo
+Options3=Actv01Stop01OutO00
+Name4=Decay
+Incoming4=MID1B047oo
+Outgoing4=MID1B020oo
+Options4=Actv01Stop01OutO00
+Name5=Accent
+Incoming5=MID1B012oo
+Outgoing5=MID1B021oo
+Options5=Actv01Stop01OutO00
+
+[Project]
+Version=2
+Author=
+AuthorContact=
+Comments=
+AuthorWWW=
+AuthorCopyright=
+DefaultInPorts=MIDA00010004CS1x
+DefaultOutPorts=MIDA00010013Virtual MIDI device
+

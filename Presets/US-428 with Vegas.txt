@@ -1,0 +1,55 @@
+렬컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴�
+   Sonic Foundry Vegas preset for TASCAM US-428/Bome's Midi Translator 1.3 
+렬컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴�
+
+
+
+Translation:
+
+
+R Ew    		------> Move Cursor left to grid
+F FWD   		------> Move cursor right to grid
+Stop    		------> Pause
+PLay    		------> Play / Stop
+Locate << 		------> beginning of selection or view
+Locate >> 		------> end of selection or view
+Set			------> Split
+Bank <   		------> up (Zoom + or other all depend where U're)
+Bank >			------> Down (Zoom - or other all depend where U're) 
+Jog  			------>  Left / Right  ( different applications)
+Null			------> Marker
+ASGN			------> Copy
+F1			------> Cut
+F2			------> Paste
+F3			------> Paste insert
+Aux 1			------> Insert/show/hide track-volume envelope
+Aux 2			------> Insert/show/hide track-panning envelope
+Aux 3			------> Mark IN
+Aux 4			------> Mark OUT  ( to do a selection)
+High (Eq section) 	------> undo
+Hi-Mid			------> Redo
+Low-Mid			------> Save
+Low			------> Quit
+Pan tweak		------>	Move on Frame Left/Right
+EQ tweak 1 up		------>
+EQ tweak 2 		------> Left / Right ( different applications)
+EQ tweak 3 down		------> Up / Down  ( Zoom +/- or other)
+Track 1 Select		------> Add audio Track
+Track 2 select		------> Add video track
+Track 3 select		------> Open
+Track 4 select		------> New
+Track 5 select		------> view Mixer
+Track 6 select		------> view Video Preview
+Track 7 select		------> Looped Playback
+Track 8 select		------> Delete
+Rec Track		------> Properties
+
+
+
+I know U would like use the faders  of the US-428 w/ Acid OR Vegas, but  U can't
+coz  Sonic Foundry  didn't created  shortcuts 4  that and  their products  don't
+manage  surface controllers  !!!!   So  mail them  about that,  maybe they  will
+realise that we badly need that !!!
+
+
+05/16/2001- Am0s - Am0s@gmx.net

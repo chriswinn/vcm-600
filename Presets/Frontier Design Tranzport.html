@@ -1,0 +1,360 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<title>Frontier Design TranzPort with Bome's Midi Translator</title>
+
+<STYLE type="text/css">
+<!--
+TABLE.help_master_table { max-width: 50em; margin-left: auto; margin-right:auto; }
+/* standard styles */
+BODY {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+
+A { text-decoration: none; }
+A:ACTIVE {}
+A:HOVER {
+	color: #445293;
+	text-decoration: underline;
+}
+A:LINK {}
+A:VISITED {}
+TD, TH {
+	color: #000000;
+	font-size: small;
+}
+
+tt { font-size: small; }
+A.copyright, A:HOVER.copyright { color: #000000; }
+/* H subclasses */
+H1, H2, H3, H4 {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: medium;
+	margin-top: 2em;
+	margin-bottom: 2px;
+}
+H1 { font-size: large; }
+H2 { letter-spacing: 1px; }
+H4 {
+	font-size: small;
+	font-weight: bold;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+.top { margin-top: 0px; }
+FONT.copyright {
+	font-size: 8pt;
+	font-weight: bold;
+}
+TABLE.singleborder { border-width: 1px; border-style:solid; border-color: #000000; }
+.nospace { margin-top: 1px; }
+.inline {
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+-->
+</STYLE>
+
+</head>
+<body bgcolor="#E0E0E0" text="#000000" link="#445293" vlink="#800080" alink="#505050" leftmargin=3 topmargin=3>
+<table width="100%" class=help_master_table border="0" cellspacing="4" cellpadding="1">
+<tr>
+<td valign="top">
+<h1 class=top>Frontier Design TranzPort<br>
+and<br>
+Bome's Midi Translator</h1>
+
+<!-- ]====================[ Content ]====================[ -->
+<a name="overview"></a><h2>Table of Contents</h2>
+<b>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#setup">General Setup</a></li>
+<li><a href="#winamp">Winamp</a></li>
+<li><a href="#wmp">Windows Media Player</a></li>
+<li><a href="#premele">Adobe Premiere Elements</a></li>
+<li><a href="#premiere">Adobe Premiere </a></li>
+<li><a href="#powerpoint">Microsoft Powerpoint</a></li>
+<li><a href="#generic">Generic Control</a></li>
+<li><a href="#mp3directcut">MP3 Direct Cut</a></li>
+<li><a href="#create">Create Your Own Presets</a></li>
+</ul>
+</b>
+<br>
+
+
+<a name="overview"></a><h2>Overview</h2>
+This document describes how you can use the TranzPort Remote
+with applications that aren't supported &quot;out of the box&quot;.
+This is achieved by using Bome's Midi Translator: it converts
+the MIDI data from the TranzPort to keystrokes which are used to
+control the various applications. The mapping rules are organized
+in different presets, one preset per application to be controlled.
+<br>
+<br>
+
+
+<h2><a name="setup"></a>General Setup</h2>
+For any of these presets to work, verify the following steps:
+<ul class=nospace>
+	<li>Connect the TranzPort Bridge to the computer<li>
+	<li>Start Bome's Midi Translator (MT)</li>
+	<li>In MT's menu, select TranzPort in MIDI IN, and also select it as MIDI OUT</li>
+	<li>In MT's Options menu, <b>unselect MIDI Thru</b></li>
+	<li>In MT, open the file &quot;Frontier Design TranzPort&quot; (if not already done)</li>
+</ul>
+Now the TranzPort's display should display &quot;Midi Translator&quot;.<br>
+<br>
+Use the <b>Solo</b> button to cycle through the different presets (Shift+Solo will cycle backwards).<br>
+That's it for the setup!
+<br>
+<br>
+
+
+<h2><a name="winamp"></a>Nullsoft Winamp</h2>
+Using this preset, you can control Nullsoft's media player Winamp conveniently from
+the wireless TranzPort. This will work even if Winamp is not active!<br>
+<br>
+After following the <a href="#setup">setup</a>, start Winamp and bring up its preferences (e.g. with Ctrl+P).
+There, select the page <b>&quot;Global Hotkeys&quot;</b> and enable them by checking the Enabled checkbox.<br>
+<br>
+Then select the Winamp preset in Bome's Midi Translator by pressing the Solo button until
+the TranzPort's display shows &quot;Winamp&quot;. <br>
+<br>
+Now you can use the following controls on the TranzPort:<br>
+
+<table frame=box rules=all border=1 cellpadding=4>
+<tr><th>TranzPort<br>control</th><th>Function in Winamp</th></tr>
+<tr><td>Play button</td><td>Start Playback</td></tr>
+<tr><td>Stop button</td><td>Stop Playback</td></tr>
+<tr><td>Rewind &lt;&lt; button</td><td>Wind backward (hold to continue winding)</td></tr>
+<tr><td>FFwd &gt;&gt; button</td><td>Wind forward (hold to continue winding)</td></tr>
+<tr><td>Track &lt; button</td><td>Previous Song</td></tr>
+<tr><td>Track &gt; button</td><td>Next Song</td></tr>
+<tr><td>Mute button</td><td>Toggle: mute/unmute volume (mute LED will light up)</td></tr>
+<tr><td>Wheel</td><td>Scrub forward and backward</td></tr>
+<tr><td>Shift+Wheel</td><td>Volume (will be ignored in muted state)</td></tr>
+</table>
+<br>
+<br>
+
+
+<h2><a name="wmp"></a>Windows Media Player</h2>
+Using this preset, you can operate Windows Media Player (WMP) from
+the TranzPort Remote.<br>
+<br>
+First, follow the <a href="#setup">general setup</a>. Then, for convenience,
+you can define a keyboard shortcut to start WMP: Locate WMP in the start menu (it's
+in Programs|Accessories|Entertainment), then right-click on the entry in the start menu
+and select Properties. In the <i>Shortcut Key</i> field, press these keys at the same time:
+Alt+Ctrl+Shift+P. Click on OK. You can test it - that key combination should now start
+WMP.<br>
+<br>
+Now switch to Bome's Midi Translator and press the Solo button until
+the TranzPort's display shows &quot;Windows Media Player&quot;. <br>
+<br>
+Now you can use the following controls on the TranzPort:<br>
+
+<table frame=box rules=all border=1 cellpadding=4>
+<tr><th>TranzPort<br>control</th><th>Function in WMP</th></tr>
+<tr><td>Play button</td><td>Start Playback</td></tr>
+<tr><td>Stop button</td><td>Stop Playback</td></tr>
+<tr><td>Rewind &lt;&lt; button</td><td>Wind backward (this doesn't always work in WMP)</td></tr>
+<tr><td>FFwd &gt;&gt; button</td><td>Wind forward (this doesn't always work in WMP)</td></tr>
+<tr><td>Track &lt; button</td><td>Previous Song</td></tr>
+<tr><td>Track &gt; button</td><td>Next Song</td></tr>
+<tr><td>Mute button</td><td>Toggle: mute/unmute volume</td></tr>
+<tr><td>Wheel</td><td>Volume (will unmute if in muted state)</td></tr>
+<tr><td>Shift+Wheel</td><td>Scrub forward and backward</td></tr>
+<tr><td>Loop button</td><td>Toggle repeat on/off</td></tr>
+<tr><td>Add button</td><td>Add Tracks window</td></tr>
+<tr><td>In button</td><td>Normal/full size mode</td></tr>
+<tr><td>Out button</td><td>Skin mode</td></tr>
+<tr><td>Punch button</td><td>Toggle full screen</td></tr>
+</table>
+<br>
+<br>
+
+
+<h2><a name="premele"></a>Adobe Premiere Elements</h2>
+Using this preset, you can cut and edit your videos with from
+the TranzPort Remote.<br>
+<br>
+First, follow the <a href="#setup">general setup</a>. Then, start Premiere Elements.<br>
+<br>
+Provided that Midi Translator is already running, press the TranzPort's Solo button until
+the display of the TranzPort displays &quot;Premiere Elements&quot;. <br>
+<br>
+Now you can use the following controls on the TranzPort:<br>
+
+<table frame=box rules=all border=1 cellpadding=4>
+<tr><th>TranzPort<br>control</th><th>Function in Premiere Elements</th></tr>
+<tr><td>Play button</td><td>Start/Pause Playback</td></tr>
+<tr><td>Stop button</td><td>Stop Playback</td></tr>
+<tr><td>Rewind &lt;&lt; button</td><td>play backwards</td></tr>
+<tr><td>FFwd &gt;&gt; button</td><td>play faster</td></tr>
+<tr><td>Track &lt; button</td><td>go to previous edit point</td></tr>
+<tr><td>Track &gt; button</td><td>go to next edit point</td></tr>
+<tr><td>Wheel</td><td>Go a frame forward or backward</td></tr>
+<tr><td>Add button</td><td>Set unnumbered marker</td></tr>
+<tr><td>Prev button</td><td>Go to previous marker</td></tr>
+<tr><td>Next button</td><td>Go to next marker</td></tr>
+<tr><td>In button</td><td>Punch In</td></tr>
+<tr><td>Out button</td><td>Punch Out</td></tr>
+<tr><td>Shift+In button</td><td>Zoom In</td></tr>
+<tr><td>Shift+Out button</td><td>Zoom Out</td></tr>
+<tr><td>Undo button</td><td>Undo</td></tr>
+</table>
+<br>
+<br>
+
+
+<h2><a name="premiere"></a>Adobe Premiere</h2>
+Using this preset, you can cut and edit your videos with from
+the TranzPort Remote.<br>
+<br>
+First, follow the <a href="#setup">general setup</a>. Then, start Adobe Premiere.<br>
+<br>
+Provided that Midi Translator is already running, select the Premiere preset
+by repeatedly pressing the TranzPort's Solo button until
+the display of the TranzPort displays &quot;Premiere&quot;. <br>
+<br>
+Now you can use the following controls on the TranzPort:<br>
+
+<table frame=box rules=all border=1 cellpadding=4>
+<tr><th>TranzPort<br>control</th><th>Function in Premiere</th></tr>
+<tr><td>Play button</td><td>Start/Pause Playback</td></tr>
+<tr><td>Stop button</td><td>Stop Playback</td></tr>
+<tr><td>Rewind &lt;&lt; button</td><td>play backwards</td></tr>
+<tr><td>FFwd &gt;&gt; button</td><td>play faster</td></tr>
+<tr><td>Wheel</td><td>Go a frame forward or backward</td></tr>
+<tr><td>Add button</td><td>Set unnumbered marker</td></tr>
+<tr><td>Prev button</td><td>Go to previous marker</td></tr>
+<tr><td>Next button</td><td>Go to next marker</td></tr>
+<tr><td>In button</td><td>Zoom In</td></tr>
+<tr><td>Out button</td><td>Zoom Out</td></tr>
+<tr><td>Undo button</td><td>Undo</td></tr>
+</table>
+<br>
+<br>
+
+
+<h2><a name="powerpoint"></a>Microsoft Powerpoint</h2>
+How about using the TranzPort as a remote control for your presentations?
+No problem with this preset!<br>
+<br>
+First, follow the <a href="#setup">general setup</a>. Then, start Powerpoint.<br>
+<br>
+Provided that Midi Translator is already running,
+repeatedly press the TranzPort's Solo button until
+the display of the TranzPort shows &quot;Powerpoint&quot;. <br>
+<br>
+Now you can use the following controls on the TranzPort:<br>
+
+<table frame=box rules=all border=1 cellpadding=4>
+<tr><th>TranzPort<br>control</th><th>Function in Powerpoint</th></tr>
+<tr><td>FFwd &gt;&gt; button</td><td>next page</td></tr>
+<tr><td>Rewind &lt;&lt; button</td><td>previous page</td></tr>
+<tr><td>Wheel</td><td>Go a page forward or backward</td></tr>
+</table>
+<br>
+<br>
+
+
+<h2><a name="generic"></a>Generic Control</h2>
+This is a generic preset that provides some general functionality for many applications.<br>
+<br>
+First, follow the <a href="#setup">general setup</a>. <br>
+<br>
+Start Bome's Midi Translator (if not already done) and activate the Generic Control preset
+by repeatedly pressing the Solo button until the display reads &quot;Generic Control&quot;. <br>
+<br>
+Now you can use the following controls on the TranzPort:<br>
+
+<table frame=box rules=all border=1 cellpadding=4>
+<tr><th>TranzPort<br>control</th><th>Function</th></tr>
+<tr><td>Play button</td><td>Start Playback (as if pressed on a multimedia keyboard)</td></tr>
+<tr><td>Stop button</td><td>Stop Playback (as if pressed on a multimedia keyboard)</td></tr>
+<tr><td>Track &lt; button</td><td>Previous Song (as if pressed on a multimedia keyboard)</td></tr>
+<tr><td>Track &gt; button</td><td>Next Song (as if pressed on a multimedia keyboard)</td></tr>
+<tr><td>Wheel</td><td>Change Volume (as if using the volume keys on a multimedia keyboard)</td></tr>
+<tr><td>Mute button</td><td>Toggle: mute/unmute volume (as if using the volume keys on a multimedia keyboard)</td></tr>
+<tr><td>In button</td><td>Email Program</td></tr>
+<tr><td>Out button</td><td>Web Browser</td></tr>
+<tr><td>Punch button</td><td>Search Function</td></tr>
+<tr><td>Shift+Out button</td><td>Close current program/window</td></tr>
+<tr><td>Shift+Track &lt; and &gt; buttons</td><td>Cycle programs (as if pressing Alt-Tab)</td></tr>
+</table>
+<br>
+<br>
+
+
+<h2><a name="mp3directcut"></a>Controlling MP3 Direct Cut</h2>
+Using this preset, you can use the TranzPort to operate MP3 Direct Cut, a useful MP3 editor
+that lets you edit mp3 files without re-encoding the file, so it keeps the original quality.<br>
+<br>
+After following the <a href="#setup">setup</a>, select the MP3DirectCut preset in Bome's Midi Translator
+by repeatedly pressing the Solo button until the TranzPort should displays &quot;MP3DirectCut&quot;.<br>
+<br>
+Now you can use the following controls on the TranzPort:<br>
+
+<table frame=box rules=all border=1 cellpadding=4>
+<tr><th>TranzPort<br>control</th><th>Function in MP3DirectCut</th></tr>
+<tr><td>Play button</td><td>Start/Pause Playback</td></tr>
+<tr><td>Stop button</td><td>Stop Playback</td></tr>
+<tr><td>Rewind &lt;&lt; button</td><td>Wind backward</td></tr>
+<tr><td>FFwd &gt;&gt; button</td><td>Wind forward</td></tr>
+<tr><td>Undo button</td><td>Undo last action</td></tr>
+<tr><td>In button</td><td>Select Begin of selection</td></tr>
+<tr><td>Out button</td><td>Select End of selection</td></tr>
+<tr><td>Punch button</td><td>Delete selection</td></tr>
+<tr><td>Loop button</td><td>Listen AS CUT: listen to 4 seconds before beginning of selection, and to 4 seconds after selection.</td></tr>
+<tr><td>Shift+In button</td><td>Zoom In</td></tr>
+<tr><td>Shift+Out button</td><td>Zoom Out</td></tr>
+<tr><td>Prev button</td><td>Go to previous cut/edit point</td></tr>
+<tr><td>Next button</td><td>Go to next cut/edit point</td></tr>
+<tr><td>Wheel</td><td>Scrub forward and backward one frame at a time</td></tr>
+<tr><td>Shift+Wheel</td><td>Scrub forward and backward in larger steps</td></tr>
+</table>
+<br>
+<br>
+
+
+<h2><a name="create"></a>Create Your Own Presets</h2>
+If the program you want to control is not on this list, or if you want to modify
+these provided presets, no problem! With <a href="http://www.bome.com/products/miditranslator/">Bome's Midi Translator
+Pro or Author</a> you can create your own presets. It's always a good idea to inspect
+these existing presets to see how it's done.
+The documentation that ships with the TranzPort unit includes the PDF file
+&quot;TranzPort native&quot; which has a useful reference of the MIDI messages
+sent by the TranzPort device.
+<br>
+<br>
+The project file has one preset <i>Convert to Absolute Controller</i> which
+demonstrates how you can use the rules to convert the wheel to output
+a continuous controller as MIDI data.<br>
+<br>
+With the <i>Author</i> edition of Bome's Midi Translator you can even create
+signed and/or encrypted presets that you can publish or sell for usage with the
+free MT Player.
+
+
+<br>
+<br>
+<br>
+
+<!-- ]====================[ Footer ]====================[ -->
+   <div align="center">
+    <hr width="400" align="center" size="4">
+    <font class="copyright">Copyright 1997-2007 by Bome Software</font>
+   </div>
+</td></tr>
+</body>
+</html>
+
+

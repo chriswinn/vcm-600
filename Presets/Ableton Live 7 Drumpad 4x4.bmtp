@@ -1,0 +1,165 @@
+; ------- Signed Project File: DO NOT MODIFY!
+; ------- Any modification in this file will invalidate the signature,
+; ------- so that it cannot be opened in MT Player anymore.
+;
+[Preset.0]
+Name=Drum Pads
+Active=1
+PresetSwitchIgnore=0
+Name0=1 down
+Incoming0=KAM11000KSQ1000105A
+Outgoing0=MID190ppoo
+Options0=Actv01Stop00OutO00StMa00000002pp=ga+36oo=gb+64
+Name1=1 up
+Incoming1=KAM12000KSQ1000105A
+Outgoing1=MID180pp00
+Options1=Actv01Stop00OutO00StMa00000001pp=ga+36
+Name2=2 down
+Incoming2=KAM11000KSQ10001058
+Outgoing2=MID190ppoo
+Options2=Actv01Stop00OutO00StMa00000002pp=ga+37oo=gb+64
+Name3=2 up
+Incoming3=KAM12000KSQ10001058
+Outgoing3=MID180pp00
+Options3=Actv01Stop00OutO00StMa00000001pp=ga+37
+Name4=3 down
+Incoming4=KAM11000KSQ10001043
+Outgoing4=MID190ppoo
+Options4=Actv01Stop00OutO00StMa00000002pp=ga+38oo=gb+64
+Name5=3 up
+Incoming5=KAM12000KSQ10001043
+Outgoing5=MID180pp00
+Options5=Actv01Stop00OutO00StMa00000001pp=ga+38
+Name6=4 down
+Incoming6=KAM11000KSQ10001056
+Outgoing6=MID190ppoo
+Options6=Actv01Stop00OutO00StMa00000002pp=ga+39oo=gb+64
+Name7=4 up
+Incoming7=KAM12000KSQ10001056
+Outgoing7=MID180pp00
+Options7=Actv01Stop00OutO00StMa00000001pp=ga+39
+Name8=5 down
+Incoming8=KAM11000KSQ10001041
+Outgoing8=MID190ppoo
+Options8=Actv01Stop00OutO00StMa00000002pp=ga+40oo=gb+64
+Name9=5 up
+Incoming9=KAM12000KSQ10001041
+Outgoing9=MID180pp00
+Options9=Actv01Stop00OutO00StMa00000001pp=ga+40
+Name10=6 down
+Incoming10=KAM11000KSQ10001053
+Outgoing10=MID190ppoo
+Options10=Actv01Stop00OutO00StMa00000002pp=ga+41oo=gb+64
+Name11=6 up
+Incoming11=KAM12000KSQ10001053
+Outgoing11=MID180pp00
+Options11=Actv01Stop00OutO00StMa00000001pp=ga+41
+Name12=7 down
+Incoming12=KAM11000KSQ10001044
+Outgoing12=MID190ppoo
+Options12=Actv01Stop00OutO00StMa00000002pp=ga+42oo=gb+64
+Name13=7 up
+Incoming13=KAM12000KSQ10001044
+Outgoing13=MID180pp00
+Options13=Actv01Stop00OutO00StMa00000001pp=ga+42
+Name14=8 down
+Incoming14=KAM11000KSQ10001046
+Outgoing14=MID190ppoo
+Options14=Actv01Stop00OutO00StMa00000002pp=ga+43oo=gb+64
+Name15=8 up
+Incoming15=KAM12000KSQ10001046
+Outgoing15=MID180pp00
+Options15=Actv01Stop00OutO00StMa00000001pp=ga+43
+Name16=9 down
+Incoming16=KAM11000KSQ10001051
+Outgoing16=MID190ppoo
+Options16=Actv01Stop00OutO00StMa00000002pp=ga+44oo=gb+64
+Name17=9 up
+Incoming17=KAM12000KSQ10001051
+Outgoing17=MID180pp00
+Options17=Actv01Stop00OutO00StMa00000001pp=ga+44
+Name18=10 down
+Incoming18=KAM11000KSQ10001057
+Outgoing18=MID190ppoo
+Options18=Actv01Stop00OutO00StMa00000002pp=ga+45oo=gb+64
+Name19=10 up
+Incoming19=KAM12000KSQ10001057
+Outgoing19=MID180pp00
+Options19=Actv01Stop00OutO00StMa00000001pp=ga+45
+Name20=11 down
+Incoming20=KAM11000KSQ10001045
+Outgoing20=MID190ppoo
+Options20=Actv01Stop00OutO00StMa00000002pp=ga+46oo=gb+64
+Name21=11up
+Incoming21=KAM12000KSQ10001045
+Outgoing21=MID180pp00
+Options21=Actv01Stop00OutO00StMa00000001pp=ga+46
+Name22=12 down
+Incoming22=KAM11000KSQ10001052
+Outgoing22=MID190ppoo
+Options22=Actv01Stop00OutO00StMa00000002pp=ga+47oo=gb+64
+Name23=12 up
+Incoming23=KAM12000KSQ10001052
+Outgoing23=MID180pp00
+Options23=Actv01Stop00OutO00StMa00000001pp=ga+47
+Name24=13 down
+Incoming24=KAM11000KSQ10001031
+Outgoing24=MID190ppoo
+Options24=Actv01Stop00OutO00StMa00000002pp=ga+48oo=gb+64
+Name25=13 up
+Incoming25=KAM12000KSQ10001031
+Outgoing25=MID180pp00
+Options25=Actv01Stop00OutO00StMa00000001pp=ga+48
+Name26=14 down
+Incoming26=KAM11000KSQ10001032
+Outgoing26=MID190ppoo
+Options26=Actv01Stop00OutO00StMa00000002pp=ga+49oo=gb+64
+Name27=14 up
+Incoming27=KAM12000KSQ10001032
+Outgoing27=MID180pp00
+Options27=Actv01Stop00OutO00StMa00000001pp=ga+49
+Name28=15 down
+Incoming28=KAM11000KSQ10001033
+Outgoing28=MID190ppoo
+Options28=Actv01Stop00OutO00StMa00000002pp=ga+50oo=gb+64
+Name29=15 up
+Incoming29=KAM12000KSQ10001033
+Outgoing29=MID180pp00
+Options29=Actv01Stop00OutO00StMa00000001pp=ga+50
+Name30=16 down
+Incoming30=KAM11000KSQ10001034
+Outgoing30=MID190ppoo
+Options30=Actv01Stop00OutO00StMa00000002pp=ga+51oo=gb+64
+Name31=16 up
+Incoming31=KAM12000KSQ10001034
+Outgoing31=MID180pp00
+Options31=Actv01Stop00OutO00StMa00000001pp=ga+51
+Name32=Up Pad
+Incoming32=KAM11000KSQ10001047
+Outgoing32=None
+Options32=Actv01Stop00OutO00StMa00000002ga=ga+16if(ga>80)ga=80
+Name33=Down Pad
+Incoming33=KAM11000KSQ10001042
+Outgoing33=None
+Options33=Actv01Stop00OutO00StMa00000002ga=ga-16if(ga<-32)ga=-32
+Name34=Up Velocity
+Incoming34=KAM11000KSQ10001048
+Outgoing34=None
+Options34=Actv01Stop00OutO00StMa00000002gb=gb+10if(gb>63)gb=63
+Name35=Down Velocity
+Incoming35=KAM11000KSQ1000104E
+Outgoing35=None
+Options35=Actv01Stop00OutO00StMa00000002gb=gb-10if(gb<-63)gb=-63
+
+[Project]
+Version=2
+Author=
+AuthorContact=
+Comments=
+DefaultInPorts=MIDA0000
+DefaultOutPorts=MIDA0000
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=Cdk9I2Y4hwzgx7T8ARP9XZ4/3cW8ZZQTMxUF/JR6JgKplWgea4yYTrKSw7Vc+4/m0Ley5JY1/PcbBEdnGot8qm/dvAVNqz9RJ0d0EsHMvwy/MKnnq+7CpsfGdHe+ysMh0F4qAM367NTHzTPuxfZczDNczw9sOUS+jVDOxMUJv0A=
+SignedBy-1=Florian

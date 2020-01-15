@@ -1,0 +1,44 @@
+; ------- Bome MIDI Translator: Signed Project File
+; ------- You can modify this file as you like, but that will invalidate
+; ------- the signature so that it cannot be opened in MT Player anymore.
+;
+[Preset.0]
+Name=Init
+Active=1
+PresetSwitchIgnore=0
+Name0=Open Project
+Incoming0=EnDi02
+Outgoing0=Tim0TimS0004Init1:0:1
+Options0=Actv01Stop00OutO00
+Name1=Restart
+Incoming1=KAM10000KSQ1000201B21B
+Outgoing1=Tim0TimS0004Init1:0:1
+Options1=Actv01Stop00OutO00
+Name2=Set Global Variables
+Incoming2=Tim0TimT0004Init
+Outgoing2=None
+Options2=Actv01Stop00OutO00StMa00000004label0029__cmt>// Set all of your global variablesga=0gb=10label000C__cmt>// ...
+
+[Preset.1]
+Name=Work
+Active=1
+PresetSwitchIgnore=0
+Name0=Whatever working translators you want here
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x40"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing0=None
+Options0=Actv01Stop00OutO00
+
+[Project]
+Version=2
+Author=
+AuthorContact=
+Comments=
+AuthorWWW=
+AuthorCopyright=
+DefaultInPorts=MIDA00010021Bome MIDI Translator 1 Virtual In
+DefaultOutPorts=MIDA00010022Bome MIDI Translator 1 Virtual Out
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=NFoh1oWKHOmezj9O+i6AnbmXsZkxj6YThkG2ONcEbP1UitTuyvWVFCFsHKFiZQNKaBn8KKE/rG0bfgF5V+qn0n7vR496ZLVFxJZSX2EU3/L1U9Vaw6lHWR853FcHbDM2uOimw0KaisTRNHG5DYh9hEyzRkP/U4j+fcJfMKvcrUE=
+SignedBy-1=Steve Caldwell

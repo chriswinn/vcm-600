@@ -1,0 +1,1766 @@
+; ------- Bome MIDI Translator: Signed Project File
+; ------- You can modify this file as you like, but that will invalidate
+; ------- the signature so that it cannot be opened in MT Player anymore.
+;
+[Preset.0]
+Name=Init
+Active=1
+Comments=
+PresetSwitchIgnore=0
+Name0=Open Project
+Incoming0=EnDi02
+Outgoing0=Tim0TimS0004Init1:0:1
+Options0=Actv01Stop00OutO00
+Name1=Restart
+Incoming1=KAM10000KSQ1000201B21B
+Outgoing1=Tim0TimS0004Init1:0:1
+Options1=Actv00Stop00OutO00
+Name2=Set Global Variables
+Incoming2=Tim0TimT0004Init
+Outgoing2=None
+Options2=Actv01Stop00OutO00StMa0000000Elabel0028__cmt>// Initialize all global variableslabel001A__cmt>// Shift Function(s)label0008__cmt>//label0018__cmt>// SENDS "loop in"no=0label0019__cmt>// ALt   "loop out"np=0label0031__cmt>// MIXER "loop on/off" <-- Initialize greennq=1label001F__cmt>// TRACK Ctrl   "tempo -"ne=1label001F__cmt>// EFFECTS Ctrl "tempo +"nf=0label000C__cmt>// ...
+Name3=Set Default Presets ON
+Incoming3=Tim0TimT0004Init
+Outgoing3=Pres04001B(LEFT) - CH - Knobs (CH ON)
+Options3=Actv01Stop00OutO00
+Name4=Set Default Presets ON
+Incoming4=Tim0TimT0004Init
+Outgoing4=Pres04001B(LEFT) - CH - Knobs (CH ON)
+Options4=Actv00Stop00OutO00StMa0000000Dlabel0028__cmt>// Initialize all global variableslabel001A__cmt>// Shift Function(s)label0012__cmt>// "loop in"no=0label0013__cmt>// "loop out"np=0label002B__cmt>// "loop on/off" <-- Initialize greennq=1label0012__cmt>// "tempo -"nf=0label0012__cmt>// "tempo +"ne=0label000C__cmt>// ...
+[Preset.1]
+Name=Always Active
+Active=1
+Comments=
+PresetSwitchIgnore=1
+DefaultOutPorts=MIDA0001000DModel_D - Net
+Name0=LOOP IN
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="82" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing0=MID19Coopp
+Options0=Actv01Stop00OutO00StMa0000000Foo=31label0006__cmt>label0023__cmt>// 9C oo pp 8C vv ss 8C ww sslabel0014__cmt>// Sends Lightlabel000E__cmt>// rr=pplabel0012__cmt>// Alt Lightss=0label0011__cmt>// CH Lightlabel000D__cmt>// tt=0label0018__cmt>// note: 82 (0x52)label000E__cmt>// uu=82label0018__cmt>// note: 83 (0x53)vv=83label0018__cmt>// note: 84 (0x54)ww=84
+Name1=LOOP OUT
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="83" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing1=MID19Coopp
+Options1=Actv01Stop00OutO00StMa0000000Foo=32label0006__cmt>label0023__cmt>// 8C uu rr 9C oo pp 8C ww rrlabel0014__cmt>// Sends Lightrr=0label0012__cmt>// Alt Lightlabel000E__cmt>// ss=pplabel0011__cmt>// CH Lightlabel000D__cmt>// tt=0label0018__cmt>// note: 82 (0x52)uu=82label0018__cmt>// note: 83 (0x53)label000E__cmt>// vv=83label0018__cmt>// note: 84 (0x54)ww=84
+Name2=LOOP ON/OFF
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="84" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing2=MID19Coopp
+Options2=Actv01Stop00OutO00StMa0000000Foo=33label0006__cmt>label0023__cmt>// 8C uu rr 8C vv rr 9C oo pplabel0014__cmt>// Sends Lightrr=0label0012__cmt>// Alt Lightlabel000D__cmt>// ss=0label0011__cmt>// CH Lightlabel000E__cmt>// tt=pplabel0018__cmt>// note: 82 (0x52)uu=82label0018__cmt>// note: 83 (0x53)vv=83label0018__cmt>// note: 84 (0x54)label000E__cmt>// ww=84
+Name3=Tempo -
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="85" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing3=MID19Coopp
+Options3=Actv01Stop00OutO00StMa0000000Coo=34label0006__cmt>label001A__cmt>// 9C oo pp 8C vv ttlabel0019__cmt>// Left Shift Lightlabel000E__cmt>// ss=pplabel0008__cmt>//label001A__cmt>// Right Shift Lighttt=0label0018__cmt>// note: 85 (0x55)label000E__cmt>// uu=85label0018__cmt>// note: 86 (0x56)vv=86
+Name4=Tempo +
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="86" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing4=MID19Coopp
+Options4=Actv01Stop00OutO00StMa0000000Coo=35label0006__cmt>label001A__cmt>// 8C uu ss 9C oo pplabel0019__cmt>// Left Shift Lightss=0label0008__cmt>//label001A__cmt>// Right Shift Lightlabel000E__cmt>// tt=pplabel0018__cmt>// note: 85 (0x55)uu=85label0018__cmt>// note: 86 (0x56)label000E__cmt>// vv=86
+Name5=SCENE (Turn R)
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="89" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing5=MID19Coopp
+Options5=Actv01Stop00OutO00StMa00000001oo=36
+Name6=SCENE (Turn L)
+Incoming6=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="90" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing6=MID19Coopp
+Options6=Actv01Stop00OutO00StMa00000001oo=37
+Name7=TRACK BANK
+Incoming7=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x00"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing7=None
+Options7=Actv00Stop00OutO00StMa00000001oo=38
+[Preset.10]
+Name=(RIGHT) - CH - *LIGHTS*
+Active=1
+Comments=
+PresetSwitchIgnore=0
+DefaultOutPorts=MIDA00010005USB 1
+Name0=Play 1 ON
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="69" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing0=MID196oopp
+Options0=Actv01Stop00OutO00StMa000CLight Play 10003ga=ga^1if(ga==1)pp=127if(ga==0)pp=0
+Name1=Play 2 ON
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="69" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing1=MID197oopp
+Options1=Actv01Stop00OutO00StMa000CLight Play 10003gb=gb^1if(gb==1)pp=127if(gb==0)pp=0
+Name2=Play 3 ON
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="69" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing2=MID198oopp
+Options2=Actv01Stop00OutO00StMa000CLight Play 10003gc=gc^1if(gc==1)pp=127if(gc==0)pp=0
+Name3=Play 4 ON
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="69" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing3=MID199oopp
+Options3=Actv01Stop00OutO00StMa000CLight Play 10003gd=gd^1if(gd==1)pp=127if(gd==0)pp=0
+Name4=Play 5 ON
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="69" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing4=MID19Aoopp
+Options4=Actv01Stop00OutO00StMa000CLight Play 10003ge=ge^1if(ge==1)pp=127if(ge==0)pp=0
+Name5=Play 6 ON
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="69" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing5=MID19Boopp
+Options5=Actv01Stop00OutO00StMa000CLight Play 10003gf=gf^1if(gf==1)pp=127if(gf==0)pp=0
+Name6=Stop 1 ON
+Incoming6=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="68" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing6=MID196oopp
+Options6=Actv01Stop00OutO00StMa000CLight Play 10003gg=gg^1if(gg==1)pp=127if(gg==0)pp=0
+Name7=Stop 2 ON
+Incoming7=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="68" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing7=MID197oopp
+Options7=Actv01Stop00OutO00StMa000CLight Play 10003gh=gh^1if(gh==1)pp=127if(gh==0)pp=0
+Name8=Stop 3 ON
+Incoming8=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="68" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing8=MID198oopp
+Options8=Actv01Stop00OutO00StMa000CLight Play 10003gi=gi^1if(gi==1)pp=127if(gi==0)pp=0
+Name9=Stop 4 ON
+Incoming9=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="68" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing9=MID199oopp
+Options9=Actv01Stop00OutO00StMa000CLight Play 10003gj=gj^1if(gj==1)pp=127if(gj==0)pp=0
+Name10=Stop 5 ON
+Incoming10=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="68" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing10=MID19Aoopp
+Options10=Actv01Stop00OutO00StMa000CLight Play 10003gk=gk^1if(gk==1)pp=127if(gk==0)pp=0
+Name11=Stop 6 ON
+Incoming11=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="68" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing11=MID19Boopp
+Options11=Actv01Stop00OutO00StMa000CLight Play 10003gl=gl^1if(gl==1)pp=127if(gl==0)pp=0
+Name12=CF ASN 1 ON
+Incoming12=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="65" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing12=MID196oopp
+Options12=Actv01Stop00OutO00StMa000CLight Play 10003gm=gm^1if(gm==1)pp=127if(gm==0)pp=0
+Name13=CF ASN 2 ON
+Incoming13=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="65" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing13=MID197oopp
+Options13=Actv01Stop00OutO00StMa000CLight Play 10003gn=gn^1if(gn==1)pp=127if(gn==0)pp=0
+Name14=CF ASN 3 ON
+Incoming14=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="65" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing14=MID198oopp
+Options14=Actv01Stop00OutO00StMa000CLight Play 10003go=go^1if(go==1)pp=127if(go==0)pp=0
+Name15=CF ASN 4 ON
+Incoming15=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="65" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing15=MID199oopp
+Options15=Actv01Stop00OutO00StMa000CLight Play 10003gp=gp^1if(gp==1)pp=127if(gp==0)pp=0
+Name16=CF ASN 5 ON
+Incoming16=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="65" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing16=MID19Aoopp
+Options16=Actv01Stop00OutO00StMa000CLight Play 10003gq=gq^1if(gq==1)pp=127if(gq==0)pp=0
+Name17=CF ASN 6 ON
+Incoming17=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="65" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing17=MID19Boopp
+Options17=Actv01Stop00OutO00StMa000CLight Play 10003gr=gr^1if(gr==1)pp=127if(gr==0)pp=0
+Name18=Clip 1 ON
+Incoming18=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="66" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing18=MID196oopp
+Options18=Actv01Stop00OutO00StMa000CLight Play 10003gs=gs^1if(gs==1)pp=127if(gs==0)pp=0
+Name19=Clip 2 ON
+Incoming19=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="66" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing19=MID197oopp
+Options19=Actv01Stop00OutO00StMa000CLight Play 10003gt=gt^1if(gt==1)pp=127if(gt==0)pp=0
+Name20=Clip 3 ON
+Incoming20=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="66" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing20=MID198oopp
+Options20=Actv01Stop00OutO00StMa000CLight Play 10003gu=gu^1if(gu==1)pp=127if(gu==0)pp=0
+Name21=Clip 4 ON
+Incoming21=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="66" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing21=MID199oopp
+Options21=Actv01Stop00OutO00StMa000CLight Play 10003gv=gv^1if(gv==1)pp=127if(gv==0)pp=0
+Name22=Clip 5 ON
+Incoming22=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="66" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing22=MID19Aoopp
+Options22=Actv01Stop00OutO00StMa000CLight Play 10003gw=gw^1if(gw==1)pp=127if(gw==0)pp=0
+Name23=Clip 6 ON
+Incoming23=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="66" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing23=MID19Boopp
+Options23=Actv01Stop00OutO00StMa000CLight Play 10003gx=gx^1if(gx==1)pp=127if(gx==0)pp=0
+Name24=Track 1 ON
+Incoming24=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="67" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing24=MID196oopp
+Options24=Actv01Stop00OutO00StMa000CLight Play 10003gy=gy^1if(gy==1)pp=127if(gy==0)pp=0
+Name25=Track 2 ON
+Incoming25=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="67" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing25=MID197oopp
+Options25=Actv01Stop00OutO00StMa000CLight Play 10003gz=gz^1if(gz==1)pp=127if(gz==0)pp=0
+Name26=Track 3 ON
+Incoming26=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="67" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing26=MID198oopp
+Options26=Actv01Stop00OutO00StMa000CLight Play 10003g0=g0^1if(g0==1)pp=127if(g0==0)pp=0
+Name27=Track 4 ON
+Incoming27=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="67" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing27=MID199oopp
+Options27=Actv01Stop00OutO00StMa000CLight Play 10003g1=g1^1if(g1==1)pp=127if(g1==0)pp=0
+Name28=Track 5 ON
+Incoming28=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="67" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing28=MID19Aoopp
+Options28=Actv01Stop00OutO00StMa000CLight Play 10003g2=g2^1if(g2==1)pp=127if(g2==0)pp=0
+Name29=Track 6 ON
+Incoming29=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="67" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing29=MID19Boopp
+Options29=Actv01Stop00OutO00StMa000CLight Play 10003g3=g3^1if(g3==1)pp=127if(g3==0)pp=0
+Name30=Solo 1 ON
+Incoming30=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="64" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing30=MID196oopp
+Options30=Actv01Stop00OutO00StMa000CLight Play 10003g4=g4^1if(g4==1)pp=127if(g4==0)pp=0
+Name31=Solo 2 ON
+Incoming31=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="64" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing31=MID197oopp
+Options31=Actv01Stop00OutO00StMa000CLight Play 10003g5=g5^1if(g5==1)pp=127if(g5==0)pp=0
+Name32=Solo 3 ON
+Incoming32=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="64" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing32=MID198oopp
+Options32=Actv01Stop00OutO00StMa000CLight Play 10003g6=g6^1if(g6==1)pp=127if(g6==0)pp=0
+Name33=Solo 4 ON
+Incoming33=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="64" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing33=MID199oopp
+Options33=Actv01Stop00OutO00StMa000CLight Play 10003g7=g7^1if(g7==1)pp=127if(g7==0)pp=0
+Name34=Solo 5 ON
+Incoming34=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="64" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing34=MID19Aoopp
+Options34=Actv01Stop00OutO00StMa000CLight Play 10003g8=g8^1if(g8==1)pp=127if(g8==0)pp=0
+Name35=Solo 6 ON
+Incoming35=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="64" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing35=MID19Boopp
+Options35=Actv01Stop00OutO00StMa000CLight Play 10003g9=g9^1if(g9==1)pp=127if(g9==0)pp=0
+Name36=Mute 1 ON
+Incoming36=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="63" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing36=MID196oopp
+Options36=Actv01Stop00OutO00StMa000CLight Play 10003ha=ha^1if(ha==1)pp=127if(ha==0)pp=0
+Name37=Mute 2 ON
+Incoming37=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="63" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing37=MID197oopp
+Options37=Actv01Stop00OutO00StMa000CLight Play 10003hb=hb^1if(hb==1)pp=127if(hb==0)pp=0
+Name38=Mute 3 ON
+Incoming38=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="63" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing38=MID198oopp
+Options38=Actv01Stop00OutO00StMa000CLight Play 10003hc=hc^1if(hc==1)pp=127if(hc==0)pp=0
+Name39=Mute 4 ON
+Incoming39=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="63" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing39=MID199oopp
+Options39=Actv01Stop00OutO00StMa000CLight Play 10003hd=hd^1if(hd==1)pp=127if(hd==0)pp=0
+Name40=Mute 5 ON
+Incoming40=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="63" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing40=MID19Aoopp
+Options40=Actv01Stop00OutO00StMa000CLight Play 10003he=he^1if(he==1)pp=127if(he==0)pp=0
+Name41=Mute 6 ON
+Incoming41=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="63" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing41=MID19Boopp
+Options41=Actv01Stop00OutO00StMa000CLight Play 10003hf=hf^1if(hf==1)pp=127if(hf==0)pp=0
+Name42=LOW 1 ON
+Incoming42=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="62" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing42=MID196oopp
+Options42=Actv01Stop00OutO00StMa000CLight Play 10003hs=hs^1if(hs==1)pp=127if(hs==0)pp=0
+Name43=LOW 2 ON
+Incoming43=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="62" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing43=MID197oopp
+Options43=Actv01Stop00OutO00StMa000CLight Play 10003ht=ht^1if(ht==1)pp=127if(ht==0)pp=0
+Name44=LOW 3 ON
+Incoming44=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="62" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing44=MID198oopp
+Options44=Actv01Stop00OutO00StMa000CLight Play 10003hu=hu^1if(hu==1)pp=127if(hu==0)pp=0
+Name45=LOW 4 ON
+Incoming45=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="62" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing45=MID198oopp
+Options45=Actv01Stop00OutO00StMa000CLight Play 10003hv=hv^1if(hv==1)pp=127if(hv==0)pp=0
+Name46=LOW 5 ON
+Incoming46=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="62" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing46=MID19Aoopp
+Options46=Actv01Stop00OutO00StMa000CLight Play 10003hw=hw^1if(hw==1)pp=127if(hw==0)pp=0
+Name47=LOW 6 ON
+Incoming47=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="62" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing47=MID19Boopp
+Options47=Actv01Stop00OutO00StMa000CLight Play 10003hx=hx^1if(hx==1)pp=127if(hx==0)pp=0
+Name48=MID 1 ON
+Incoming48=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="61" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing48=MID196oopp
+Options48=Actv01Stop00OutO00StMa000CLight Play 10003hy=hy^1if(hy==1)pp=127if(hy==0)pp=0
+Name49=MID 2 ON
+Incoming49=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="61" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing49=MID197oopp
+Options49=Actv01Stop00OutO00StMa000CLight Play 10003hz=hz^1if(hz==1)pp=127if(hz==0)pp=0
+Name50=MID 3 ON
+Incoming50=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="61" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing50=MID198oopp
+Options50=Actv01Stop00OutO00StMa000CLight Play 10003h0=h0^1if(h0==1)pp=127if(h0==0)pp=0
+Name51=MID 4 ON
+Incoming51=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="61" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing51=MID199oopp
+Options51=Actv01Stop00OutO00StMa000CLight Play 10003h1=h1^1if(h1==1)pp=127if(h1==0)pp=0
+Name52=MID 5 ON
+Incoming52=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="61" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing52=MID19Aoopp
+Options52=Actv01Stop00OutO00StMa000CLight Play 10003h2=h2^1if(h2==1)pp=127if(h2==0)pp=0
+Name53=MID 6 ON
+Incoming53=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="61" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing53=MID19Boopp
+Options53=Actv01Stop00OutO00StMa000CLight Play 10003h3=h3^1if(h3==1)pp=127if(h3==0)pp=0
+Name54=HI 1 ON
+Incoming54=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="60" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing54=MID196oopp
+Options54=Actv01Stop00OutO00StMa000CLight Play 10003h4=h4^1if(h4==1)pp=127if(h4==0)pp=0
+Name55=HI 2 ON
+Incoming55=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="60" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing55=MID197oopp
+Options55=Actv01Stop00OutO00StMa000CLight Play 10003h5=h5^1if(h5==1)pp=127if(h5==0)pp=0
+Name56=HI 3 ON
+Incoming56=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="60" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing56=MID198oopp
+Options56=Actv01Stop00OutO00StMa000CLight Play 10003h6=h6^1if(h6==1)pp=127if(h6==0)pp=0
+Name57=HI 4 ON
+Incoming57=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="60" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing57=MID199oopp
+Options57=Actv01Stop00OutO00StMa000CLight Play 10003h7=h7^1if(h7==1)pp=127if(h7==0)pp=0
+Name58=HI 5 ON
+Incoming58=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="60" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing58=MID19Aoopp
+Options58=Actv01Stop00OutO00StMa000CLight Play 10003h8=h8^1if(h8==1)pp=127if(h8==0)pp=0
+Name59=HI 6 ON
+Incoming59=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="60" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing59=MID19Boopp
+Options59=Actv01Stop00OutO00StMa000CLight Play 10003h9=h9^1if(h9==1)pp=127if(h9==0)pp=0
+[Preset.11]
+Name=(RIGHT) - Master - Effect Ctrl
+Active=1
+Comments=
+PresetSwitchIgnore=0
+Name0=VR - A
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="12" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing0=MID1BDoopp
+Options0=Actv01Stop00OutO00StMa00000001oo=39
+Name1=VR - B
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="13" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing1=MID1BDoopp
+Options1=Actv01Stop00OutO00StMa00000001oo=40
+Name2=VR - C
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="14" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing2=MID1BDoopp
+Options2=Actv01Stop00OutO00StMa00000001oo=41
+Name3=VR - D
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="15" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing3=MID1BDoopp
+Options3=Actv01Stop00OutO00StMa00000001oo=42
+Name4=VR - E
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing4=MID1BDoopp
+Options4=Actv01Stop00OutO00StMa00000001oo=43
+Name5=VR - F
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing5=MID1BDoopp
+Options5=Actv01Stop00OutO00StMa00000001oo=44
+Name6=VR - G
+Incoming6=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing6=MID1BDoopp
+Options6=Actv01Stop00OutO00StMa00000001oo=45
+Name7=VR - H
+Incoming7=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing7=MID1BDoopp
+Options7=Actv01Stop00OutO00StMa00000001oo=46
+Name8=Mute A
+Incoming8=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing8=MID1BDoopp
+Options8=Actv01Stop00OutO00StMa00000001oo=47
+Name9=Mute B
+Incoming9=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing9=MID1BDoopp
+Options9=Actv01Stop00OutO00StMa00000001oo=48
+Name10=Cue
+Incoming10=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="24" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing10=MID1BDoopp
+Options10=Actv01Stop00OutO00StMa00000001oo=49
+Name11=Pan
+Incoming11=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing11=MID1BDoopp
+Options11=Actv01Stop00OutO00StMa00000001oo=50
+Name12=Return A - Fader
+Incoming12=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing12=MID1BDoopp
+Options12=Actv01Stop00OutO00StMa00000001oo=51
+Name13=Return B - Fader
+Incoming13=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="23" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing13=MID1BDoopp
+Options13=Actv01Stop00OutO00StMa00000001oo=52
+Name14=Master - Fader
+Incoming14=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="7" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing14=MID1BDoopp
+Options14=Actv01Stop00OutO00StMa00000001oo=53
+Name15=Tempo - Fader
+Incoming15=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="26" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing15=MID1BDoopp
+Options15=Actv01Stop00OutO00StMa00000001oo=54
+Name16=Cross Fader
+Incoming16=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="8" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing16=MID1BDoopp
+Options16=Actv01Stop00OutO00StMa00000001oo=55
+Name17=Fine
+Incoming17=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="25" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing17=MID1BDoopp
+Options17=Actv01Stop00OutO00StMa00000001oo=56
+Name18=FX-1
+Incoming18=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="70" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing18=MID19Doopp
+Options18=Actv01Stop00OutO00StMa00000001oo=57
+Name19=FX-2
+Incoming19=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="71" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing19=MID19Doopp
+Options19=Actv01Stop00OutO00StMa00000001oo=58
+Name20=FX-3
+Incoming20=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="72" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing20=MID19Doopp
+Options20=Actv01Stop00OutO00StMa00000001oo=59
+Name21=FX-4
+Incoming21=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="73" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing21=MID19Doopp
+Options21=Actv01Stop00OutO00StMa00000001oo=60
+Name22=FX-5
+Incoming22=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="74" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing22=MID19Doopp
+Options22=Actv01Stop00OutO00StMa00000001oo=61
+Name23=FX-6
+Incoming23=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="75" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing23=MID19Doopp
+Options23=Actv01Stop00OutO00StMa00000001oo=62
+Name24=FX-7
+Incoming24=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="76" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing24=MID19Doopp
+Options24=Actv01Stop00OutO00StMa00000001oo=63
+Name25=FX-8
+Incoming25=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="77" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing25=MID19Doopp
+Options25=Actv01Stop00OutO00StMa00000001oo=64
+Name26=MUTE RET A
+Incoming26=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="78" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing26=MID19Doopp
+Options26=Actv01Stop00OutO00StMa00000001oo=65
+Name27=MUTE RET B
+Incoming27=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="79" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing27=MID19Doopp
+Options27=Actv01Stop00OutO00StMa00000001oo=66
+Name28=MUTE VOL L
+Incoming28=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="80" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing28=MID19Doopp
+Options28=Actv01Stop00OutO00StMa00000001oo=67
+Name29=MUTE VOL R
+Incoming29=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="81" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing29=MID19Doopp
+Options29=Actv01Stop00OutO00StMa00000001oo=68
+Name30=TRACK Ctrl OFF
+Incoming30=Pres080000
+Outgoing30=Pres06001D(RIGHT) - Master - Track Ctrl
+Options30=Actv01Stop00OutO00
+Name31=MASTER Ctrl OFF
+Incoming31=Pres080000
+Outgoing31=Pres060017(RIGHT) - Master - Ctrl
+Options31=Actv01Stop00OutO00
+[Preset.12]
+Name=(RIGHT) - Master - Track Ctrl
+Active=0
+Comments=
+PresetSwitchIgnore=0
+Name0=VR - A
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="12" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing0=MID1BDoopp
+Options0=Actv01Stop00OutO00StMa00000001oo=1
+Name1=VR - B
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="13" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing1=MID1BDoopp
+Options1=Actv01Stop00OutO00StMa00000001oo=2
+Name2=VR - C
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="14" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing2=MID1BDoopp
+Options2=Actv01Stop00OutO00StMa00000001oo=3
+Name3=VR - D
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="15" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing3=MID1BDoopp
+Options3=Actv01Stop00OutO00StMa00000001oo=4
+Name4=VR - E
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing4=MID1BDoopp
+Options4=Actv01Stop00OutO00StMa00000001oo=5
+Name5=VR - F
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing5=MID1BDoopp
+Options5=Actv01Stop00OutO00StMa00000001oo=6
+Name6=VR - G
+Incoming6=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing6=MID1BDoopp
+Options6=Actv01Stop00OutO00StMa00000001oo=7
+Name7=VR - H
+Incoming7=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing7=MID1BDoopp
+Options7=Actv01Stop00OutO00StMa00000001oo=8
+Name8=Mute A
+Incoming8=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing8=MID1BDoopp
+Options8=Actv01Stop00OutO00StMa00000001oo=9
+Name9=Mute B
+Incoming9=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing9=MID1BDoopp
+Options9=Actv01Stop00OutO00StMa00000001oo=10
+Name10=Cue
+Incoming10=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="24" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing10=MID1BDoopp
+Options10=Actv01Stop00OutO00StMa00000001oo=11
+Name11=Pan
+Incoming11=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing11=MID1BDoopp
+Options11=Actv01Stop00OutO00StMa00000001oo=12
+Name12=Return A - Fader
+Incoming12=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing12=MID1BDoopp
+Options12=Actv01Stop00OutO00StMa00000001oo=13
+Name13=Return B - Fader
+Incoming13=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="23" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing13=MID1BDoopp
+Options13=Actv01Stop00OutO00StMa00000001oo=14
+Name14=Master - Fader
+Incoming14=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="7" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing14=MID1BDoopp
+Options14=Actv01Stop00OutO00StMa00000001oo=15
+Name15=Tempo - Fader
+Incoming15=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="26" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing15=MID1BDoopp
+Options15=Actv01Stop00OutO00StMa00000001oo=16
+Name16=Cross Fader
+Incoming16=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="8" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing16=MID1BDoopp
+Options16=Actv01Stop00OutO00StMa00000001oo=17
+Name17=Fine
+Incoming17=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="25" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing17=MID1BDoopp
+Options17=Actv01Stop00OutO00StMa00000001oo=18
+Name18=FX-1
+Incoming18=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="70" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing18=MID19Doopp
+Options18=Actv01Stop00OutO00StMa00000001oo=19
+Name19=FX-2
+Incoming19=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="71" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing19=MID19Doopp
+Options19=Actv01Stop00OutO00StMa00000001oo=20
+Name20=FX-3
+Incoming20=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="72" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing20=MID19Doopp
+Options20=Actv01Stop00OutO00StMa00000001oo=21
+Name21=FX-4
+Incoming21=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="73" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing21=MID19Doopp
+Options21=Actv01Stop00OutO00StMa00000001oo=22
+Name22=FX-5
+Incoming22=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="74" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing22=MID19Doopp
+Options22=Actv01Stop00OutO00StMa00000001oo=23
+Name23=FX-6
+Incoming23=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="75" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing23=MID19Doopp
+Options23=Actv01Stop00OutO00StMa00000001oo=24
+Name24=FX-7
+Incoming24=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="76" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing24=MID19Doopp
+Options24=Actv01Stop00OutO00StMa00000001oo=25
+Name25=FX-8
+Incoming25=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="77" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing25=MID19Doopp
+Options25=Actv01Stop00OutO00StMa00000001oo=26
+Name26=MUTE RET A
+Incoming26=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="78" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing26=MID19Doopp
+Options26=Actv01Stop00OutO00StMa00000001oo=27
+Name27=MUTE RET B
+Incoming27=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="79" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing27=MID19Doopp
+Options27=Actv01Stop00OutO00StMa00000001oo=28
+Name28=MUTE VOL L
+Incoming28=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="80" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing28=MID19Doopp
+Options28=Actv01Stop00OutO00StMa00000001oo=29
+Name29=MUTE VOL R
+Incoming29=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="81" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing29=MID19Doopp
+Options29=Actv01Stop00OutO00StMa00000001oo=30
+Name30=EFFECT Ctrl OFF
+Incoming30=Pres080000
+Outgoing30=Pres06001E(RIGHT) - Master - Effect Ctrl
+Options30=Actv01Stop00OutO00
+Name31=MASTER Ctrl OFF
+Incoming31=Pres080000
+Outgoing31=Pres060017(RIGHT) - Master - Ctrl
+Options31=Actv01Stop00OutO00
+[Preset.13]
+Name=(RIGHT) - Master - Ctrl
+Active=0
+Comments=
+PresetSwitchIgnore=0
+Name0=VR - A
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="12" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing0=MID1BDoopp
+Options0=Actv01Stop00OutO00StMa00000001oo=69
+Name1=VR - B
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="13" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing1=MID1BDoopp
+Options1=Actv01Stop00OutO00StMa00000001oo=70
+Name2=VR - C
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="14" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing2=MID1BDoopp
+Options2=Actv01Stop00OutO00StMa00000001oo=71
+Name3=VR - D
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="15" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing3=MID1BDoopp
+Options3=Actv01Stop00OutO00StMa00000001oo=72
+Name4=VR - E
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing4=MID1BDoopp
+Options4=Actv01Stop00OutO00StMa00000001oo=73
+Name5=VR - F
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing5=MID1BDoopp
+Options5=Actv01Stop00OutO00StMa00000001oo=74
+Name6=VR - G
+Incoming6=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing6=MID1BDoopp
+Options6=Actv01Stop00OutO00StMa00000001oo=75
+Name7=VR - H
+Incoming7=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing7=MID1BDoopp
+Options7=Actv01Stop00OutO00StMa00000001oo=76
+Name8=Mute A
+Incoming8=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing8=MID1BDoopp
+Options8=Actv01Stop00OutO00StMa00000001oo=77
+Name9=Mute B
+Incoming9=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing9=MID1BDoopp
+Options9=Actv01Stop00OutO00StMa00000001oo=78
+Name10=Cue
+Incoming10=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="24" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing10=MID1BDoopp
+Options10=Actv01Stop00OutO00StMa00000001oo=79
+Name11=Pan
+Incoming11=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing11=MID1BDoopp
+Options11=Actv01Stop00OutO00StMa00000001oo=80
+Name12=Return A - Fader
+Incoming12=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing12=MID1BDoopp
+Options12=Actv01Stop00OutO00StMa00000001oo=81
+Name13=Return B - Fader
+Incoming13=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="23" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing13=MID1BDoopp
+Options13=Actv01Stop00OutO00StMa00000001oo=82
+Name14=Master - Fader
+Incoming14=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="7" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing14=MID1BDoopp
+Options14=Actv01Stop00OutO00StMa00000001oo=83
+Name15=Tempo - Fader
+Incoming15=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="26" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing15=MID1BDoopp
+Options15=Actv01Stop00OutO00StMa00000001oo=84
+Name16=Cross Fader
+Incoming16=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="8" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing16=MID1BDoopp
+Options16=Actv01Stop00OutO00StMa00000001oo=85
+Name17=Fine
+Incoming17=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="12" setvar="qq" Type="New Version Required"/><Value1 num="25" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing17=MID1BDoopp
+Options17=Actv01Stop00OutO00StMa00000001oo=86
+Name18=FX-1
+Incoming18=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="70" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing18=MID19Doopp
+Options18=Actv01Stop00OutO00StMa00000001oo=87
+Name19=FX-2
+Incoming19=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="71" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing19=MID19Doopp
+Options19=Actv01Stop00OutO00StMa00000001oo=88
+Name20=FX-3
+Incoming20=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="72" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing20=MID19Doopp
+Options20=Actv01Stop00OutO00StMa00000001oo=89
+Name21=FX-4
+Incoming21=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="73" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing21=MID19Doopp
+Options21=Actv01Stop00OutO00StMa00000001oo=90
+Name22=FX-5
+Incoming22=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="74" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing22=MID19Doopp
+Options22=Actv01Stop00OutO00StMa00000001oo=91
+Name23=FX-6
+Incoming23=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="75" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing23=MID19Doopp
+Options23=Actv01Stop00OutO00StMa00000001oo=92
+Name24=FX-7
+Incoming24=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="76" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing24=MID19Doopp
+Options24=Actv01Stop00OutO00StMa00000001oo=93
+Name25=FX-8
+Incoming25=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="77" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing25=MID19Doopp
+Options25=Actv01Stop00OutO00StMa00000001oo=94
+Name26=MUTE RET A
+Incoming26=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="78" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing26=MID19Doopp
+Options26=Actv01Stop00OutO00StMa00000001oo=95
+Name27=MUTE RET B
+Incoming27=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="79" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing27=MID19Doopp
+Options27=Actv01Stop00OutO00StMa00000001oo=96
+Name28=MUTE VOL L
+Incoming28=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="80" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing28=MID19Doopp
+Options28=Actv01Stop00OutO00StMa00000001oo=97
+Name29=MUTE VOL R
+Incoming29=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="81" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing29=MID19Doopp
+Options29=Actv01Stop00OutO00StMa00000001oo=98
+Name30=EFFECT Ctrl OFF
+Incoming30=Pres080000
+Outgoing30=Pres06001E(RIGHT) - Master - Effect Ctrl
+Options30=Actv01Stop00OutO00
+Name31=TRACK Ctrl OFF
+Incoming31=Pres080000
+Outgoing31=Pres06001D(RIGHT) - Master - Track Ctrl
+Options31=Actv01Stop00OutO00
+[Preset.14]
+Name=(RIGHT) - Master - *LIGHTS*
+Active=1
+Comments=
+PresetSwitchIgnore=0
+DefaultOutPorts=MIDA00010005USB 1
+Name0=FX-1
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="70" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing0=MID19Coopp
+Options0=Actv01Stop00OutO00StMa000CLight Play 10003ng=ng^1if(ng==1)pp=127if(ng==0)pp=0
+Name1=FX-2
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="71" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing1=MID19Coopp
+Options1=Actv01Stop00OutO00StMa000CLight Play 10003nh=nh^1if(nh==1)pp=127if(nh==0)pp=0
+Name2=FX-3
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="72" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing2=MID19Coopp
+Options2=Actv01Stop00OutO00StMa000CLight Play 10003ni=ni^1if(ni==1)pp=127if(ni==0)pp=0
+Name3=FX-4
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="73" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing3=MID19Coopp
+Options3=Actv01Stop00OutO00StMa000CLight Play 10003nj=nj^1if(nj==1)pp=127if(nj==0)pp=0
+Name4=FX-5
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="74" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing4=MID19Coopp
+Options4=Actv01Stop00OutO00StMa000CLight Play 10003nk=nk^1if(nk==1)pp=127if(nk==0)pp=0
+Name5=FX-6
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="75" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing5=MID19Coopp
+Options5=Actv01Stop00OutO00StMa000CLight Play 10003nl=nl^1if(nl==1)pp=127if(nl==0)pp=0
+Name6=FX-7
+Incoming6=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="76" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing6=MID19Coopp
+Options6=Actv01Stop00OutO00StMa000CLight Play 10003nm=nm^1if(nm==1)pp=127if(nm==0)pp=0
+Name7=FX-8
+Incoming7=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="77" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing7=MID19Coopp
+Options7=Actv01Stop00OutO00StMa000CLight Play 10003nn=nn^1if(nn==1)pp=127if(nn==0)pp=0
+Name8=MUTE RET A
+Incoming8=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="78" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing8=MID19Coopp
+Options8=Actv01Stop00OutO00StMa000CLight Play 10003na=na^1if(na==1)pp=127if(na==0)pp=0
+Name9=MUTE RET B
+Incoming9=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="79" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing9=MID19Coopp
+Options9=Actv01Stop00OutO00StMa000CLight Play 10003nb=nb^1if(nb==1)pp=127if(nb==0)pp=0
+Name10=MUTE VOL L
+Incoming10=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="80" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing10=MID19Coopp
+Options10=Actv01Stop00OutO00StMa000CLight Play 10003nc=nc^1if(nc==1)pp=127if(nc==0)pp=0
+Name11=MUTE VOL R
+Incoming11=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="81" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing11=MID19Coopp
+Options11=Actv01Stop00OutO00StMa000CLight Play 10003nd=nd^1if(nd==1)pp=127if(nd==0)pp=0
+[Preset.2]
+Name=Always Active *LIGHTS*
+Active=1
+Comments=
+PresetSwitchIgnore=1
+DefaultOutPorts=MIDA00010005USB 1
+Name0=LOOP IN
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="82" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing0=MID19Cuupp8Cvvss8Cwwss
+Options0=Actv01Stop00OutO00StMa000CLight Play 1000Blabel001B__cmt>// Mixer & ALt. Lightss=0label0014__cmt>// Sends Lightpp=127label0018__cmt>// note: 82 (0x52)uu=82label0018__cmt>// note: 83 (0x53)vv=83label0018__cmt>// note: 84 (0x54)ww=84label0006__cmt>
+Name1=LOOP OUT
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="83" setvar="oo" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
+Outgoing1=MID19Cvvpp8Cuuss8Cwwss
+Options1=Actv01Stop00OutO00StMa000CLight Play 1000Alabel001B__cmt>// Mixer & ALt. Lightss=0label0014__cmt>// Sends Lightpp=127label0018__cmt>// note: 82 (0x52)uu=82label0018__cmt>// note: 83 (0x53)vv=83label0018__cmt>// note: 84 (0x54)ww=84
+Name2=LOOP ON/OFF
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="84" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing2=MID19Cwwpp8Cuuss8Cvvss8Crrss8Cttss
+Options2=Actv01Stop00OutO00StMa000CLight Play 1000Elabel001B__cmt>// Sends & ALt. Lightss=0label0014__cmt>// Mixer Lightpp=127label0018__cmt>// note: 82 (0x52)uu=82label0018__cmt>// note: 83 (0x53)vv=83label0018__cmt>// note: 84 (0x54)ww=84label0018__cmt>// note: 85 (0x53)rr=85label0018__cmt>// note: 86 (0x54)tt=86
+Name3=Tempo -
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="85" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing3=MID19Cvvpp8Cwwss
+Options3=Actv01Stop00OutO00StMa000CLight Play 10008label0011__cmt>// + Buttonss=0label0011__cmt>// - Buttonpp=127label0018__cmt>// note: 85 (0x55)vv=85label0018__cmt>// note: 86 (0x54)ww=86
+Name4=Tempo +
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="86" setvar="oo" Type="New Version Required"/><Value2 num="127" setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing4=MID19Cwwpp8Cvvss
+Options4=Actv01Stop00OutO00StMa000CLight Play 10008label0011__cmt>// - Buttonss=0label0011__cmt>// + Buttonpp=127label0018__cmt>// note: 85 (0x55)vv=85label0018__cmt>// note: 86 (0x54)ww=86
+Name5=TRACK BANK
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x00"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing5=None
+Options5=Actv00Stop00OutO00
+[Preset.3]
+Name=SHIFT(er) - *CH Controls*
+Active=1
+Comments=
+PresetSwitchIgnore=0
+DefaultOutPorts=MIDA0001000DModel_D - Net
+Name0=SENDS
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12"/><Value1 num="0x52"/><Value2 num="0x7F"/></Simple></Incoming>
+Outgoing0=Pres04001B(LEFT) - CH - Knobs (SENDS)
+Options0=Actv01Stop00OutO00
+Name1=TRACK
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12"/><Value1 num="0x53"/><Value2 num="0x7F"/></Simple></Incoming>
+Outgoing1=Pres04001B(LEFT) - CH - Knobs (TRACK)
+Options1=Actv01Stop00OutO00
+Name2=MIXER
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12"/><Value1 num="0x54"/><Value2 num="0x7F"/></Simple></Incoming>
+Outgoing2=Pres04001B(LEFT) - CH - Knobs (MIXER)
+Options2=Actv01Stop00OutO00
+[Preset.4]
+Name=SHIFT(er) - *Master Section*
+Active=1
+Comments=
+PresetSwitchIgnore=0
+DefaultOutPorts=MIDA0001000DModel_D - Net
+Name0=Effect Ctrl
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12"/><Value1 num="0x54"/><Value2 num="0x7F"/></Simple></Incoming>
+Outgoing0=Pres04001D(LEFT) - Master - Effect Ctrl
+Options0=Actv01Stop00OutO00
+Name1=Track Ctrl
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12"/><Value1 num="0x55"/><Value2 num="0x7F"/></Simple></Incoming>
+Outgoing1=Pres04001C(LEFT) - Master - Track Ctrl
+Options1=Actv01Stop00OutO00
+Name2=Master Ctrl
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12"/><Value1 num="0x56"/><Value2 num="0x7F"/></Simple></Incoming>
+Outgoing2=Pres040016(LEFT) - Master - Ctrl
+Options2=Actv01Stop00OutO00
+[Preset.5]
+Name=Show / Hide
+Active=0
+Comments=
+PresetSwitchIgnore=0
+Name0=Sends
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="82" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing0=KAM10100KSQ1000601215B05325335B212
+Options0=Actv01Stop00OutO00
+Name1=Track
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="83" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing1=KAM10100KSQ1000601215B05225221235B
+Options1=Actv01Stop00OutO00
+Name2=Mixer
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="84" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing2=KAM10100KSQ1000601215B04D24D35B212
+Options2=Actv01Stop00OutO00
+Name3=Effects
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="85" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing3=KAM10100KSQ1000601215B04C24C35B212
+Options3=Actv01Stop00OutO00
+Name4=Master Effects
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="12" Type="New Version Required"/><Value1 num="86" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing4=KAM10100KSQ10004010009209210
+Options4=Actv01Stop00OutO00
+[Preset.6]
+Name=(RIGHT) - CH - Buttons & Faders
+Active=1
+Comments=
+PresetSwitchIgnore=0
+Name0=Play 1 ON
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="69" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing0=MID190oopp
+Options0=Actv01Stop00OutO00StMa00000001oo=66
+Name1=Play 2 ON
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="69" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing1=MID191oopp
+Options1=Actv01Stop00OutO00StMa00000001oo=67
+Name2=Play 3 ON
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="69" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing2=MID192oopp
+Options2=Actv01Stop00OutO00StMa00000001oo=68
+Name3=Play 4 ON
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="69" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing3=MID193oopp
+Options3=Actv01Stop00OutO00StMa00000001oo=69
+Name4=Play 5 ON
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="69" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing4=MID194oopp
+Options4=Actv01Stop00OutO00StMa00000001oo=70
+Name5=Play 6 ON
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="69" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing5=MID195oopp
+Options5=Actv01Stop00OutO00StMa00000001oo=71
+Name6=Stop 1 ON
+Incoming6=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="68" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing6=MID190oopp
+Options6=Actv01Stop00OutO00StMa00000001oo=72
+Name7=Stop 2 ON
+Incoming7=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="68" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing7=MID191oopp
+Options7=Actv01Stop00OutO00StMa00000001oo=73
+Name8=Stop 3 ON
+Incoming8=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="68" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing8=MID192oopp
+Options8=Actv01Stop00OutO00StMa00000001oo=74
+Name9=Stop 4 ON
+Incoming9=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="68" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing9=MID193oopp
+Options9=Actv01Stop00OutO00StMa00000001oo=75
+Name10=Stop 5 ON
+Incoming10=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="68" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing10=MID194oopp
+Options10=Actv01Stop00OutO00StMa00000001oo=76
+Name11=Stop 6 ON
+Incoming11=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="68" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing11=MID195oopp
+Options11=Actv01Stop00OutO00StMa00000001oo=77
+Name12=CF ASN 1 ON
+Incoming12=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="65" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing12=MID190oopp
+Options12=Actv01Stop00OutO00StMa00000001oo=78
+Name13=CF ASN 2 ON
+Incoming13=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="65" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing13=MID191oopp
+Options13=Actv01Stop00OutO00StMa00000001oo=79
+Name14=CF ASN 3 ON
+Incoming14=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="65" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing14=MID192oopp
+Options14=Actv01Stop00OutO00StMa00000001oo=80
+Name15=CF ASN 4 ON
+Incoming15=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="65" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing15=MID193oopp
+Options15=Actv01Stop00OutO00StMa00000001oo=81
+Name16=CF ASN 5 ON
+Incoming16=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="65" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing16=MID194oopp
+Options16=Actv01Stop00OutO00StMa00000001oo=82
+Name17=CF ASN 6 ON
+Incoming17=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="65" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing17=MID195oopp
+Options17=Actv01Stop00OutO00StMa00000001oo=83
+Name18=Clip 1 ON
+Incoming18=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="66" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing18=MID190oopp
+Options18=Actv01Stop00OutO00StMa00000001oo=84
+Name19=Clip 2 ON
+Incoming19=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="66" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing19=MID191oopp
+Options19=Actv01Stop00OutO00StMa00000001oo=85
+Name20=Clip 3 ON
+Incoming20=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="66" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing20=MID192oopp
+Options20=Actv01Stop00OutO00StMa00000001oo=86
+Name21=Clip 4 ON
+Incoming21=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="66" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing21=MID193oopp
+Options21=Actv01Stop00OutO00StMa00000001oo=87
+Name22=Clip 5 ON
+Incoming22=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="66" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing22=MID194oopp
+Options22=Actv01Stop00OutO00StMa00000001oo=88
+Name23=Clip 6 ON
+Incoming23=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="66" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing23=MID195oopp
+Options23=Actv01Stop00OutO00StMa00000001oo=89
+Name24=Track 1 ON
+Incoming24=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="67" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing24=MID190oopp
+Options24=Actv01Stop00OutO00StMa00000001oo=90
+Name25=Track 2 ON
+Incoming25=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="67" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing25=MID191oopp
+Options25=Actv01Stop00OutO00StMa00000001oo=91
+Name26=Track 3 ON
+Incoming26=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="67" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing26=MID192oopp
+Options26=Actv01Stop00OutO00StMa00000001oo=92
+Name27=Track 4 ON
+Incoming27=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="67" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing27=MID193oopp
+Options27=Actv01Stop00OutO00StMa00000001oo=93
+Name28=Track 5 ON
+Incoming28=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="67" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing28=MID194oopp
+Options28=Actv01Stop00OutO00StMa00000001oo=94
+Name29=Track 6 ON
+Incoming29=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="67" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing29=MID195oopp
+Options29=Actv01Stop00OutO00StMa00000001oo=95
+Name30=Solo 1 ON
+Incoming30=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="64" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing30=MID190oopp
+Options30=Actv01Stop00OutO00StMa00000001oo=96
+Name31=Solo 2 ON
+Incoming31=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="64" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing31=MID191oopp
+Options31=Actv01Stop00OutO00StMa00000001oo=97
+Name32=Solo 3 ON
+Incoming32=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="64" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing32=MID192oopp
+Options32=Actv01Stop00OutO00StMa00000001oo=98
+Name33=Solo 4 ON
+Incoming33=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="64" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing33=MID193oopp
+Options33=Actv01Stop00OutO00StMa00000001oo=99
+Name34=Solo 5 ON
+Incoming34=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="64" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing34=MID194oopp
+Options34=Actv01Stop00OutO00StMa00000001oo=100
+Name35=Solo 6 ON
+Incoming35=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="64" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing35=MID195oopp
+Options35=Actv01Stop00OutO00StMa00000001oo=101
+Name36=Mute 1 ON
+Incoming36=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="63" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing36=MID190oopp
+Options36=Actv01Stop00OutO00StMa00000001oo=102
+Name37=Mute 2 ON
+Incoming37=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="63" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing37=MID191oopp
+Options37=Actv01Stop00OutO00StMa00000001oo=103
+Name38=Mute 3 ON
+Incoming38=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="63" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing38=MID192oopp
+Options38=Actv01Stop00OutO00StMa00000001oo=104
+Name39=Mute 4 ON
+Incoming39=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="63" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing39=MID193oopp
+Options39=Actv01Stop00OutO00StMa00000001oo=105
+Name40=Mute 5 ON
+Incoming40=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="63" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing40=MID194oopp
+Options40=Actv01Stop00OutO00StMa00000001oo=106
+Name41=Mute 6 ON
+Incoming41=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="63" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing41=MID195oopp
+Options41=Actv01Stop00OutO00StMa00000001oo=107
+Name42=LOW 1 ON
+Incoming42=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="62" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing42=MID190oopp
+Options42=Actv01Stop00OutO00StMa00000001oo=108
+Name43=LOW 2 ON
+Incoming43=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="62" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing43=MID191oopp
+Options43=Actv01Stop00OutO00StMa00000001oo=109
+Name44=LOW 3 ON
+Incoming44=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="62" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing44=MID192oopp
+Options44=Actv01Stop00OutO00StMa00000001oo=110
+Name45=LOW 4 ON
+Incoming45=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="62" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing45=MID193oopp
+Options45=Actv01Stop00OutO00StMa00000001oo=111
+Name46=LOW 5 ON
+Incoming46=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="62" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing46=MID194oopp
+Options46=Actv01Stop00OutO00StMa00000001oo=112
+Name47=LOW 6 ON
+Incoming47=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="62" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing47=MID195oopp
+Options47=Actv01Stop00OutO00StMa00000001oo=113
+Name48=MID 1 ON
+Incoming48=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="61" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing48=MID190oopp
+Options48=Actv01Stop00OutO00StMa00000001oo=114
+Name49=MID 2 ON
+Incoming49=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="61" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing49=MID191oopp
+Options49=Actv01Stop00OutO00StMa00000001oo=115
+Name50=MID 3 ON
+Incoming50=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="61" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing50=MID192oopp
+Options50=Actv01Stop00OutO00StMa00000001oo=116
+Name51=MID 4 ON
+Incoming51=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="61" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing51=MID193oopp
+Options51=Actv01Stop00OutO00StMa00000001oo=117
+Name52=MID 5 ON
+Incoming52=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="61" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing52=MID194oopp
+Options52=Actv01Stop00OutO00StMa00000001oo=118
+Name53=MID 6 ON
+Incoming53=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="61" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing53=MID195oopp
+Options53=Actv01Stop00OutO00StMa00000001oo=119
+Name54=HI 1 ON
+Incoming54=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="6" Type="New Version Required"/><Value1 num="60" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing54=MID190oopp
+Options54=Actv01Stop00OutO00StMa00000001oo=120
+Name55=HI 2 ON
+Incoming55=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="7" Type="New Version Required"/><Value1 num="60" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing55=MID191oopp
+Options55=Actv01Stop00OutO00StMa00000001oo=121
+Name56=HI 3 ON
+Incoming56=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="8" Type="New Version Required"/><Value1 num="60" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing56=MID192oopp
+Options56=Actv01Stop00OutO00StMa00000001oo=122
+Name57=HI 4 ON
+Incoming57=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="9" Type="New Version Required"/><Value1 num="60" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing57=MID193oopp
+Options57=Actv01Stop00OutO00StMa00000001oo=123
+Name58=HI 5 ON
+Incoming58=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="10" Type="New Version Required"/><Value1 num="60" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing58=MID194oopp
+Options58=Actv01Stop00OutO00StMa00000001oo=124
+Name59=HI 6 ON
+Incoming59=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="11" Type="New Version Required"/><Value1 num="60" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing59=MID195oopp
+Options59=Actv01Stop00OutO00StMa00000001oo=125
+Name60=Fader 1
+Incoming60=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="23" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing60=MID1B0oopp
+Options60=Actv01Stop00OutO00StMa00000001oo=25
+Name61=Fader 2
+Incoming61=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="23" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing61=MID1B1oopp
+Options61=Actv01Stop00OutO00StMa00000001oo=26
+Name62=Fader 3
+Incoming62=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="23" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing62=MID1B2oopp
+Options62=Actv01Stop00OutO00StMa00000001oo=27
+Name63=Fader 4
+Incoming63=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="23" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing63=MID1B3oopp
+Options63=Actv01Stop00OutO00StMa00000001oo=28
+Name64=Fader 5
+Incoming64=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="23" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing64=MID1B4oopp
+Options64=Actv01Stop00OutO00StMa00000001oo=29
+Name65=Fader 6
+Incoming65=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="23" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing65=MID1B5oopp
+Options65=Actv01Stop00OutO00StMa00000001oo=30
+[Preset.7]
+Name=(RIGHT) - CH - Knobs (SENDS)
+Active=0
+Comments=
+PresetSwitchIgnore=0
+Name0=Hi 1
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing0=MID1B0oopp
+Options0=Actv01Stop00OutO00StMa00000001oo=31
+Name1=Hi 2
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing1=MID1B1oopp
+Options1=Actv01Stop00OutO00StMa00000001oo=31
+Name2=Hi 3
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing2=MID1B2oopp
+Options2=Actv01Stop00OutO00StMa00000001oo=31
+Name3=Hi 4
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing3=MID1B3oopp
+Options3=Actv01Stop00OutO00StMa00000001oo=31
+Name4=Hi 5
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing4=MID1B4oopp
+Options4=Actv01Stop00OutO00StMa00000001oo=31
+Name5=Hi 6
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing5=MID1B5oopp
+Options5=Actv01Stop00OutO00StMa00000001oo=31
+Name6=Mid 1
+Incoming6=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing6=MID1B0oopp
+Options6=Actv01Stop00OutO00StMa00000001oo=32
+Name7=Mid 2
+Incoming7=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing7=MID1B1oopp
+Options7=Actv01Stop00OutO00StMa00000001oo=32
+Name8=Mid 3
+Incoming8=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing8=MID1B2oopp
+Options8=Actv01Stop00OutO00StMa00000001oo=32
+Name9=Mid 4
+Incoming9=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing9=MID1B3oopp
+Options9=Actv01Stop00OutO00StMa00000001oo=32
+Name10=Mid 5
+Incoming10=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing10=MID1B4oopp
+Options10=Actv01Stop00OutO00StMa00000001oo=32
+Name11=Mid 6
+Incoming11=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing11=MID1B5oopp
+Options11=Actv01Stop00OutO00StMa00000001oo=32
+Name12=Low 1
+Incoming12=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing12=MID1B0oopp
+Options12=Actv01Stop00OutO00StMa00000001oo=33
+Name13=Low 2
+Incoming13=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing13=MID1B1oopp
+Options13=Actv01Stop00OutO00StMa00000001oo=33
+Name14=Low 3
+Incoming14=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing14=MID1B2oopp
+Options14=Actv01Stop00OutO00StMa00000001oo=33
+Name15=Low 4
+Incoming15=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing15=MID1B3oopp
+Options15=Actv01Stop00OutO00StMa00000001oo=33
+Name16=Low 5
+Incoming16=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing16=MID1B4oopp
+Options16=Actv01Stop00OutO00StMa00000001oo=33
+Name17=Low 6
+Incoming17=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing17=MID1B5oopp
+Options17=Actv01Stop00OutO00StMa00000001oo=33
+Name18=Pan 1
+Incoming18=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing18=MID1B0oopp
+Options18=Actv01Stop00OutO00StMa00000001oo=34
+Name19=Pan 2
+Incoming19=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing19=MID1B1oopp
+Options19=Actv01Stop00OutO00StMa00000001oo=34
+Name20=Pan 3
+Incoming20=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing20=MID1B2oopp
+Options20=Actv01Stop00OutO00StMa00000001oo=34
+Name21=Pan 4
+Incoming21=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing21=MID1B3oopp
+Options21=Actv01Stop00OutO00StMa00000001oo=34
+Name22=Pan 5
+Incoming22=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing22=MID1B4oopp
+Options22=Actv01Stop00OutO00StMa00000001oo=34
+Name23=Pan 6
+Incoming23=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing23=MID1B5oopp
+Options23=Actv01Stop00OutO00StMa00000001oo=34
+Name24=Send A 1
+Incoming24=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing24=MID1B0oopp
+Options24=Actv01Stop00OutO00StMa00000001oo=35
+Name25=Send A 2
+Incoming25=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing25=MID1B1oopp
+Options25=Actv01Stop00OutO00StMa00000001oo=35
+Name26=Send A 3
+Incoming26=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing26=MID1B2oopp
+Options26=Actv01Stop00OutO00StMa00000001oo=35
+Name27=Send A 4
+Incoming27=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing27=MID1B3oopp
+Options27=Actv01Stop00OutO00StMa00000001oo=35
+Name28=Send A 5
+Incoming28=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing28=MID1B4oopp
+Options28=Actv01Stop00OutO00StMa00000001oo=35
+Name29=Send A 6
+Incoming29=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing29=MID1B5oopp
+Options29=Actv01Stop00OutO00StMa00000001oo=35
+Name30=Send B 1
+Incoming30=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing30=MID1B0oopp
+Options30=Actv01Stop00OutO00StMa00000001oo=36
+Name31=Send B 2
+Incoming31=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing31=MID1B1oopp
+Options31=Actv01Stop00OutO00StMa00000001oo=36
+Name32=Send B 3
+Incoming32=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing32=MID1B2oopp
+Options32=Actv01Stop00OutO00StMa00000001oo=36
+Name33=Send B 4
+Incoming33=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing33=MID1B3oopp
+Options33=Actv01Stop00OutO00StMa00000001oo=36
+Name34=Send B 5
+Incoming34=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing34=MID1B4oopp
+Options34=Actv01Stop00OutO00StMa00000001oo=36
+Name35=Send B 6
+Incoming35=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing35=MID1B5oopp
+Options35=Actv01Stop00OutO00StMa00000001oo=36
+Name36=Resonance 1
+Incoming36=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing36=MID1B0oopp
+Options36=Actv01Stop00OutO00StMa00000001oo=37
+Name37=Resonance 2
+Incoming37=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing37=MID1B1oopp
+Options37=Actv01Stop00OutO00StMa00000001oo=37
+Name38=Resonance 3
+Incoming38=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing38=MID1B2oopp
+Options38=Actv01Stop00OutO00StMa00000001oo=37
+Name39=Resonance 4
+Incoming39=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing39=MID1B3oopp
+Options39=Actv01Stop00OutO00StMa00000001oo=37
+Name40=Resonance 5
+Incoming40=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing40=MID1B4oopp
+Options40=Actv01Stop00OutO00StMa00000001oo=37
+Name41=Resonance 6
+Incoming41=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing41=MID1B5oopp
+Options41=Actv01Stop00OutO00StMa00000001oo=37
+Name42=Freq 1
+Incoming42=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing42=MID1B0oopp
+Options42=Actv01Stop00OutO00StMa00000001oo=38
+Name43=Freq 2
+Incoming43=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing43=MID1B1oopp
+Options43=Actv01Stop00OutO00StMa00000001oo=38
+Name44=Freq 3
+Incoming44=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing44=MID1B2oopp
+Options44=Actv01Stop00OutO00StMa00000001oo=38
+Name45=Freq 4
+Incoming45=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing45=MID1B3oopp
+Options45=Actv01Stop00OutO00StMa00000001oo=38
+Name46=Freq 5
+Incoming46=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing46=MID1B4oopp
+Options46=Actv01Stop00OutO00StMa00000001oo=38
+Name47=Freq 6
+Incoming47=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing47=MID1B5oopp
+Options47=Actv01Stop00OutO00StMa00000001oo=38
+Name48=TRACK OFF
+Incoming48=Pres080000
+Outgoing48=Pres06001C(RIGHT) - CH - Knobs (TRACK)
+Options48=Actv01Stop00OutO00
+Name49=MIXER OFF
+Incoming49=Pres080000
+Outgoing49=Pres06001C(RIGHT) - CH - Knobs (MIXER)
+Options49=Actv01Stop00OutO00
+[Preset.8]
+Name=(RIGHT) - CH - Knobs (TRACK)
+Active=0
+Comments=
+PresetSwitchIgnore=0
+Name0=Hi 1
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing0=MID1B0oopp
+Options0=Actv01Stop00OutO00StMa00000001oo=39
+Name1=Hi 2
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing1=MID1B1oopp
+Options1=Actv01Stop00OutO00StMa00000001oo=39
+Name2=Hi 3
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing2=MID1B2oopp
+Options2=Actv01Stop00OutO00StMa00000001oo=39
+Name3=Hi 4
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing3=MID1B3oopp
+Options3=Actv01Stop00OutO00StMa00000001oo=39
+Name4=Hi 5
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing4=MID1B4oopp
+Options4=Actv01Stop00OutO00StMa00000001oo=39
+Name5=Hi 6
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing5=MID1B5oopp
+Options5=Actv01Stop00OutO00StMa00000001oo=39
+Name6=Mid 1
+Incoming6=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing6=MID1B0oopp
+Options6=Actv01Stop00OutO00StMa00000001oo=40
+Name7=Mid 2
+Incoming7=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing7=MID1B1oopp
+Options7=Actv01Stop00OutO00StMa00000001oo=40
+Name8=Mid 3
+Incoming8=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing8=MID1B2oopp
+Options8=Actv01Stop00OutO00StMa00000001oo=40
+Name9=Mid 4
+Incoming9=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing9=MID1B3oopp
+Options9=Actv01Stop00OutO00StMa00000001oo=40
+Name10=Mid 5
+Incoming10=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing10=MID1B4oopp
+Options10=Actv01Stop00OutO00StMa00000001oo=40
+Name11=Mid 6
+Incoming11=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing11=MID1B5oopp
+Options11=Actv01Stop00OutO00StMa00000001oo=40
+Name12=Low 1
+Incoming12=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing12=MID1B0oopp
+Options12=Actv01Stop00OutO00StMa00000001oo=41
+Name13=Low 2
+Incoming13=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing13=MID1B1oopp
+Options13=Actv01Stop00OutO00StMa00000001oo=41
+Name14=Low 3
+Incoming14=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing14=MID1B2oopp
+Options14=Actv01Stop00OutO00StMa00000001oo=41
+Name15=Low 4
+Incoming15=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing15=MID1B3oopp
+Options15=Actv01Stop00OutO00StMa00000001oo=41
+Name16=Low 5
+Incoming16=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing16=MID1B4oopp
+Options16=Actv01Stop00OutO00StMa00000001oo=41
+Name17=Low 6
+Incoming17=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing17=MID1B5oopp
+Options17=Actv01Stop00OutO00StMa00000001oo=41
+Name18=Pan 1
+Incoming18=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing18=MID1B0oopp
+Options18=Actv01Stop00OutO00StMa00000001oo=42
+Name19=Pan 2
+Incoming19=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing19=MID1B1oopp
+Options19=Actv01Stop00OutO00StMa00000001oo=42
+Name20=Pan 3
+Incoming20=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing20=MID1B2oopp
+Options20=Actv01Stop00OutO00StMa00000001oo=42
+Name21=Pan 4
+Incoming21=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing21=MID1B3oopp
+Options21=Actv01Stop00OutO00StMa00000001oo=42
+Name22=Pan 5
+Incoming22=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing22=MID1B4oopp
+Options22=Actv01Stop00OutO00StMa00000001oo=42
+Name23=Pan 6
+Incoming23=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing23=MID1B5oopp
+Options23=Actv01Stop00OutO00StMa00000001oo=42
+Name24=Send A 1
+Incoming24=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing24=MID1B0oopp
+Options24=Actv01Stop00OutO00StMa00000001oo=43
+Name25=Send A 2
+Incoming25=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing25=MID1B1oopp
+Options25=Actv01Stop00OutO00StMa00000001oo=43
+Name26=Send A 3
+Incoming26=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing26=MID1B2oopp
+Options26=Actv01Stop00OutO00StMa00000001oo=43
+Name27=Send A 4
+Incoming27=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing27=MID1B3oopp
+Options27=Actv01Stop00OutO00StMa00000001oo=43
+Name28=Send A 5
+Incoming28=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing28=MID1B4oopp
+Options28=Actv01Stop00OutO00StMa00000001oo=43
+Name29=Send A 6
+Incoming29=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing29=MID1B5oopp
+Options29=Actv01Stop00OutO00StMa00000001oo=43
+Name30=Send B 1
+Incoming30=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing30=MID1B0oopp
+Options30=Actv01Stop00OutO00StMa00000001oo=44
+Name31=Send B 2
+Incoming31=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing31=MID1B1oopp
+Options31=Actv01Stop00OutO00StMa00000001oo=44
+Name32=Send B 3
+Incoming32=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing32=MID1B2oopp
+Options32=Actv01Stop00OutO00StMa00000001oo=44
+Name33=Send B 4
+Incoming33=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing33=MID1B3oopp
+Options33=Actv01Stop00OutO00StMa00000001oo=44
+Name34=Send B 5
+Incoming34=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing34=MID1B4oopp
+Options34=Actv01Stop00OutO00StMa00000001oo=44
+Name35=Send B 6
+Incoming35=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing35=MID1B5oopp
+Options35=Actv01Stop00OutO00StMa00000001oo=44
+Name36=Resonance 1
+Incoming36=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing36=MID1B0oopp
+Options36=Actv01Stop00OutO00StMa00000001oo=45
+Name37=Resonance 2
+Incoming37=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing37=MID1B1oopp
+Options37=Actv01Stop00OutO00StMa00000001oo=45
+Name38=Resonance 3
+Incoming38=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing38=MID1B2oopp
+Options38=Actv01Stop00OutO00StMa00000001oo=45
+Name39=Resonance 4
+Incoming39=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing39=MID1B3oopp
+Options39=Actv01Stop00OutO00StMa00000001oo=45
+Name40=Resonance 5
+Incoming40=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing40=MID1B4oopp
+Options40=Actv01Stop00OutO00StMa00000001oo=45
+Name41=Resonance 6
+Incoming41=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing41=MID1B5oopp
+Options41=Actv01Stop00OutO00StMa00000001oo=45
+Name42=Freq 1
+Incoming42=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing42=MID1B0oopp
+Options42=Actv01Stop00OutO00StMa00000001oo=46
+Name43=Freq 2
+Incoming43=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing43=MID1B1oopp
+Options43=Actv01Stop00OutO00StMa00000001oo=46
+Name44=Freq 3
+Incoming44=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing44=MID1B2oopp
+Options44=Actv01Stop00OutO00StMa00000001oo=46
+Name45=Freq 4
+Incoming45=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing45=MID1B3oopp
+Options45=Actv01Stop00OutO00StMa00000001oo=46
+Name46=Freq 5
+Incoming46=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing46=MID1B4oopp
+Options46=Actv01Stop00OutO00StMa00000001oo=46
+Name47=Freq 6
+Incoming47=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing47=MID1B5oopp
+Options47=Actv01Stop00OutO00StMa00000001oo=46
+Name48=SENDS OFF
+Incoming48=Pres080000
+Outgoing48=Pres06001C(RIGHT) - CH - Knobs (SENDS)
+Options48=Actv01Stop00OutO00
+Name49=MIXER OFF
+Incoming49=Pres080000
+Outgoing49=Pres06001C(RIGHT) - CH - Knobs (MIXER)
+Options49=Actv01Stop00OutO00
+[Preset.9]
+Name=(RIGHT) - CH - Knobs (MIXER)
+Active=1
+Comments=
+PresetSwitchIgnore=0
+Name0=Hi 1
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing0=MID1B0oopp
+Options0=Actv01Stop00OutO00StMa00000001oo=47
+Name1=Hi 2
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing1=MID1B1oopp
+Options1=Actv01Stop00OutO00StMa00000001oo=47
+Name2=Hi 3
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing2=MID1B2oopp
+Options2=Actv01Stop00OutO00StMa00000001oo=47
+Name3=Hi 4
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing3=MID1B3oopp
+Options3=Actv01Stop00OutO00StMa00000001oo=47
+Name4=Hi 5
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing4=MID1B4oopp
+Options4=Actv01Stop00OutO00StMa00000001oo=47
+Name5=Hi 6
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="16" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing5=MID1B5oopp
+Options5=Actv01Stop00OutO00StMa00000001oo=47
+Name6=Mid 1
+Incoming6=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing6=MID1B0oopp
+Options6=Actv01Stop00OutO00StMa00000001oo=48
+Name7=Mid 2
+Incoming7=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing7=MID1B1oopp
+Options7=Actv01Stop00OutO00StMa00000001oo=48
+Name8=Mid 3
+Incoming8=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing8=MID1B2oopp
+Options8=Actv01Stop00OutO00StMa00000001oo=48
+Name9=Mid 4
+Incoming9=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing9=MID1B3oopp
+Options9=Actv01Stop00OutO00StMa00000001oo=48
+Name10=Mid 5
+Incoming10=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing10=MID1B4oopp
+Options10=Actv01Stop00OutO00StMa00000001oo=48
+Name11=Mid 6
+Incoming11=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="17" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing11=MID1B5oopp
+Options11=Actv01Stop00OutO00StMa00000001oo=48
+Name12=Low 1
+Incoming12=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing12=MID1B0oopp
+Options12=Actv01Stop00OutO00StMa00000001oo=49
+Name13=Low 2
+Incoming13=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing13=MID1B1oopp
+Options13=Actv01Stop00OutO00StMa00000001oo=49
+Name14=Low 3
+Incoming14=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing14=MID1B2oopp
+Options14=Actv01Stop00OutO00StMa00000001oo=49
+Name15=Low 4
+Incoming15=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing15=MID1B3oopp
+Options15=Actv01Stop00OutO00StMa00000001oo=49
+Name16=Low 5
+Incoming16=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing16=MID1B4oopp
+Options16=Actv01Stop00OutO00StMa00000001oo=49
+Name17=Low 6
+Incoming17=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="18" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing17=MID1B5oopp
+Options17=Actv01Stop00OutO00StMa00000001oo=49
+Name18=Pan 1
+Incoming18=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing18=MID1B0oopp
+Options18=Actv01Stop00OutO00StMa00000001oo=50
+Name19=Pan 2
+Incoming19=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing19=MID1B1oopp
+Options19=Actv01Stop00OutO00StMa00000001oo=50
+Name20=Pan 3
+Incoming20=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing20=MID1B2oopp
+Options20=Actv01Stop00OutO00StMa00000001oo=50
+Name21=Pan 4
+Incoming21=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing21=MID1B3oopp
+Options21=Actv01Stop00OutO00StMa00000001oo=50
+Name22=Pan 5
+Incoming22=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing22=MID1B4oopp
+Options22=Actv01Stop00OutO00StMa00000001oo=50
+Name23=Pan 6
+Incoming23=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="10" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing23=MID1B5oopp
+Options23=Actv01Stop00OutO00StMa00000001oo=50
+Name24=Send A 1
+Incoming24=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing24=MID1B0oopp
+Options24=Actv01Stop00OutO00StMa00000001oo=51
+Name25=Send A 2
+Incoming25=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing25=MID1B1oopp
+Options25=Actv01Stop00OutO00StMa00000001oo=51
+Name26=Send A 3
+Incoming26=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing26=MID1B2oopp
+Options26=Actv01Stop00OutO00StMa00000001oo=51
+Name27=Send A 4
+Incoming27=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing27=MID1B3oopp
+Options27=Actv01Stop00OutO00StMa00000001oo=51
+Name28=Send A 5
+Incoming28=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing28=MID1B4oopp
+Options28=Actv01Stop00OutO00StMa00000001oo=51
+Name29=Send A 6
+Incoming29=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="19" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing29=MID1B5oopp
+Options29=Actv01Stop00OutO00StMa00000001oo=51
+Name30=Send B 1
+Incoming30=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing30=MID1B0oopp
+Options30=Actv01Stop00OutO00StMa00000001oo=52
+Name31=Send B 2
+Incoming31=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing31=MID1B1oopp
+Options31=Actv01Stop00OutO00StMa00000001oo=52
+Name32=Send B 3
+Incoming32=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing32=MID1B2oopp
+Options32=Actv01Stop00OutO00StMa00000001oo=52
+Name33=Send B 4
+Incoming33=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing33=MID1B3oopp
+Options33=Actv01Stop00OutO00StMa00000001oo=52
+Name34=Send B 5
+Incoming34=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing34=MID1B4oopp
+Options34=Actv01Stop00OutO00StMa00000001oo=52
+Name35=Send B 6
+Incoming35=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="20" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing35=MID1B5oopp
+Options35=Actv01Stop00OutO00StMa00000001oo=52
+Name36=Resonance 1
+Incoming36=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing36=MID1B0oopp
+Options36=Actv01Stop00OutO00StMa00000001oo=53
+Name37=Resonance 2
+Incoming37=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing37=MID1B1oopp
+Options37=Actv01Stop00OutO00StMa00000001oo=53
+Name38=Resonance 3
+Incoming38=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing38=MID1B2oopp
+Options38=Actv01Stop00OutO00StMa00000001oo=53
+Name39=Resonance 4
+Incoming39=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing39=MID1B3oopp
+Options39=Actv01Stop00OutO00StMa00000001oo=53
+Name40=Resonance 5
+Incoming40=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing40=MID1B4oopp
+Options40=Actv01Stop00OutO00StMa00000001oo=53
+Name41=Resonance 6
+Incoming41=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="21" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing41=MID1B5oopp
+Options41=Actv01Stop00OutO00StMa00000001oo=53
+Name42=Freq 1
+Incoming42=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="6" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing42=MID1B0oopp
+Options42=Actv01Stop00OutO00StMa00000001oo=54
+Name43=Freq 2
+Incoming43=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="7" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing43=MID1B1oopp
+Options43=Actv01Stop00OutO00StMa00000001oo=54
+Name44=Freq 3
+Incoming44=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing44=MID1B2oopp
+Options44=Actv01Stop00OutO00StMa00000001oo=54
+Name45=Freq 4
+Incoming45=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing45=MID1B3oopp
+Options45=Actv01Stop00OutO00StMa00000001oo=54
+Name46=Freq 5
+Incoming46=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing46=MID1B4oopp
+Options46=Actv01Stop00OutO00StMa00000001oo=54
+Name47=Freq 6
+Incoming47=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="11" setvar="qq" Type="New Version Required"/><Value1 num="22" setvar="oo" Type="New Version Required"/><Value2 setvar="pp" Type="New Version Required"/></Simple></Incoming>
+Outgoing47=MID1B5oopp
+Options47=Actv01Stop00OutO00StMa00000001oo=54
+Name48=EFFECT Ctrl
+Incoming48=Pres080000
+Outgoing48=Pres04001E(RIGHT) - Master - Effect Ctrl
+Options48=Actv01Stop00OutO00
+Name49=SENDS OFF
+Incoming49=Pres080000
+Outgoing49=Pres06001C(RIGHT) - CH - Knobs (SENDS)
+Options49=Actv01Stop00OutO00
+Name50=TRACK OFF
+Incoming50=Pres080000
+Outgoing50=Pres06001C(RIGHT) - CH - Knobs (TRACK)
+Options50=Actv01Stop00OutO00
+Name51=TRACK Ctrl OFF
+Incoming51=Pres080000
+Outgoing51=Pres06001D(RIGHT) - Master - Track Ctrl
+Options51=Actv01Stop00OutO00
+Name52=MASTER Ctrl OFF
+Incoming52=Pres080000
+Outgoing52=Pres060017(RIGHT) - Master - Ctrl
+Options52=Actv01Stop00OutO00
+[Project]
+Version=2
+Author=Chris Winn
+AuthorContact=chriswinn@gmail.com
+Comments=MIT License\n\nCopyright (c) 2020 Chris Winn\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the "Software"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.
+AuthorWWW=https://github.com/chriswinn/vcm-600
+AuthorCopyright=MIT License
+DefaultInPorts=MIDA00010005USB 1
+DefaultOutPorts=MIDA0001000DModel_D - Net
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=brmevZGt2aNA47TtXazS530L9smOH+0lc3KtcBkf0O7wU9puvKRSeqsCtn95iTdsTB6WqQGXn0MVHsbc7bavtO38UjQDtddOGvr0xUX+SdbobH+cUehLEZCIP2Rmk41NJ4dxfhVRFYuiFY727xf7CH2pqwt0xR9cOZGyRl6CsSs=
+SignedBy-1=Christopher Winn

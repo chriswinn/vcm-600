@@ -1,0 +1,85 @@
+; ------- Signed Project File: DO NOT MODIFY!
+; ------- Any modification in this file will invalidate the signature,
+; ------- so that it cannot be opened in MT Player anymore.
+;
+[Preset.0]
+Name=juno106
+Active=1
+PresetSwitchIgnore=0
+Name0=LFO Rate
+Incoming0=MID1F041320000ooF7
+Outgoing0=MID1B000oo
+Options0=Actv01Stop01OutO00
+Name1=LFO Delay Time
+Incoming1=MID1F041320001ooF7
+Outgoing1=MID1B001oo
+Options1=Actv01Stop01OutO00
+Name2=DCO LFO
+Incoming2=MID1F041320002ooF7
+Outgoing2=MID1B002oo
+Options2=Actv01Stop01OutO00
+Name3=DCO PWM
+Incoming3=MID1F041320003ooF7
+Outgoing3=MID1B003oo
+Options3=Actv01Stop01OutO00
+Name4=DCO Sub
+Incoming4=MID1F04132000FooF7
+Outgoing4=MID1B004oo
+Options4=Actv01Stop01OutO00
+Name5=DCO Noise
+Incoming5=MID1F041320004ooF7
+Outgoing5=MID1B005oo
+Options5=Actv01Stop01OutO00
+Name6=VCF Freq
+Incoming6=MID1F041320005ooF7
+Outgoing6=MID1B006oo
+Options6=Actv01Stop01OutO00
+Name7=VCF Resonance
+Incoming7=MID1F041320006ooF7
+Outgoing7=MID1B007oo
+Options7=Actv01Stop01OutO00
+Name8=VCF Envelope
+Incoming8=MID1F041320007ooF7
+Outgoing8=MID1B008oo
+Options8=Actv01Stop01OutO00
+Name9=VCF LFO
+Incoming9=MID1F041320008ooF7
+Outgoing9=MID1B009oo
+Options9=Actv01Stop01OutO00
+Name10=VCF Keyboard
+Incoming10=MID1F041320009ooF7
+Outgoing10=MID1B010oo
+Options10=Actv01Stop01OutO00
+Name11=VCA Level
+Incoming11=MID1F04132000AooF7
+Outgoing11=MID1B011oo
+Options11=Actv01Stop01OutO00
+Name12=ENV Attack
+Incoming12=MID1F04132000BooF7
+Outgoing12=MID1B012oo
+Options12=Actv01Stop01OutO00
+Name13=ENV Decay
+Incoming13=MID1F04132000CooF7
+Outgoing13=MID1B013oo
+Options13=Actv01Stop01OutO00
+Name14=ENV Sustain
+Incoming14=MID1F04132000DooF7
+Outgoing14=MID1B014oo
+Options14=Actv01Stop01OutO00
+Name15=ENV Release
+Incoming15=MID1F04132000EooF7
+Outgoing15=MID1B015oo
+Options15=Actv01Stop01OutO00
+
+[Project]
+Version=2
+Author=
+AuthorContact=
+Comments=
+DefaultInPorts=MIDA00010008Juno 106
+DefaultOutPorts=MIDA00010013Virtual MIDI device
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=X5iW9iwR4h2D649qbE+nGDKnmgXUugEPDJLpr3fJBbCI8Z8evL02Q0MOqepRLrUDlCDU76gyjfOowRDH1qJT2XCodMg3VrhLbpY0pKVc+yzOsHTyVrp1Anq/V8SfXEbBHnCGgtvffz7vmU2MI6BcIRhnbFvncstJVf0rv62VmfM=
+SignedBy-1=Florian

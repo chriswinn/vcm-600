@@ -1,0 +1,8 @@
+With this preset, you can use 11 switches: the 10 normal footswitches
++ the bypass switch.
+
+The Ultrafoot should be in Mode 2 (the one where all of the switches
+light up individually--NOT patch select mode).
+
+This could have other uses as well: Basically, the Ultrafoot now sends
+Momentary CC messages.

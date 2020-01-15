@@ -1,0 +1,349 @@
+; ------- Signed Project File: DO NOT MODIFY!
+; ------- Any modification in this file will invalidate the signature,
+; ------- so that it cannot be opened in MT Player anymore.
+;
+[Preset.0]
+Name=jOrgan Shortcuts
+Active=1
+PresetSwitchIgnore=0
+Name0=Translator 1: Shift down: set flag ga
+Incoming0=KAM11000KSQ10001010
+Outgoing0=None
+Options0=Actv01Stop01OutO00StMa00000001ga=1
+Name1=Translator 2: Shift up: reset flag ga
+Incoming1=KAM12000KSQ10001010
+Outgoing1=None
+Options1=Actv01Stop01OutO00StMa00000001ga=0
+Name2=Translator 3: Ctrl down:set flsg gp
+Incoming2=KAM11000KSQ10001011
+Outgoing2=None
+Options2=Actv01Stop01OutO00StMa00000001gb=1
+Name3=Translator 4: Ctrl up: Reset flag gb
+Incoming3=KAM12000KSQ10001011
+Outgoing3=None
+Options3=Actv01Stop01OutO00StMa00000001gb=0
+Name4=Translator 5: ALT down
+Incoming4=KAM11000KSQ10001012
+Outgoing4=None
+Options4=Actv01Stop01OutO00StMa00000001gc=1
+Name5=Translator 6: ALT up: reset flag ga
+Incoming5=KAM12000KSQ10001012
+Outgoing5=None
+Options5=Actv01Stop01OutO00StMa00000001gc=0
+Name6=Translator 7:Keytop A (Q) to midi
+Incoming6=KAM10000KSQ10001051
+Outgoing6=MID1c50000
+Options6=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name7=Translator 8: Shift+Keytop A (Q) to midi
+Incoming7=KAM10000KSQ10001051
+Outgoing7=MID1c51A00
+Options7=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name8=Translator 9: Keytop B (W) to midi
+Incoming8=KAM10000KSQ10001057
+Outgoing8=MID1c50100
+Options8=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name9=Translator 10: Shift+Keytop B (W) to midi
+Incoming9=KAM10000KSQ10001057
+Outgoing9=MID1c51b00
+Options9=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name10=Translator 11: Keytop C (E) to midi
+Incoming10=KAM10000KSQ10001045
+Outgoing10=MID1c50200
+Options10=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name11=Translator 12  Shift+Keytop C (E) to midi
+Incoming11=KAM10000KSQ10001045
+Outgoing11=MID1c51c00
+Options11=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name12=Translator 13: Key down R (Keytop D) to midi
+Incoming12=KAM10000KSQ10001052
+Outgoing12=MID1c50300
+Options12=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name13=Translator 14: Shift+Keytop D(R) to midi
+Incoming13=KAM10000KSQ10001052
+Outgoing13=MID1c51d00
+Options13=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name14=Translator 15:Keytop E (T) to midi
+Incoming14=KAM10000KSQ10001054
+Outgoing14=MID1c50400
+Options14=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name15=Translator 16: Shift+Keytop E(T) to midi
+Incoming15=KAM10000KSQ10001054
+Outgoing15=MID1c51e00
+Options15=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name16=Translator 17: Keytop F (Y) to midi
+Incoming16=KAM10000KSQ10001059
+Outgoing16=MID1c50500
+Options16=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name17=Translator 18: Shift+Keytop F (Y) to midi
+Incoming17=KAM10000KSQ10001059
+Outgoing17=MID1c51f00
+Options17=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name18=Translator 19: Keytop G (U) to midi
+Incoming18=KAM10000KSQ10001055
+Outgoing18=MID1c50600
+Options18=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name19=Translator 20: Shift+Keytop G (U) to midi
+Incoming19=KAM10000KSQ10001055
+Outgoing19=MID1c52000
+Options19=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name20=Translator 21: Keytop H (T) to midi
+Incoming20=KAM10000KSQ10001049
+Outgoing20=MID1c50700
+Options20=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name21=Translator 22: Shift+Keytop H (I) to midi
+Incoming21=KAM10000KSQ10001049
+Outgoing21=MID1c52100
+Options21=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name22=Translator 23: Keytop I (O) to midi
+Incoming22=KAM10000KSQ1000104F
+Outgoing22=MID1c50800
+Options22=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name23=Translator 24: Shift+Keytop I (O) to midi
+Incoming23=KAM10000KSQ1000104F
+Outgoing23=MID1c52200
+Options23=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name24=Translator 25: Keytop J (P) to midi
+Incoming24=KAM10000KSQ10001050
+Outgoing24=MID1c50900
+Options24=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name25=Translator 26: Shift+Keytop J (P) to midi
+Incoming25=KAM10000KSQ10001050
+Outgoing25=MID1c52300
+Options25=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name26=Translator 27: Keytop K (A) to midi
+Incoming26=KAM10000KSQ10001041
+Outgoing26=MID1c50a00
+Options26=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name27=Translator 28: Shift+Keytop K (A) to midi
+Incoming27=KAM10000KSQ10001041
+Outgoing27=MID1c52400
+Options27=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name28=Translator 29: Keytop L (S) to midi
+Incoming28=KAM10000KSQ10001053
+Outgoing28=MID1c50b00
+Options28=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name29=Translator 30: Shift+Keytop L (S) to midi
+Incoming29=KAM10000KSQ10001053
+Outgoing29=MID1c52500
+Options29=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name30=Translator 31: Keytop M (D) to midi
+Incoming30=KAM10000KSQ10001044
+Outgoing30=MID1c50c00
+Options30=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name31=Translator 32: Shift+Keytop M (D) to midi
+Incoming31=KAM10000KSQ10001044
+Outgoing31=MID1c52600
+Options31=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name32=Translator 33: Keytop N (F) to midi
+Incoming32=KAM10000KSQ10001046
+Outgoing32=MID1c50d00
+Options32=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name33=Translator 34: Shift+Keytop N (F) to midi
+Incoming33=KAM10000KSQ10001046
+Outgoing33=MID1c52700
+Options33=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name34=Translator 35: Keytop O (G) to midi
+Incoming34=KAM10000KSQ10001047
+Outgoing34=MID1c50e00
+Options34=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name35=Translator 36: Shift+Keytop O (G) to midi
+Incoming35=KAM10000KSQ10001047
+Outgoing35=MID1c52800
+Options35=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name36=Translator 37: Keytop P (H) to midi
+Incoming36=KAM10000KSQ10001048
+Outgoing36=MID1c50f00
+Options36=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name37=Translator 38: Shift+Keytop O (G) to midi
+Incoming37=KAM10000KSQ10001048
+Outgoing37=MID1c52900
+Options37=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name38=Translator 39: Keytop Q (J) to midi
+Incoming38=KAM10000KSQ1000104A
+Outgoing38=MID1c51000
+Options38=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name39=Translator 40: Shift+Keytop Q (J) to midi
+Incoming39=KAM10000KSQ1000104A
+Outgoing39=MID1c52a00
+Options39=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name40=Translator 41: Keytop R (K) to midi
+Incoming40=KAM10000KSQ1000104B
+Outgoing40=MID1c51100
+Options40=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name41=Translator 42: Shift+Keytop R (K) to midi
+Incoming41=KAM10000KSQ1000104B
+Outgoing41=MID1c52b00
+Options41=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name42=Translator 43: Keytop S (L) to midi
+Incoming42=KAM10000KSQ1000104C
+Outgoing42=MID1c51200
+Options42=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name43=Translator 44: Shift+Keytop S (L) to midi
+Incoming43=KAM10000KSQ1000104C
+Outgoing43=MID1c52c00
+Options43=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name44=Translator 45: Keytop T (Z) to midi
+Incoming44=KAM10000KSQ1000105A
+Outgoing44=MID1c51300
+Options44=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name45=Translator 46: Shift+Keytop T (Z) to midi
+Incoming45=KAM10000KSQ1000105A
+Outgoing45=MID1c52d00
+Options45=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name46=Translator 47: Keytop U (X) to midi
+Incoming46=KAM10000KSQ10001058
+Outgoing46=MID1c51400
+Options46=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name47=Translator 48: Shift+Keytop U (X)) to midi
+Incoming47=KAM10000KSQ10001058
+Outgoing47=MID1c52e00
+Options47=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name48=Translator 49: Keytop V (C) to midi
+Incoming48=KAM10000KSQ10001043
+Outgoing48=MID1c51500
+Options48=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name49=Translator 50: Shift + V (C) to midi
+Incoming49=KAM10000KSQ10001043
+Outgoing49=MID1c52f00
+Options49=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name50=Translator 51: Keytop W (V) to midi
+Incoming50=KAM10000KSQ10001056
+Outgoing50=MID1c51600
+Options50=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name51=Translator 52: Shift + W (V) to midi
+Incoming51=KAM10000KSQ10001056
+Outgoing51=MID1c53000
+Options51=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name52=Translator 53: Keytop X (B) to midi
+Incoming52=KAM10000KSQ10001042
+Outgoing52=MID1c51700
+Options52=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name53=Translator 54: Shift+X (B) to midi
+Incoming53=KAM10000KSQ10001042
+Outgoing53=MID1c53100
+Options53=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name54=Translator 55: Keytop Y (N) to midi
+Incoming54=KAM10000KSQ1000104E
+Outgoing54=MID1c51800
+Options54=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name55=Translator 56: Shift + Y (N) to midi
+Incoming55=KAM10000KSQ1000104E
+Outgoing55=MID1c53200
+Options55=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name56=Translator 57: Keytop Z (M) to midi
+Incoming56=KAM10000KSQ1000104D
+Outgoing56=MID1c51900
+Options56=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name57=Translator 58: Shift + Z (M) to midi
+Incoming57=KAM10000KSQ1000104D
+Outgoing57=MID1c53300
+Options57=Actv01Stop01OutO00StMa00000001if(ga==0)noexecute
+Name58=Translator 59: Keytop 1 to midi: Swell Main=6
+Incoming58=KAM10000KSQ10001031
+Outgoing58=MID1b11506
+Options58=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name59=Translator 60: Keytop 2 to midi: Swell Main=18
+Incoming59=KAM10000KSQ10001032
+Outgoing59=MID1b11512
+Options59=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name60=Translator 61: Keytop 3 to midi: Swell Main=30
+Incoming60=KAM10000KSQ10001033
+Outgoing60=MID1b1151e
+Options60=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name61=Translator 62: Keytop 4 to midi: Swell Main=42
+Incoming61=KAM10000KSQ10001034
+Outgoing61=MID1b1152a
+Options61=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name62=Translator 63: Keytop 5 to midi: Swell Main=54
+Incoming62=KAM10000KSQ10001035
+Outgoing62=MID1b11536
+Options62=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name63=Translator 64: Keytop 6 to midi: Swell Main=66
+Incoming63=KAM10000KSQ10001036
+Outgoing63=MID1b11542
+Options63=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name64=Translator 65: Keytop 7 to midi: Swell Main=78
+Incoming64=KAM10000KSQ10001037
+Outgoing64=MID1b1154e
+Options64=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name65=Translator 66: Keytop 8 to midi: Swell Main=91
+Incoming65=KAM10000KSQ10001038
+Outgoing65=MID1b1155b
+Options65=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name66=Translator 67: Keytop 9 to midi: Swell Main=104
+Incoming66=KAM10000KSQ10001039
+Outgoing66=MID1b11568
+Options66=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name67=Translator 68: Keytop 0 to midi: Swell Main=127
+Incoming67=KAM10000KSQ10001030
+Outgoing67=MID1b1157f
+Options67=Actv01Stop01OutO00StMa00000001if(ga==1)noexecute
+Name68=Translator 69: Keytop Num 1 to midi: Solo Swell=6
+Incoming68=KAM10000KSQ10001023
+Outgoing68=MID1b11606
+Options68=Actv01Stop01OutO00
+Name69=Translator 70: Keytop Num 2 to midi: Solo Swell =18
+Incoming69=KAM10000KSQ10001028
+Outgoing69=MID1b11612
+Options69=Actv01Stop01OutO00
+Name70=Translator 71: Keytop Num 3 to midi: Solo Swell=30
+Incoming70=KAM10000KSQ10001022
+Outgoing70=MID1b1161e
+Options70=Actv01Stop01OutO00
+Name71=Translator 72: Keytop Num 4 to midi: Solo Swell=42
+Incoming71=KAM10000KSQ10001025
+Outgoing71=MID1b1162a
+Options71=Actv01Stop01OutO00
+Name72=Translator 73: Keytop Num 5 to midi: Solo Swell=54
+Incoming72=KAM10000KSQ1000100C
+Outgoing72=MID1b11636
+Options72=Actv01Stop01OutO00
+Name73=Translator 74: Keytop Num 6 to midi: Solo Swell=66
+Incoming73=KAM10000KSQ10001027
+Outgoing73=MID1b11642
+Options73=Actv01Stop01OutO00
+Name74=Translator 75: Keytop Num 7 to midi: Solo Swell=78
+Incoming74=KAM10000KSQ10001024
+Outgoing74=MID1b1164e
+Options74=Actv01Stop01OutO00
+Name75=Translator 76: Keytop Num 8 to midi: Solo Swell=91
+Incoming75=KAM10000KSQ10001026
+Outgoing75=MID1b1165b
+Options75=Actv01Stop01OutO00
+Name76=Translator 77: Keytop Num 9 to midi: Solo Swell=104
+Incoming76=KAM10000KSQ10001021
+Outgoing76=MID1b11668
+Options76=Actv01Stop01OutO00
+Name77=Translator 78: Keytop Num 0 to midi: Solo Swell=127
+Incoming77=KAM10000KSQ1000102D
+Outgoing77=MID1b1167f
+Options77=Actv01Stop01OutO00
+Name78=Translator 79: Set Adobe Page 20
+Incoming78=KAM10000KSQ10001031
+Outgoing78=KAM10100KSQ1000C01001104E24E21121003223203023000D20D
+Options78=Actv01Stop00OutO00StMa00000001if(ga==0)noexecute
+Name79=Translator 80: Set Piston A: Set Swells to 40H
+Incoming79=KAM10000KSQ10001031
+Outgoing79=MID1c50000b11540b11640
+Options79=Actv01Stop01OutO00StMa00000002if(ga==0)noexecutega=0
+Name80=Translator 81: Send Adobe Page 50
+Incoming80=KAM10000KSQ10001032
+Outgoing80=KAM10100KSQ1000C01001104E24E21121003523503023000D20D
+Options80=Actv01Stop00OutO00StMa00000001if(ga==0)noexecute
+Name81=Translator 82: Set Piston SZ: Set Swells 7FH
+Incoming81=KAM10000KSQ10001032
+Outgoing81=MID1c53300b1157fb1167f
+Options81=Actv01Stop01OutO00StMa00000002if(ga==0)noexecutega=0
+
+[Project]
+Version=2
+Author=
+AuthorContact=
+Comments=
+DefaultInPorts=MIDA0000
+DefaultOutPorts=MIDA0000
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=FPkVM/MBtB0ircSBBX0ciELaPEPJaTXEO2eRVaYrWeUtEXWsLZj+jSqPdfhR6i2AChXCjdWNgkDfevrBTzjROV3iJEtNLRUbskVIa+sPz7wFGx1g64y5w2DMCvOSyCBeveU6L3UNCR5JJwTUroMzxVDTaDwoNiKFpGWv3uQqMOg=
+SignedBy-1=Florian

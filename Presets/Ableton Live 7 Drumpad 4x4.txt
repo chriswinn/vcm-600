@@ -1,0 +1,23 @@
+Trigger an Ableton 7 drum rack using the computer keyboard
+----------------------------------------------------------
+
+Preset made by user "quoke".
+
+I just setup MT to trigger an Ableton 7 drum rack using the
+computer keyboard; thought others might want it. I'd imagine
+this could be used with other software expecting inputs from
+a 4x4 drum pad as well.
+
+The trigger keys are
+	1 2 3 4
+	Q W E R
+	A S D F
+	Z X C V
+
+Also, pressing "G" moves the 4x4 pad up to the next higher
+virtual drum pad (by increasing each of the pads note value
+by 16), and "B" moves down the next lower virtual drum pad.
+
+The velocity starts at 64. Hitting "H" will increase the
+velocity of future notes by 10. Hitting "N" will decrease it
+by 10.

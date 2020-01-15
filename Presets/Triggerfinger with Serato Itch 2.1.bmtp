@@ -1,0 +1,42 @@
+[MIDI.routes]
+In0=USB Trigger Finger (M-Audio)
+Out0=Bome's Midi Translator 1 Virtual Out
+
+[Preset.0]
+Name=Itch
+Active=1
+PresetSwitchIgnore=0
+DefaultInPorts=MIDA0001001CUSB Trigger Finger (M-Audio)
+DefaultOutPorts=MIDA00010024Bome's Midi Translator 1 Virtual Out
+Name0=Pad 1
+Incoming0=MID2MIDA0001001CUSB Trigger Finger (M-Audio)992400
+Outgoing0=KAM10100KSQ1000401005A25A210
+Options0=Actv01Stop00OutO01StMa00000001pp=0
+Name1=Pad 2
+Incoming1=MID2MIDA0001001CUSB Trigger Finger (M-Audio)992600
+Outgoing1=KAM10100KSQ10004010058258210
+Options1=Actv01Stop00OutO01
+Name2=Pad 3
+Incoming2=MID2MIDA0001001CUSB Trigger Finger (M-Audio)992800
+Outgoing2=KAM10100KSQ10004010043243210
+Options2=Actv01Stop00OutO01
+Name3=Pad 4
+Incoming3=MID2MIDA0001001CUSB Trigger Finger (M-Audio)992500
+Outgoing3=KAM10100KSQ10004010056256210
+Options3=Actv01Stop00OutO01
+Name4=Pad 7
+Incoming4=MID2MIDA0001001CUSB Trigger Finger (M-Audio)992D00
+Outgoing4=KAM10100KSQ10004010042242210
+Options4=Actv01Stop00OutO01
+Name5=Pad 8
+Incoming5=MID2MIDA0001001CUSB Trigger Finger (M-Audio)992900
+Outgoing5=KAM10100KSQ1000401004E24E210
+Options5=Actv01Stop00OutO01
+
+[Project]
+Version=2
+Author=MixxWizard
+AuthorContact=
+Comments=
+AuthorWWW=
+AuthorCopyright=

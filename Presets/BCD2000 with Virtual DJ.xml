@@ -1,0 +1,84 @@
+<shortcuts name="BCD2000 Dj Solution for VDJ" version="1.0beta" author="Antonello Migliorelli" date="20/05/2006">
+  <sc midi="2-17" action="play" chan="1" />
+  <sc midi="2-1" action="play_pause" chan="1" />
+  <sc midi="3-17" action="play" chan="2" />
+  <sc midi="3-1" action="play_pause" chan="2" />
+  <sc midi="2-18" action="set_cue" chan="1" />
+  <sc midi="2-2" action="goto_cue" chan="1" />
+  <sc midi="3-18" action="set_cue" chan="2" />
+  <sc midi="3-2" action="goto_cue" chan="2" />
+  <sc midi="2-19" action="stop" chan="1" />
+  <sc midi="3-19" action="stop" chan="2" />
+  <sc midi="8-20" action="kill_bass" chan="1" />
+  <sc midi="8-4" action="kill_bass" chan="1" />
+  <sc midi="8-21" action="kill_medium" chan="1" />
+  <sc midi="8-5" action="kill_medium" chan="1" />
+  <sc midi="8-22" action="kill_high" chan="1" />
+  <sc midi="8-6" action="kill_high" chan="1" />
+  <sc midi="9-20" action="kill_bass" chan="2" />
+  <sc midi="9-4" action="kill_bass" chan="2" />
+  <sc midi="9-21" action="kill_medium" chan="2" />
+  <sc midi="9-5" action="kill_medium" chan="2" />
+  <sc midi="9-22" action="kill_high" chan="2" />
+  <sc midi="9-6" action="kill_high" chan="2" />
+  <sc midi="16-7" action="crossfader" />
+  <sc midi="14-7" action="headphone_mix" value="4096" />
+  <sc midi="4-17" action="effect" chan="1" value="1" />
+  <sc midi="4-1" action="effect" chan="1" value="1" />
+  <sc midi="4-18" action="effect" chan="1" value="2" />
+  <sc midi="4-2" action="effect" chan="1" value="2" />
+  <sc midi="4-21" action="effect" chan="1" value="3" />
+  <sc midi="4-5" action="effect" chan="1" value="3" />
+  <sc midi="4-19" action="effect" chan="2" value="1" />
+  <sc midi="4-3" action="effect" chan="2" value="1" />
+  <sc midi="4-20" action="effect" chan="2" value="2" />
+  <sc midi="4-4" action="effect" chan="2" value="2" />
+  <sc midi="4-22" action="effect" chan="2" value="3" />
+  <sc midi="4-6" action="effect" chan="2" value="3" />
+  <sc midi="8-7" action="bass" chan="1" />
+  <sc midi="9-7" action="medium" chan="1" />
+  <sc midi="10-7" action="high" chan="1" />
+  <sc midi="11-7" action="bass" chan="2" />
+  <sc midi="12-7" action="medium" chan="2" />
+  <sc midi="13-7" action="high" chan="2" />
+  <sc midi="6-7" action="gain" chan="1" />
+  <sc midi="7-7" action="gain" chan="2" />
+  <sc midi="4-7" action="pitch" chan="1" />
+  <sc midi="5-7" action="pitch" chan="2" />
+  <sc midi="11-1" action="scratchwheel" chan="1" value="-128" />
+  <sc midi="12-1" action="scratchwheel" chan="1" value="+128" />
+  <sc midi="13-1" action="scratchwheel" chan="2" value="-128" />
+  <sc midi="15-1" action="scratchwheel" chan="2" value="+128" />
+  <sc midi="2-7" action="level" chan="1" />
+  <sc midi="3-7" action="level" chan="2" />
+  <sc midi="2-27" action="skip_beat" chan="1" value="+8" />
+  <sc midi="2-26" action="skip_beat" chan="1" value="-8" />
+  <sc midi="3-27" action="skip_beat" chan="2" value="+8" />
+  <sc midi="3-26" action="skip_beat" chan="2" value="-8" />
+  <sc midi="2-12" action="select" chan="1" />
+  <sc midi="3-12" action="select" chan="2" />
+  <sc midi="2-13" action="sync" chan="1" />
+  <sc midi="3-13" action="sync" chan="2" />
+  <sc midi="2-16" action="beatlock" chan="1" />
+  <sc midi="2-0" action="beatlock" chan="1" />
+  <sc midi="3-16" action="beatlock" chan="2" />
+  <sc midi="3-0" action="beatlock" chan="2" />
+  <sc midi="5-23" action="loop" chan="1" value="temporary -1" />
+  <sc midi="5-7" action="nothing" />
+  <sc midi="5-55" action="loop" chan="2" value="-1" />
+  <sc midi="5-39" action="nothing" />
+  <sc midi="2-24" action="loop" chan="1" value="4" />
+  <sc midi="2-8" action="loop" chan="1" value="reset" />
+  <sc midi="3-24" action="loop" chan="2" value="4" />
+  <sc midi="3-8" action="loop" chan="2" value="reset" />
+  <sc midi="2-25" action="loop" chan="1" value="8" />
+  <sc midi="2-9" action="loop" chan="1" value="reset" />
+  <sc midi="3-25" action="loop" chan="2" value="8" />
+  <sc midi="3-9" action="loop" chan="2" value="reset" />
+  <sc midi="7-23" action="automix" value="+1" />
+  <sc midi="7-7" action="automix" value="-1" />
+  <sc midi="7-22" action="record" />
+  <sc midi="7-6" action="record" />
+  <sc midi="7-21" action="master_volume" value="2048" />
+  <sc midi="7-5" action="master_volume" value="reset" />
+</shortcuts>

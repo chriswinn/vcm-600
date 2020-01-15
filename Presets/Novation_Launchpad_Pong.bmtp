@@ -1,0 +1,367 @@
+; ------- Bome MIDI Translator: Signed Project File
+; ------- You can modify this file as you like, but that will invalidate
+; ------- the signature so that it cannot be opened in MT Player anymore.
+;
+[Preset.0]
+Name=Global Init
+Active=1
+PresetSwitchIgnore=0
+Name0=Initialization
+Incoming0=Pres080000
+Outgoing0=None
+Options0=Actv01Stop00OutO01StMa0000000Aks=130kt=ksi0=-2i1=-2i2=-2i3=-2kc=120lx=183ly=81label0006__cmt>
+
+[Preset.1]
+Name=Start
+Active=1
+PresetSwitchIgnore=0
+Name0=New Translator
+Incoming0=Pres080000
+Outgoing0=None
+Options0=Actv01Stop00OutO01StMa00000007ks=130ka=0i0=-2i1=-2i2=-2i3=-2if(kc==0)kc=120
+Name1=New Translator
+Incoming1=Pres080000
+Outgoing1=Pres04000FPaddle Player 0
+Options1=Actv01Stop00OutO01
+Name2=New Translator
+Incoming2=Pres080000
+Outgoing2=Pres04000FPaddle Player 1
+Options2=Actv01Stop00OutO01
+Name3=New Translator
+Incoming3=Pres080000
+Outgoing3=Pres04000FPaddle Player 2
+Options3=Actv01Stop00OutO01
+Name4=New Translator
+Incoming4=Pres080000
+Outgoing4=Pres04000FPaddle Player 3
+Options4=Actv01Stop00OutO01
+Name5=New Translator
+Incoming5=Pres080000
+Outgoing5=Pres060004Game
+Options5=Actv01Stop00OutO01
+Name6=New Translator
+Incoming6=Pres080000
+Outgoing6=Pres060009Game Over
+Options6=Actv01Stop00OutO01
+Name7=New Translator
+Incoming7=Pres080000
+Outgoing7=Tim0TimS000Dstart blinker0:0:35
+Options7=Actv01Stop00OutO01
+Name8=New Translator
+Incoming8=Pres080000
+Outgoing8=MID3<Outgoing Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x00"/><Value2 num="0x00"/></Simple></Outgoing>
+Options8=Actv01Stop00OutO01
+Name9=New Translator
+Incoming9=Tim0TimT000Dstart blinker
+Outgoing9=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x33"/><Value2 var="ka"/></Simple></Outgoing>
+Options9=Actv01Stop00OutO01StMa001CCalculate next blinker value000Alabel001E__cmt>//increase random numberkr=kr+1label0026__cmt>// calculate one of 6 LED statespp=kr%6label002C__cmt>// calculate pp to become: 0 1 2 3 2 1if(pp>=4)pp=6-pplabel002E__cmt>// set brightness for both green and redka=pppp=pp<<4ka=ka|pp
+Name10=New Translator
+Incoming10=Tim0TimT000Dstart blinker
+Outgoing10=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x34"/><Value2 var="ka"/></Simple></Outgoing>
+Options10=Actv01Stop00OutO01
+Name11=New Translator
+Incoming11=Tim0TimT000Dstart blinker
+Outgoing11=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x43"/><Value2 var="ka"/></Simple></Outgoing>
+Options11=Actv01Stop00OutO01
+Name12=New Translator
+Incoming12=Tim0TimT000Dstart blinker
+Outgoing12=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x44"/><Value2 var="ka"/></Simple></Outgoing>
+Options12=Actv01Stop00OutO01
+Name13=New Translator
+Incoming13=Pres090000
+Outgoing13=Tim0TimK000Dstart blinker
+Options13=Actv01Stop00OutO01
+Name14=New Translator
+Incoming14=Pres090000
+Outgoing14=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 num="0x33"/><Value2 num="0x00"/></Simple></Outgoing>
+Options14=Actv01Stop00OutO01
+Name15=New Translator
+Incoming15=Pres090000
+Outgoing15=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 num="0x34"/><Value2 num="0x00"/></Simple></Outgoing>
+Options15=Actv01Stop00OutO01
+Name16=New Translator
+Incoming16=Pres090000
+Outgoing16=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 num="0x43"/><Value2 num="0x00"/></Simple></Outgoing>
+Options16=Actv01Stop00OutO01
+Name17=New Translator
+Incoming17=Pres090000
+Outgoing17=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 num="0x44"/><Value2 num="0x00"/></Simple></Outgoing>
+Options17=Actv01Stop00OutO01
+Name18=Pressing one of the 4 center buttons will start game
+Incoming18=MID190ppqq
+Outgoing18=Tim0TimS000Astart game1:0:1
+Options18=Actv01Stop00OutO01StMa0025check for one of the 4 center buttons0005if(pp==51)executeif(pp==52)executeif(pp==67)executeif(pp==68)executenoexecute
+Name19=New Translator
+Incoming19=Tim0TimT000Astart game
+Outgoing19=Pres040004Game
+Options19=Actv01Stop00OutO01
+Name20=New Translator
+Incoming20=Tim0TimT000Astart game
+Outgoing20=Pres060005Start
+Options20=Actv01Stop00OutO01
+
+[Preset.2]
+Name=Game
+Active=0
+PresetSwitchIgnore=0
+Name0=Init
+Incoming0=Pres080000
+Outgoing0=None
+Options0=Actv01Stop00OutO01StMa00000001kg=1
+Name1=Init Ball Timer
+Incoming1=Pres080000
+Outgoing1=Tim0TimS000Aball timer0:0:ks
+Options1=Actv01Stop00OutO01StMa00000004kx=4*256ky=3*256label000E__cmt>//lx=183label000D__cmt>//ly=81
+Name2=Deactivate to stop game
+Incoming2=Pres090000
+Outgoing2=Tim0TimS0008end game1:0:1
+Options2=Actv01Stop00OutO01
+Name3=End Game 1
+Incoming3=Tim0TimT0008end game
+Outgoing3=Pres040009Game Over
+Options3=Actv01Stop00OutO01StMa00000001kg=0
+Name4=End Game 2
+Incoming4=Tim0TimT0008end game
+Outgoing4=Tim0TimK000Aball timer
+Options4=Actv01Stop00OutO01
+Name5=--- ball handling
+Incoming5=None
+Outgoing5=None
+Options5=Actv01Stop00OutO01
+Name6=Trigger ball hit test
+Incoming6=Tim0TimT000Aball timer
+Outgoing6=Tim0TimS000Dball hit test1:0:1
+Options6=Actv01Stop00OutO01StMa0016increase random number0001kr=kr+1
+Name7=Check for new tempo
+Incoming7=Tim0TimT000Aball timer
+Outgoing7=Tim0TimS000Aball timer0:ks:ks
+Options7=Actv01Stop00OutO01StMa001Eif tempo has not changed, exit0003if(kt==0)kt=150if(ks==kt)noexecuteks=kt
+Name8=Ball Logic At Edges (straight)
+Incoming8=Tim0TimT000Dball hit test
+Outgoing8=Pres040009Game Over
+Options8=Actv00Stop00OutO01StMa00000053label0005startnx=kx+lxny=ky+lymx=nx/256my=ny/256label0004leftif(i0>=0)goto000Bleft_paddleif(nx>=0)goto0005rightlabel0009reflectXLif(lx<0)lx=0-lxgoto0005startlabel0009reflectXRif(lx>0)lx=0-lxgoto0005startlabel0009reflectYTif(ly<0)ly=0-lygoto0005startlabel0009reflectYBif(ly>0)ly=0-lygoto0005startlabel000Bleft_paddleif(mx>=1)goto0005rightqq=myif(qq<0)qq=0if(qq>7)qq=7pp=i0-1if(qq==pp)goto0009reflectXLpp=pp+1if(qq==pp)goto0009reflectXLpp=pp+1if(qq==pp)goto0009reflectXLlabel000DPlayer 0 lostexecutelabel0005rightif(i1>=0)sk2ipif(mx<=7)goto0003topgoto0009reflectXRlabel000Cright_paddleif(mx<=6)goto0003topqq=myif(qq<0)qq=0if(qq>7)qq=7pp=i1-1if(qq==pp)goto0009reflectXRpp=pp+1if(qq==pp)goto0009reflectXRpp=pp+1if(qq==pp)goto0009reflectXRlabel000DPlayer 1 lostexecutelabel0003topif(i2>=0)sk2ipif(ny>=0)goto0006bottomgoto0009reflectYTlabel000Atop_paddleif(my>=1)goto0006bottomqq=mxif(qq<0)qq=0if(qq>7)qq=7pp=i2-1if(qq==pp)goto0009reflectYTpp=pp+1if(qq==pp)goto0009reflectYTpp=pp+1if(qq==pp)goto0009reflectYTlabel000DPlayer 2 lostexecutelabel0006bottomif(i3>=0)sk2ipif(my<=7)noexecutegoto0009reflectYBlabel000Dbottom_paddleif(my<=6)noexecuteqq=mxif(qq<0)qq=0if(qq>7)qq=7pp=i3-1if(qq==pp)goto0009reflectYBpp=pp+1if(qq==pp)goto0009reflectYBpp=pp+1if(qq==pp)goto0009reflectYBlabel000DPlayer 3 lost
+Name9=Ball Logic At Edges (with drift)
+Incoming9=Tim0TimT000Dball hit test
+Outgoing9=Pres040009Game Over
+Options9=Actv01Stop00OutO01StMa001Bedge handling with drift tt006Blabel0005startnx=kx+lxny=ky+lymx=nx/256my=ny/256label0015__cmt>// random valuerr=kr&31label000E__cmt>// drifttt=0label0004leftif(i0>=0)goto000Bleft_paddleif(nx>=0)goto0005rightlabel0009reflectXLif(lx<0)lx=0-lxlx=lx+ttly=ly-ttgoto0005startlabel0009reflectXRif(lx>0)lx=0-lxlx=lx-ttly=ly+ttgoto0005startlabel0009reflectYTif(ly<0)ly=0-lyly=ly+ttlx=lx-ttgoto0005startlabel0009reflectYBif(ly>0)ly=0-lyly=ly-ttlx=lx+ttgoto0005startlabel000Bleft_paddleif(mx>=1)goto0005rightqq=myif(qq<0)qq=0if(qq>7)qq=7pp=i0-1tt=rrif(qq==pp)goto0009reflectXLpp=pp+1tt=0if(qq==pp)goto0009reflectXLpp=pp+1tt=0-rrif(qq==pp)goto0009reflectXLlabel000DPlayer 0 lostexecutelabel0005rightif(i1>=0)sk2ipif(mx<=7)goto0003topgoto0009reflectXRlabel000Cright_paddleif(mx<=6)goto0003topqq=myif(qq<0)qq=0if(qq>7)qq=7pp=i1-1tt=rrif(qq==pp)goto0009reflectXRpp=pp+1tt=0if(qq==pp)goto0009reflectXRpp=pp+1tt=0-rrif(qq==pp)goto0009reflectXRlabel000DPlayer 1 lostexecutelabel0003topif(i2>=0)sk2ipif(ny>=0)goto0006bottomgoto0009reflectYTlabel000Atop_paddleif(my>=1)goto0006bottomqq=mxif(qq<0)qq=0if(qq>7)qq=7pp=i2-1tt=rrif(qq==pp)goto0009reflectYTpp=pp+1tt=0if(qq==pp)goto0009reflectYTpp=pp+1tt=0-rrif(qq==pp)goto0009reflectYTlabel000DPlayer 2 lostexecutelabel0006bottomif(i3>=0)sk2ipif(my<=7)noexecutegoto0009reflectYBlabel000Dbottom_paddleif(my<=6)noexecuteqq=mxif(qq<0)qq=0if(qq>7)qq=7pp=i3-1tt=rrif(qq==pp)goto0009reflectYBpp=pp+1tt=0if(qq==pp)goto0009reflectYBpp=pp+1tt=0-rrif(qq==pp)goto0009reflectYBlabel000DPlayer 3 lost
+Name10=remove old ball
+Incoming10=Tim0TimT000Dball hit test
+Outgoing10=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="qq"/><Value2 num="0x00"/></Simple></Outgoing>
+Options10=Actv01Stop00OutO01StMa0010check if new pos000App=kx/256qq=ky/256rr=0if(pp!=mx)rr=1if(qq!=my)rr=1kx=nxky=nyif(rr==0)noexecuteqq=qq*16qq=qq+pp
+Name11=paint new ball
+Incoming11=Tim0TimT000Dball hit test
+Outgoing11=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp"/><Value2 var="kc"/></Simple></Outgoing>
+Options11=Actv01Stop01OutO01StMa0010check if new pos0003if(rr==0)noexecutepp=my*16pp=pp+mx
+
+[Preset.3]
+Name=Game Over
+Active=0
+PresetSwitchIgnore=0
+Name0=New Translator
+Incoming0=Pres080000
+Outgoing0=Pres060004Game
+Options0=Actv01Stop00OutO01
+Name1=New Translator
+Incoming1=Pres080000
+Outgoing1=Pres060005Start
+Options1=Actv01Stop00OutO01
+Name2=New Translator
+Incoming2=Pres080000
+Outgoing2=Pres06000FPaddle Player 0
+Options2=Actv01Stop00OutO01
+Name3=New Translator
+Incoming3=Pres080000
+Outgoing3=Pres06000FPaddle Player 1
+Options3=Actv01Stop00OutO01
+Name4=New Translator
+Incoming4=Pres080000
+Outgoing4=Pres06000FPaddle Player 2
+Options4=Actv01Stop00OutO01
+Name5=New Translator
+Incoming5=Pres080000
+Outgoing5=Pres06000FPaddle Player 3
+Options5=Actv01Stop00OutO01
+Name6=New Translator
+Incoming6=Pres080000
+Outgoing6=Tim0TimS0011GameOverAnimation0:0:30
+Options6=Actv01Stop00OutO01StMa00000007if(mx<0)mx=0if(my<0)my=0if(mx>7)mx=7if(my>7)my=7kd=my*16kd=kd+mxke=0
+Name7=New Translator
+Incoming7=Pres080000
+Outgoing7=Tim0TimS000DStopAnimation1:2000:1
+Options7=Actv01Stop00OutO01
+Name8=New Translator
+Incoming8=Tim0TimT000DStopAnimation
+Outgoing8=Pres040005Start
+Options8=Actv01Stop00OutO01
+Name9=New Translator
+Incoming9=Tim0TimT0011GameOverAnimation
+Outgoing9=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="kd"/><Value2 var="ke"/></Simple></Outgoing>
+Options9=Actv01Stop00OutO01StMa00000001ke=kc-ke
+
+[Preset.4]
+Name=Speed
+Active=1
+PresetSwitchIgnore=0
+Name0=New Translator
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="8"/><Value1 num="0x05"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing0=None
+Options0=Actv00Stop00OutO01StMa00000003pp=127-pppp=pp*2kt=40+pp
+Name1=1: slower
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x68"/><Value2 num="0x7F"/></Simple></Incoming>
+Outgoing1=None
+Options1=Actv01Stop00OutO01StMa00000004pp=kt*110pp=pp/100if(pp==kt)pp=pp+1if(pp<400)kt=pp
+Name2=2: faster
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x69"/><Value2 num="0x7F"/></Simple></Incoming>
+Outgoing2=None
+Options2=Actv01Stop00OutO01StMa00000004pp=kt*100pp=pp/110if(pp==kt)pp=pp-1if(pp>=7)kt=pp
+Name3=3: reset
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x6A"/><Value2 num="0x7F"/></Simple></Incoming>
+Outgoing3=None
+Options3=Actv01Stop00OutO01StMa00000001kt=130
+
+[Preset.5]
+Name=Paddle Player 0
+Active=1
+PresetSwitchIgnore=0
+Name0=Player left i0
+Incoming0=MID190pp7f
+Outgoing0=Tim0TimS000Epaint paddle 01:0:1
+Options0=Actv01Stop00OutO01StMa00000007qq=pp&15if(qq!=0)noexecutepp=pp>>4if(pp<1)noexecuteif(pp>6)noexecuteif(pp==i0)noexecutej0=pp
+Name1=New Translator
+Incoming1=Tim0TimT000Epaint paddle 0
+Outgoing1=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x28"/></Simple></Outgoing>
+Options1=Actv01Stop00OutO01StMa00000002pp=j0-1pp=pp*16
+Name2=New Translator
+Incoming2=Tim0TimT000Epaint paddle 0
+Outgoing2=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options2=Actv01Stop00OutO01StMa00000002pp=j0pp=pp*16
+Name3=New Translator
+Incoming3=Tim0TimT000Epaint paddle 0
+Outgoing3=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x28"/></Simple></Outgoing>
+Options3=Actv01Stop00OutO01StMa00000002pp=j0+1pp=pp*16
+Name4=New Translator
+Incoming4=Tim0TimT000Epaint paddle 0
+Outgoing4=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x00"/></Simple></Outgoing>
+Options4=Actv01Stop00OutO01StMa0000000Dpp=i0-1qq=j0-1if(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteif(pp>=1)goto0002golabel000CCheckPlayer2if(i2==1)noexecutelabel0002goif(i0<1)noexecutepp=pp*16
+Name5=New Translator
+Incoming5=Tim0TimT000Epaint paddle 0
+Outgoing5=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x00"/></Simple></Outgoing>
+Options5=Actv01Stop00OutO01StMa00000009pp=i0qq=j0-1if(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteif(i0<1)noexecutepp=pp*16
+Name6=New Translator
+Incoming6=Tim0TimT000Epaint paddle 0
+Outgoing6=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x00"/></Simple></Outgoing>
+Options6=Actv01Stop01OutO01StMa0000000Epp=i0+1qq=j0-1i0=j0if(pp<1)noexecuteif(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteif(pp<7)goto0002golabel000CCheckPlayer3if(i3==1)noexecutelabel0002gopp=pp*16
+
+[Preset.6]
+Name=Paddle Player 1
+Active=1
+PresetSwitchIgnore=0
+Name0=Player right i1
+Incoming0=MID190pp7f
+Outgoing0=Tim0TimS000Epaint paddle 11:0:1
+Options0=Actv01Stop00OutO01StMa00000007qq=pp&15if(qq!=7)noexecutepp=pp>>4if(pp<1)noexecuteif(pp>6)noexecuteif(pp==i1)noexecutej1=pp
+Name1=New Translator
+Incoming1=Tim0TimT000Epaint paddle 1
+Outgoing1=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x28"/></Simple></Outgoing>
+Options1=Actv01Stop00OutO01StMa00000003pp=j1-1pp=pp*16pp=pp+7
+Name2=New Translator
+Incoming2=Tim0TimT000Epaint paddle 1
+Outgoing2=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options2=Actv01Stop00OutO01StMa00000003pp=j1pp=pp*16pp=pp+7
+Name3=New Translator
+Incoming3=Tim0TimT000Epaint paddle 1
+Outgoing3=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x28"/></Simple></Outgoing>
+Options3=Actv01Stop00OutO01StMa00000003pp=j1+1pp=pp*16pp=pp+7
+Name4=New Translator
+Incoming4=Tim0TimT000Epaint paddle 1
+Outgoing4=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x00"/></Simple></Outgoing>
+Options4=Actv01Stop00OutO01StMa0000000Epp=i1-1qq=j1-1if(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteif(pp>=1)goto0002golabel000CCheckPlayer2if(i2>=6)noexecutelabel0002goif(pp<0)noexecutepp=pp*16pp=pp+7
+Name5=New Translator
+Incoming5=Tim0TimT000Epaint paddle 1
+Outgoing5=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x00"/></Simple></Outgoing>
+Options5=Actv01Stop00OutO01StMa0000000App=i1qq=j1-1if(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteif(pp<0)noexecutepp=pp*16pp=pp+7
+Name6=New Translator
+Incoming6=Tim0TimT000Epaint paddle 1
+Outgoing6=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x00"/></Simple></Outgoing>
+Options6=Actv01Stop01OutO01StMa0000000Fpp=i1+1qq=j1-1i1=j1if(pp<1)noexecuteif(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteif(pp<7)goto0002golabel000CCheckPlayer3if(i3>=6)noexecutelabel0002gopp=pp*16pp=pp+7
+
+[Preset.7]
+Name=Paddle Player 2
+Active=1
+PresetSwitchIgnore=0
+Name0=Player top i2
+Incoming0=MID190pp7f
+Outgoing0=Tim0TimS000Epaint paddle 21:0:1
+Options0=Actv01Stop00OutO01StMa00000007qq=pp>>4if(qq!=0)noexecutepp=pp&15if(pp<1)noexecuteif(pp>6)noexecuteif(pp==i2)noexecutej2=pp
+Name1=New Translator
+Incoming1=Tim0TimT000Epaint paddle 2
+Outgoing1=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x28"/></Simple></Outgoing>
+Options1=Actv01Stop00OutO01StMa00000001pp=j2-1
+Name2=New Translator
+Incoming2=Tim0TimT000Epaint paddle 2
+Outgoing2=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options2=Actv01Stop00OutO01StMa00000001pp=j2
+Name3=New Translator
+Incoming3=Tim0TimT000Epaint paddle 2
+Outgoing3=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x28"/></Simple></Outgoing>
+Options3=Actv01Stop00OutO01StMa00000001pp=j2+1
+Name4=New Translator
+Incoming4=Tim0TimT000Epaint paddle 2
+Outgoing4=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x00"/></Simple></Outgoing>
+Options4=Actv01Stop00OutO01StMa0000000Cpp=i2-1qq=j2-1if(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteif(pp==0)goto000CCheckPlayer0if(pp<0)noexecuteexecutelabel000CCheckPlayer0if(i0==1)noexecute
+Name5=New Translator
+Incoming5=Tim0TimT000Epaint paddle 2
+Outgoing5=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x00"/></Simple></Outgoing>
+Options5=Actv01Stop00OutO01StMa00000008pp=i2qq=j2-1if(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteif(pp<0)noexecute
+Name6=New Translator
+Incoming6=Tim0TimT000Epaint paddle 2
+Outgoing6=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x00"/></Simple></Outgoing>
+Options6=Actv01Stop01OutO01StMa0000000Dpp=i2+1qq=j2-1i2=j2if(pp<1)noexecuteif(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteif(pp==7)goto000CCheckPlayer1executelabel000CCheckPlayer1if(i1==1)noexecute
+
+[Preset.8]
+Name=Paddle Player 3
+Active=1
+PresetSwitchIgnore=0
+Name0=Player bottom i3
+Incoming0=MID190pp7f
+Outgoing0=Tim0TimS000Epaint paddle 31:0:1
+Options0=Actv01Stop00OutO01StMa00000007qq=pp>>4if(qq!=7)noexecutepp=pp&15if(pp<1)noexecuteif(pp>6)noexecuteif(pp==i3)noexecutej3=pp
+Name1=New Translator
+Incoming1=Tim0TimT000Epaint paddle 3
+Outgoing1=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x28"/></Simple></Outgoing>
+Options1=Actv01Stop00OutO01StMa00000002pp=j3-1pp=pp+112
+Name2=New Translator
+Incoming2=Tim0TimT000Epaint paddle 3
+Outgoing2=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x7F"/></Simple></Outgoing>
+Options2=Actv01Stop00OutO01StMa00000002pp=j3pp=pp+112
+Name3=New Translator
+Incoming3=Tim0TimT000Epaint paddle 3
+Outgoing3=MID3<Outgoing Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x28"/></Simple></Outgoing>
+Options3=Actv01Stop00OutO01StMa00000002pp=j3+1pp=pp+112
+Name4=New Translator
+Incoming4=Tim0TimT000Epaint paddle 3
+Outgoing4=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x00"/></Simple></Outgoing>
+Options4=Actv01Stop00OutO01StMa0000000Epp=i3-1qq=j3-1if(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteif(pp==0)goto000CCheckPlayer0if(pp<0)noexecutepp=pp+112executelabel000CCheckPlayer0if(i0==6)noexecutepp=pp+112
+Name5=New Translator
+Incoming5=Tim0TimT000Epaint paddle 3
+Outgoing5=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x00"/></Simple></Outgoing>
+Options5=Actv01Stop00OutO01StMa00000009pp=i3qq=j3-1if(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteif(pp<0)noexecutepp=pp+112
+Name6=New Translator
+Incoming6=Tim0TimT000Epaint paddle 3
+Outgoing6=MID3<Outgoing Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 var="pp"/><Value2 num="0x00"/></Simple></Outgoing>
+Options6=Actv01Stop01OutO01StMa0000000Fpp=i3+1qq=j3-1i3=j3if(pp<1)noexecuteif(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteqq=qq+1if(pp==qq)noexecuteif(pp==7)goto000CCheckPlayer1pp=pp+112executelabel000CCheckPlayer1if(i1==6)noexecutepp=pp+112
+
+[Project]
+Version=2
+Author=Florian Bomers
+AuthorContact=www.bome.com/contact
+Comments=ka: current start blinker value\nkc: ball color\nkd: end animation note\nke: current end animation value\nks: ball speed (millis), kt next ball speed\nkx, ky: curr ball pos (fixed int 8.8)\nlx, ly: curr ball vector (fixed int 8.8)\ni0,i1,i2,i3: current player paddle pos (0...7 or <0 if not playing)\nj0...j3: next paddle position\nnx, ny: next ball pos (fixed int)\nmx,my: next ball pos (0...7)\nkg: 1 if game is ON\nkr: random number
+AuthorWWW=www.bome.com
+AuthorCopyright=(c)2015 by Bome Software
+DefaultInPorts=MIDA00010009Launchpad
+DefaultOutPorts=MIDA00010009Launchpad
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=MbzzlRzYv0BNkwIYak9FTpuWmKoOa6x6GuAMJL7/MufIK08ntU2ekGqAQKdXBoAIC1PNKaHh+iEE7nE66BIaF9ctM4sKtXeISyXLfYmWEtGgNONZrT1T6JRZgpGbaXy72ZiXJEcqJAI2RpyVwDRkAYGYT9zLYHtzy6A9COMnE9c=
+SignedBy-1=Florian Bomers

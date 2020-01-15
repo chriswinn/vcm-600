@@ -1,0 +1,38 @@
+(c) 2006 by Ben Blue
+
+--- VERSION FOR MIDI TRANSLATOR PRO, AUTHOR, or PLAYER ---
+
+1) Install MIDI Yoke
+ -- or any other virtual MIDI port --
+Download: http://www.midiox.com/myoke.htm
+
+
+2) Set up your MIDI controller
+midi controller assignments:
+send 1 - CC1 CH 1
+send 2 - CC2 CH 1
+EQ L - CC3 CH 1
+EQ M - CC4 CH 1
+EQ H - CC5 CH 1
+Select Track 1 - Note Number 1 CH 1
+Select Track 2 - Note Number 2 CH 1
+Select Track 3 - Note Number 3 CH 1
+Select Track 4 - Note Number 4 CH 1
+
+Set default values for EQ3 and Sends for selected track: - Note Number 7 CH 1
+
+Switch to turn off visual track selection but keep all this other stuff the same:
+Note Number 8 CH 1. MT will make this a toggle: pressing it will switch to the
+other mode.
+
+
+3) Set up Midi Translator
+- open "Ableton Live 6 control.bmtp" in Midi Translator Pro/Author/Player
+  (it uses variable gt for track selection, and gs for toggling visual/non-visual mode)
+- select your MIDI controller as MIDI IN
+- select Yoke 1 as MIDI OUT
+
+4) Set up Ableton
+- load "Ableton Live 6 with Midi Translator.als" into Ableton
+- in the configuration, make sure Yoke 1 is selected as MIDI input
+

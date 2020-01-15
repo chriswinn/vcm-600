@@ -1,0 +1,569 @@
+; ------- Signed Project File: DO NOT MODIFY!
+; ------- Any modification in this file will invalidate the signature,
+; ------- so that it cannot be opened in MT Player anymore.
+;
+[Preset.0]
+Name=(always active)
+Active=1
+PresetSwitchIgnore=1
+Name0=Initialize Tranzport Unit
+Incoming0=EnDi02
+Outgoing0=MID1MIDD0011Force Native Modef0000140100100f7
+Options0=Actv01Stop00OutO00
+Name1=Write To Display
+Incoming1=EnDi02
+Outgoing1=MID1MIDD0020Write Midi Translator on DisplayF00001401000004D696469205472616E736C61746F7220202020202020202020202020202020202020202020202020F7
+Options1=Actv01Stop00OutO00
+Name2=Shift down/up [set gz]
+Incoming2=MID1MIDD000DShift down/up9079gz
+Outgoing2=None
+Options2=Actv01Stop00OutO00
+Name3=Switch to next Preset
+Incoming3=MID1MIDD000BSolo button90087F
+Outgoing3=Pres000000
+Options3=Actv01Stop01OutO00StMa00000001if(gz!=0)noexecute
+Name4=Switch to previous Preset
+Incoming4=MID1MIDD0011Shift+Solo button90087F
+Outgoing4=Pres010000
+Options4=Actv01Stop01OutO00StMa00000001if(gz==0)noexecute
+Name5=Little animation at start
+Incoming5=EnDi02
+Outgoing5=Tim0TimS0009Animation20:400:30
+Options5=Actv01Stop00OutO00StMa00000001ga=0
+Name6=Animation: switch on LED
+Incoming6=Tim0TimT0009Animation
+Outgoing6=MID190vv7F
+Options6=Actv01Stop00OutO00StMa0000000Eif(ga>=20)ga=0ww=gaga=ga+1pp=ww&1if(pp!=0)noexecutexx=ww/2if(xx>6)noexecuteif(xx==0)vv=0if(xx==1)vv=16if(xx==2)vv=8if(xx==3)vv=115if(xx==4)vv=8if(xx==5)vv=16if(xx==6)vv=0
+Name7=Animation: switch off LED
+Incoming7=Tim0TimT0009Animation
+Outgoing7=MID190vv00
+Options7=Actv01Stop00OutO00StMa0000000Dpp=ww&1if(pp==0)noexecutexx=ww-3if(xx<0)noexecutexx=xx/2if(xx>6)noexecuteif(xx==0)vv=0if(xx==1)vv=16if(xx==2)vv=8if(xx==3)vv=115if(xx==4)vv=8if(xx==5)vv=16if(xx==6)vv=0
+
+[Preset.1]
+Name=Winamp 5 Global Hotkeys
+Active=0
+PresetSwitchIgnore=0
+Name0=Activation: display Winamp
+Incoming0=Pres080000
+Outgoing0=MID1f000014010001457696E616D702020202020202020202020202020F7
+Options0=Actv01Stop00OutO00
+Name1=Play
+Incoming1=MID1MIDD0010Play button down905E7F
+Outgoing1=KAM10000KSQ1000501101212D212211
+Options1=Actv01Stop01OutO00
+Name2=Stop
+Incoming2=MID1MIDD0010Stop button down905D7F
+Outgoing2=KAM10000KSQ10006011012123323212211
+Options2=Actv01Stop01OutO00
+Name3=FFwr button down (1)
+Incoming3=MID1MIDD000E>> button down905C7F
+Outgoing3=KAM10000KSQ10006011012127327212211
+Options3=Actv01Stop00OutO00
+Name4=FFwr button down (2) [set timer]
+Incoming4=MID1MIDD000E>> button down905C7F
+Outgoing4=Tim0TimS000DSlide Forward0:500:70
+Options4=Actv01Stop00OutO00
+Name5=FFwr button up [kill timer]
+Incoming5=MID1MIDD000C>> button up905C00
+Outgoing5=Tim0TimK000DSlide Forward
+Options5=Actv01Stop00OutO00
+Name6=Rwd button down (1)
+Incoming6=MID1MIDD000E<< button down905B7F
+Outgoing6=KAM10000KSQ10006011012125325212211
+Options6=Actv01Stop00OutO00
+Name7=Rwd button down (2) set timer
+Incoming7=MID1MIDD000E<< button down905B7F
+Outgoing7=Tim0TimS000ESlide Backward0:500:70
+Options7=Actv01Stop00OutO00
+Name8=Rwd button up [kill timer]
+Incoming8=MID1MIDD000C<< button up905B00
+Outgoing8=Tim0TimK000ESlide Backward
+Options8=Actv01Stop00OutO00
+Name9=Next
+Incoming9=MID1MIDD0007Track >90317F
+Outgoing9=KAM10000KSQ10006011012122322212211
+Options9=Actv01Stop01OutO00
+Name10=Previous
+Incoming10=MID1MIDD0007< Track90307F
+Outgoing10=KAM10000KSQ10007210011012121321212211
+Options10=Actv01Stop01OutO00
+Name11=Mute on LED
+Incoming11=MID1MIDD0009Mute down90107F
+Outgoing11=MID1MIDD000FMute LED on/off9010pp
+Options11=Actv01Stop00OutO00StMa00000002pp=0if(gm==0)pp=127
+Name12=Mute on [set gm]
+Incoming12=MID1MIDD0009Mute down90107F
+Outgoing12=Tim0TimS000BVolume Down64:0:10
+Options12=Actv01Stop01OutO00StMa00000006if(gm!=0)noexecutelabel001CRemember unmute volume in gmgm=gvgv=0label002Aif unmute level is 0, set to middle volumeif(gm==0)gm=32
+Name13=Mute off
+Incoming13=MID1MIDD0009Mute down90107F
+Outgoing13=Tim0TimS0009Volume Upgv:0:10
+Options13=Actv01Stop01OutO00StMa00000005if(gm==0)noexecutelabel0021set gv to remembered unmute levelgv=gmlabel0018Reset gm to mean unmutedgm=0
+Name14=On Timer Volume Up
+Incoming14=Tim0TimT0009Volume Up
+Outgoing14=KAM10100KSQ10006012011126326212211
+Options14=Actv01Stop01OutO00
+Name15=On Timer Volume Down
+Incoming15=Tim0TimT000BVolume Down
+Outgoing15=KAM10100KSQ10005011012128212211
+Options15=Actv01Stop01OutO00
+Name16=Scrub Forward
+Incoming16=MID1MIDD0013Turn Wheel to rightB03Cpp
+Outgoing16=KAM10000KSQ10006011012127327211212
+Options16=Actv01Stop01OutO00StMa00000002if(gz!=0)noexecuteif(pp>64)noexecute
+Name17=Scrub Backward
+Incoming17=MID1MIDD0012Turn Wheel to leftB03Cpp
+Outgoing17=KAM10000KSQ10006012011125325212211
+Options17=Actv01Stop01OutO00StMa00000002if(gz!=0)noexecuteif(pp<=64)noexecute
+Name18=On Timer Forward
+Incoming18=Tim0TimT000DSlide Forward
+Outgoing18=KAM10000KSQ10006011012127327212211
+Options18=Actv01Stop01OutO00
+Name19=On Timer Backward
+Incoming19=Tim0TimT000ESlide Backward
+Outgoing19=KAM10000KSQ10006011012125325212211
+Options19=Actv01Stop01OutO00
+Name20=Volume Up
+Incoming20=MID1MIDD0019Shift+Turn Wheel to rightB03Cpp
+Outgoing20=KAM10000KSQ10005011012126211212
+Options20=Actv01Stop01OutO00StMa00000005if(gz==0)noexecuteif(pp>64)noexecutelabel0011only if not mutedif(gm!=0)noexecuteif(gv<64)gv=gv+1
+Name21=Volume Down
+Incoming21=MID1MIDD0018Shift+Turn Wheel to leftB03Cpp
+Outgoing21=KAM10000KSQ10005011012128212211
+Options21=Actv01Stop01OutO00StMa00000005if(gz==0)noexecuteif(pp<=64)noexecutelabel0011Only if not mutedif(gm!=0)noexecuteif(gv>0)gv=gv-1
+
+[Preset.2]
+Name=Windows Media Player
+Active=0
+PresetSwitchIgnore=0
+Name0=Activation: display Media Player
+Incoming0=Pres080000
+Outgoing0=MID1F000014010001457696E646F7773204d6564696120506C61796572F7
+Options0=Actv01Stop00OutO00
+Name1=Activation, start WMP
+Incoming1=Pres080000
+Outgoing1=KAM10100KSQ10007012011010050212210211
+Options1=Actv01Stop00OutO00
+Name2=Play/Pause
+Incoming2=MID1MIDD0010Play button down905E7F
+Outgoing2=KAM10000KSQ10004011050250211
+Options2=Actv01Stop01OutO00
+Name3=Stop
+Incoming3=MID1MIDD0010Stop button down905D7F
+Outgoing3=KAM10000KSQ10004011053253211
+Options3=Actv01Stop01OutO00
+Name4=FFwr button down or up
+Incoming4=MID1MIDD0014>> button down or up905Cpp
+Outgoing4=KAM10000KSQ10006011010046246210211
+Options4=Actv01Stop00OutO00
+Name5=Rwd button down or up
+Incoming5=MID1MIDD0014<< button down or up905Bpp
+Outgoing5=KAM10000KSQ10006011010042242210211
+Options5=Actv01Stop00OutO00
+Name6=Next
+Incoming6=MID1MIDD0007Track >90317F
+Outgoing6=KAM10000KSQ10004011046246211
+Options6=Actv01Stop01OutO00
+Name7=Previous
+Incoming7=MID1MIDD0007< Track90307F
+Outgoing7=KAM10000KSQ10005210011042242211
+Options7=Actv01Stop01OutO00
+Name8=Mute on/off
+Incoming8=MID1MIDD0009Mute down90107F
+Outgoing8=KAM10100KSQ10002077277
+Options8=Actv01Stop01OutO00
+Name9=Loop: Repeat
+Incoming9=MID1MIDD000BLoop button90567F
+Outgoing9=KAM10100KSQ10004011054254211
+Options9=Actv01Stop01OutO00
+Name10=Add Tracks
+Incoming10=MID1MIDD000AAdd button90527F
+Outgoing10=KAM10100KSQ1000401104F24F211
+Options10=Actv01Stop01OutO00
+Name11=Volume Up
+Incoming11=MID1MIDD0013Turn Wheel to rightB03Cpp
+Outgoing11=KAM10000KSQ10002079279
+Options11=Actv01Stop01OutO00StMa00000005if(gz!=0)noexecuteif(pp>64)noexecutelabel0011only if not mutedif(gm!=0)noexecuteif(gv<64)gv=gv+1
+Name12=Volume Down
+Incoming12=MID1MIDD0012Turn Wheel to leftB03Cpp
+Outgoing12=KAM10000KSQ10002078278
+Options12=Actv01Stop01OutO00StMa00000005if(gz!=0)noexecuteif(pp<=64)noexecutelabel0011Only if not mutedif(gm!=0)noexecuteif(gv>0)gv=gv-1
+Name13=Scrub Forward
+Incoming13=MID1MIDD0019Shift+Turn Wheel to rightB03Cpp
+Outgoing13=KAM10000KSQ10006011010046246210211
+Options13=Actv01Stop01OutO00StMa00000002if(gz==0)noexecuteif(pp>64)noexecute
+Name14=Scrub Backward
+Incoming14=MID1MIDD0018Shift+Turn Wheel to leftB03Cpp
+Outgoing14=KAM10000KSQ10006011010042242210211
+Options14=Actv01Stop01OutO00StMa00000002if(gz==0)noexecuteif(pp<=64)noexecute
+Name15=Normal Mode
+Incoming15=MID1MIDD0009In button90577F
+Outgoing15=KAM10100KSQ10004011031231211
+Options15=Actv01Stop00OutO00
+Name16=Skin Mode
+Incoming16=MID1MIDD000AOut button90587F
+Outgoing16=KAM10100KSQ10004011032232211
+Options16=Actv01Stop00OutO00
+Name17=Toggle Full Screen
+Incoming17=MID1MIDD000CPunch button90787F
+Outgoing17=KAM10100KSQ1000401200D20D212
+Options17=Actv01Stop00OutO00
+
+[Preset.3]
+Name=Premiere Elements 3.0
+Active=0
+PresetSwitchIgnore=0
+Name0=Activation: Display Premiere
+Incoming0=Pres080000
+Outgoing0=MID1f00001401000145072656D6965726520456C656D656E7473202020F7
+Options0=Actv01Stop00OutO00
+Name1=Play
+Incoming1=MID1MIDD000BPlay button905E7F
+Outgoing1=KAM10000KSQ10002020220
+Options1=Actv01Stop01OutO00
+Name2=Stop
+Incoming2=MID1MIDD000BStop button905D7F
+Outgoing2=KAM10000KSQ1000204B24B
+Options2=Actv01Stop01OutO00
+Name3=Forward: Play Faster
+Incoming3=MID1MIDD0009>> button905C7F
+Outgoing3=KAM10000KSQ1000204C24C
+Options3=Actv01Stop01OutO00
+Name4=Rewind: Reverse
+Incoming4=MID1MIDD0009<< button905B7F
+Outgoing4=KAM10000KSQ1000204A24A
+Options4=Actv01Stop01OutO00
+Name5=Set Unnumbered Marker
+Incoming5=MID1MIDD000AAdd button90527F
+Outgoing5=KAM10000KSQ1000206A26A
+Options5=Actv01Stop01OutO00
+Name6=Go to Previous Marker
+Incoming6=MID1MIDD000BPrev button90547F
+Outgoing6=KAM10000KSQ10004011125325211
+Options6=Actv01Stop01OutO00
+Name7=Go to Next Marker
+Incoming7=MID1MIDD000BNext button90557F
+Outgoing7=KAM10000KSQ10004011127327211
+Options7=Actv01Stop01OutO00
+Name8=Punch In
+Incoming8=MID1MIDD0009In button90577F
+Outgoing8=KAM10100KSQ10002049249
+Options8=Actv01Stop00OutO00StMa00000001if(gz!=0)noexecute
+Name9=Punch Out
+Incoming9=MID1MIDD000AOut button90587F
+Outgoing9=KAM10100KSQ1000204F24F
+Options9=Actv01Stop00OutO00StMa00000001if(gz!=0)noexecute
+Name10=Zoom In
+Incoming10=MID1MIDD000FShift+In button90577F
+Outgoing10=KAM10000KSQ100020BB2BB
+Options10=Actv01Stop00OutO00StMa00000001if(gz==0)noexecute
+Name11=Zoom Out
+Incoming11=MID1MIDD0010Shift+Out button90587F
+Outgoing11=KAM10000KSQ100020BD2BD
+Options11=Actv01Stop00OutO00StMa00000001if(gz==0)noexecute
+Name12=Preview Video
+Incoming12=MID190177F
+Outgoing12=KAM10000KSQ1000210D30D
+Options12=Actv00Stop01OutO00
+Name13=Undo
+Incoming13=MID1MIDD000BUndo button904C7F
+Outgoing13=KAM10100KSQ1000401105A25A211
+Options13=Actv01Stop01OutO00
+Name14=Go to previous Edit Point
+Incoming14=MID1MIDD0007< Track90307F
+Outgoing14=KAM10100KSQ10002121321
+Options14=Actv01Stop01OutO00
+Name15=Go to next Edit Point
+Incoming15=MID1MIDD0007Track >90317F
+Outgoing15=KAM10100KSQ10002122322
+Options15=Actv01Stop01OutO00
+Name16=Scrub forward
+Incoming16=MID1MIDD0010Wheel turn rightB03Cpp
+Outgoing16=Tim0TimS000ANext Framepp:0:5
+Options16=Actv01Stop00OutO00StMa00000001if(pp>=64)noexecute
+Name17=Scrub backward
+Incoming17=MID1MIDD000FWheel turn leftB03Cpp
+Outgoing17=Tim0TimS000EPrevious Framepp:0:5
+Options17=Actv01Stop00OutO00StMa00000002if(pp<=64)noexecutepp=pp-64
+Name18=On Timer Next Frame
+Incoming18=Tim0TimT000ANext Frame
+Outgoing18=KAM10000KSQ10002127327
+Options18=Actv01Stop01OutO00
+Name19=On Timer Previous Frame
+Incoming19=Tim0TimT000EPrevious Frame
+Outgoing19=KAM10100KSQ10002125325
+Options19=Actv01Stop01OutO00
+
+[Preset.4]
+Name=Premiere 6
+Active=0
+PresetSwitchIgnore=0
+Name0=Activation: Display Premiere
+Incoming0=Pres080000
+Outgoing0=MID1f00001401000145072656D69657265202020202020202020202020F7
+Options0=Actv01Stop00OutO00
+Name1=Play
+Incoming1=MID1MIDD0010Play button down905E7F
+Outgoing1=KAM10000KSQ10002020220
+Options1=Actv01Stop01OutO00
+Name2=Stop
+Incoming2=MID1MIDD0010Stop button down905D7F
+Outgoing2=KAM10000KSQ1000204B24B
+Options2=Actv01Stop01OutO00
+Name3=Forward: Play Faster
+Incoming3=MID1MIDD000E>> button down905C7F
+Outgoing3=KAM10000KSQ1000204C24C
+Options3=Actv01Stop01OutO00
+Name4=Rewind: Reverse
+Incoming4=MID1MIDD000E<< button down905B7F
+Outgoing4=KAM10000KSQ1000204A24A
+Options4=Actv01Stop01OutO00
+Name5=Dial Next Frame: turn right
+Incoming5=MID1MIDD00163rd encoder turn rightB012pp
+Outgoing5=Tim0TimS000ANext Framepp:0:5
+Options5=Actv01Stop00OutO00StMa00000001if(pp>=64)noexecute
+Name6=Dial Previous Frame: turn left
+Incoming6=MID1MIDD00153rd encoder turn leftB012pp
+Outgoing6=Tim0TimS000EPrevious Framepp:0:5
+Options6=Actv01Stop00OutO00StMa00000002if(pp<=64)noexecutepp=pp-64
+Name7=On Timer Next Frame
+Incoming7=Tim0TimT000ANext Frame
+Outgoing7=KAM10000KSQ10002127327
+Options7=Actv01Stop01OutO00
+Name8=On Timer Previous Frame
+Incoming8=Tim0TimT000EPrevious Frame
+Outgoing8=KAM10100KSQ10002125325
+Options8=Actv01Stop01OutO00
+Name9=Set Unnumbered Marker
+Incoming9=MID1MIDD000AAdd button90527F
+Outgoing9=KAM10000KSQ1000206A26A
+Options9=Actv01Stop01OutO00
+Name10=Go to Previous Marker
+Incoming10=MID1MIDD000BPrev button90547F
+Outgoing10=KAM10000KSQ10004010051251210
+Options10=Actv01Stop01OutO00
+Name11=Go to Next Marker
+Incoming11=MID1MIDD000BNext button90557F
+Outgoing11=KAM10000KSQ10004010057257210
+Options11=Actv01Stop01OutO00
+Name12=Zoom In
+Incoming12=MID1MIDD0009In button90577F
+Outgoing12=KAM10000KSQ1000206B26B
+Options12=Actv01Stop00OutO00StMa00000001if(gz!=0)noexecute
+Name13=Zoom Out
+Incoming13=MID1MIDD000AOut button90587F
+Outgoing13=KAM10000KSQ1000206D26D
+Options13=Actv01Stop00OutO00StMa00000001if(gz!=0)noexecute
+Name14=Undo
+Incoming14=MID1MIDD000BUndo button904C7F
+Outgoing14=KAM10100KSQ1000401105A25A211
+Options14=Actv01Stop01OutO00
+Name15=Preview Video
+Incoming15=MID190327F
+Outgoing15=KAM10000KSQ1000210D30D
+Options15=Actv00Stop01OutO00
+
+[Preset.5]
+Name=Powerpoint
+Active=0
+PresetSwitchIgnore=0
+Name0=Activation: Display Powerpoint
+Incoming0=Pres080000
+Outgoing0=MID1F0000140100014506f776572706f696e7420202020202020202020F7
+Options0=Actv01Stop00OutO00
+Name1=Previous Page
+Incoming1=MID1MIDD000Awheel leftB03C41
+Outgoing1=KAM10100KSQ10002121321
+Options1=Actv01Stop01OutO00
+Name2=Previous Page
+Incoming2=MID1MIDD0008press <<905B7F
+Outgoing2=KAM10100KSQ10002121321
+Options2=Actv01Stop01OutO00
+Name3=Next Page
+Incoming3=MID1MIDD000Bwheel rightB03C01
+Outgoing3=KAM10100KSQ10002122322
+Options3=Actv01Stop01OutO00
+Name4=Next Page
+Incoming4=MID1MIDD0008press >>905C7F
+Outgoing4=KAM10100KSQ10002122322
+Options4=Actv01Stop01OutO00
+
+[Preset.6]
+Name=Generic Control
+Active=0
+PresetSwitchIgnore=0
+Name0=Activation: Display Generic Control
+Incoming0=Pres080000
+Outgoing0=MID1F000014010001447656e6572696320436f6e74726f6c2020202020F7
+Options0=Actv01Stop00OutO00
+Name1=Play/Pause
+Incoming1=MID1MIDD000BPlay button905E7F
+Outgoing1=KAM10000KSQ100011B3
+Options1=Actv01Stop01OutO00
+Name2=Stop
+Incoming2=MID1MIDD000BStop button905D7F
+Outgoing2=KAM10000KSQ100011B2
+Options2=Actv01Stop01OutO00
+Name3=Next
+Incoming3=MID1MIDD0007Track >90317F
+Outgoing3=KAM10000KSQ100011B0
+Options3=Actv01Stop01OutO00StMa00000001if(gz!=0)noexecute
+Name4=Previous
+Incoming4=MID1MIDD0007< Track90307F
+Outgoing4=KAM10000KSQ100011B1
+Options4=Actv01Stop01OutO00StMa00000001if(gz!=0)noexecute
+Name5=Master Faster Up
+Incoming5=MID1MIDD0017Turn Wheel to clockwiseB03Cpp
+Outgoing5=Tim0TimS0009Volume Uppp:0:10
+Options5=Actv01Stop01OutO00StMa00000001if(pp>64)noexecute
+Name6=Master Faster Down
+Incoming6=MID1MIDD001FTurn Wheel to counter clockwiseB03Cpp
+Outgoing6=Tim0TimS000BVolume Downpp:0:10
+Options6=Actv01Stop01OutO00StMa00000002if(pp<=64)noexecutepp=pp-64
+Name7=Mute on toggle
+Incoming7=MID1MIDD0009Mute down90107F
+Outgoing7=KAM10100KSQ100021AD3AD
+Options7=Actv01Stop01OutO00
+Name8=On Timer Volume Up
+Incoming8=Tim0TimT0009Volume Up
+Outgoing8=KAM10100KSQ100021AF3AF
+Options8=Actv01Stop01OutO00
+Name9=On Timer Volume Down
+Incoming9=Tim0TimT000BVolume Down
+Outgoing9=KAM10100KSQ100021AE3AE
+Options9=Actv01Stop01OutO00
+Name10=Email Program
+Incoming10=MID1MIDD0009In button90577F
+Outgoing10=KAM10100KSQ100021B43B4
+Options10=Actv01Stop01OutO00
+Name11=Web Browser
+Incoming11=MID1MIDD000AOut button90587F
+Outgoing11=KAM10100KSQ100021AC3AC
+Options11=Actv01Stop01OutO00StMa00000001if(gz!=0)noexecute
+Name12=Search Function
+Incoming12=MID1MIDD000CPunch button90787F
+Outgoing12=KAM10100KSQ100021AA3AA
+Options12=Actv01Stop01OutO00
+Name13=Close current program
+Incoming13=MID1MIDD0009Shift+Out90587F
+Outgoing13=KAM10100KSQ10004012073273212
+Options13=Actv01Stop01OutO00StMa00000001if(gz==0)noexecute
+Name14=Alt-Tab, press Alt
+Incoming14=MID1MIDD0012Shift+Track < or >90qq7F
+Outgoing14=KAM11000KSQ10001012
+Options14=Actv01Stop00OutO00StMa00000007if(gz==0)noexecuteif(gt!=0)noexecuteif(qq==48)goto0002OKif(qq==49)goto0002OKnoexecutelabel0002OKgt=1
+Name15=Alt-Tab next
+Incoming15=MID1MIDD000DShift+Track >90317F
+Outgoing15=KAM10000KSQ10002009209
+Options15=Actv01Stop00OutO00StMa00000001if(gz==0)noexecute
+Name16=Alt-Tab prev
+Incoming16=MID1MIDD000DShift+Track <90307F
+Outgoing16=KAM10000KSQ10004010009209210
+Options16=Actv01Stop00OutO00StMa00000001if(gz==0)noexecute
+Name17=Alt-Tab end
+Incoming17=MID1MIDD000FShift button up907900
+Outgoing17=KAM12100KSQ10001012
+Options17=Actv01Stop00OutO00StMa00000002if(gt==0)noexecutegt=0
+
+[Preset.7]
+Name=mp3directCut
+Active=0
+PresetSwitchIgnore=0
+Name0=Activation: Display
+Incoming0=Pres080000
+Outgoing0=MID1F00001401000144D50332044697265637420437574202020202020F7
+Options0=Actv01Stop00OutO00
+Name1=Play/Pause
+Incoming1=MID1MIDD000BPlay button905E7F
+Outgoing1=KAM10100KSQ10002020220
+Options1=Actv01Stop00OutO00
+Name2=Stop
+Incoming2=MID1MIDD000BStop button905D7F
+Outgoing2=KAM10100KSQ10002053253
+Options2=Actv01Stop00OutO00
+Name3=Rewind
+Incoming3=MID1MIDD0009<< button905B7F
+Outgoing3=KAM10100KSQ10002121321
+Options3=Actv01Stop00OutO00
+Name4=Fast Forward
+Incoming4=MID1MIDD0009>> button905C7F
+Outgoing4=KAM10100KSQ10002122322
+Options4=Actv01Stop00OutO00
+Name5=Undo
+Incoming5=MID1MIDD000BUndo button904C7F
+Outgoing5=KAM10100KSQ1000401105A25A211
+Options5=Actv01Stop00OutO00
+Name6=Set Begin
+Incoming6=MID1MIDD0009In button90577F
+Outgoing6=KAM10100KSQ10002042242
+Options6=Actv01Stop00OutO00StMa0009Non-Shift0001if(gz!=0)noexecute
+Name7=Set End
+Incoming7=MID1MIDD000AOut button90587F
+Outgoing7=KAM10100KSQ1000204E24E
+Options7=Actv01Stop00OutO00StMa0009Non-Shift0001if(gz!=0)noexecute
+Name8=Delete Selection
+Incoming8=MID1MIDD000CPunch Button90787F
+Outgoing8=KAM10100KSQ1000212E32E
+Options8=Actv01Stop00OutO00
+Name9=Wheel left: back one frame
+Incoming9=MID1MIDD0009Dial leftB03Cpp
+Outgoing9=KAM10100KSQ10004010125325210
+Options9=Actv01Stop00OutO00StMa0012Non-Shift, pp>0x400002if(pp<=64)noexecuteif(gz!=0)noexecute
+Name10=Wheel right: forward one frame
+Incoming10=MID1MIDD000ADial rightB03Cpp
+Outgoing10=KAM10100KSQ10004010127327210
+Options10=Actv01Stop00OutO00StMa0013Non-Shift, pp<=0x400002if(gz!=0)noexecuteif(pp>64)noexecute
+Name11=Shift+Wheel left: forward 1sec
+Incoming11=MID1MIDD0011Dial left [shift]B03Cpp
+Outgoing11=KAM10100KSQ10002125325
+Options11=Actv01Stop00OutO00StMa000EShift, pp>0x400002if(gz==0)noexecuteif(pp<=64)noexecute
+Name12=Shift+Wheel right: backward 1sec
+Incoming12=MID1MIDD0012Dial right [shift]B03C01
+Outgoing12=KAM10100KSQ10002127327
+Options12=Actv01Stop00OutO00StMa000FShift, pp<=0x400002if(gz==0)noexecuteif(pp>64)noexecute
+Name13=Zoom In
+Incoming13=MID1MIDD0011In button [shift]90577F
+Outgoing13=KAM10100KSQ10004010126326210
+Options13=Actv01Stop00OutO00StMa0005Shift0001if(gz==0)noexecute
+Name14=Zoom Out
+Incoming14=MID1MIDD0012Out button [shift]90587F
+Outgoing14=KAM10100KSQ10004010128328210
+Options14=Actv01Stop00OutO00StMa0005Shift0001if(gz==0)noexecute
+Name15=Listen AS CUT
+Incoming15=MID1MIDD000BLoop button90567F
+Outgoing15=KAM10100KSQ10002078278
+Options15=Actv01Stop00OutO00
+Name16=Previous Marker
+Incoming16=MID1MIDD0004Prev90547F
+Outgoing16=KAM10100KSQ10004011125325211
+Options16=Actv01Stop00OutO00
+Name17=Next Marker
+Incoming17=MID1MIDD0004Next90557F
+Outgoing17=KAM10100KSQ10004011127327211
+Options17=Actv01Stop00OutO00
+
+[Preset.8]
+Name=Convert To Absolute Controller
+Active=0
+PresetSwitchIgnore=0
+Name0=Activation: Display
+Incoming0=Pres080000
+Outgoing0=MID1F00001401000142020202020202020202020202020202020202020F7
+Options0=Actv01Stop00OutO00
+Name1=Data Wheel
+Incoming1=MID1MIDD000AData WheelB03Cpp
+Outgoing1=MID1B001ga
+Options1=Actv01Stop01OutO00StMa00000005if(pp<=64)ga=ga+pppp=pp-64if(pp>0)ga=ga-ppif(ga>127)ga=127if(ga<0)ga=0
+
+[Project]
+Version=2
+Author=Florian Bomers
+AuthorContact=www.bome.com
+Comments=
+DefaultInPorts=MIDA00010009TranzPort
+DefaultOutPorts=MIDA00010009TranzPort
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=On7DRU3sVqd0wo5DrXD1gO/i2feJRcKZ4oHJabxIGdl0rtpvSt2ub4v7nuWR0PWx1tEJ3m/D2Ems9H4M1Fl1tjRwD5dMVjsv8gIrIK468r4uCcC1CKUwn6ecDa8upQRItcAUF8tjSMXFXlrPs8LpkLMoQ60xMlwmfS4/X48wOIE=
+SignedBy-1=Florian

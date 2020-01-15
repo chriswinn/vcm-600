@@ -1,0 +1,57 @@
+; ------- Bome MIDI Translator: Signed Project File
+; ------- You can modify this file as you like, but that will invalidate
+; ------- the signature so that it cannot be opened in MT Player anymore.
+;
+[Preset.0]
+Name=Switcher
+Active=1
+PresetSwitchIgnore=0
+Name0=Shift down enable SHIFT preset
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x3C"/><Value2 num="0x7F"/></Simple></Incoming>
+Outgoing0=Pres040017Translations with SHIFT
+Options0=Actv01Stop00OutO00
+Name1=Shift down enable SHIFT preset
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x3C"/><Value2 num="0x7F"/></Simple></Incoming>
+Outgoing1=Pres06001ATranslations without SHIFT
+Options1=Actv01Stop00OutO00
+Name2=Shift up enable SHIFT preset
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 num="0x3C"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing2=Pres060017Translations with SHIFT
+Options2=Actv01Stop00OutO00
+Name3=Shift up enable SHIFT preset
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="NoteOff"><Channel num="0"/><Value1 num="0x3C"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing3=Pres04001ATranslations without SHIFT
+Options3=Actv01Stop00OutO00
+
+[Preset.1]
+Name=Translations without SHIFT
+Active=1
+PresetSwitchIgnore=0
+Name0=New Translator
+Incoming0=KAM10000KSQ10002041241
+Outgoing0=KAM10100KSQ10002042242
+Options0=Actv01Stop00OutO00
+
+[Preset.2]
+Name=Translations with SHIFT
+Active=0
+PresetSwitchIgnore=0
+Name0=New Translator
+Incoming0=KAM10000KSQ10002041241
+Outgoing0=KAM10100KSQ10002043243
+Options0=Actv01Stop00OutO00
+
+[Project]
+Version=2
+Author=
+AuthorContact=
+Comments=
+AuthorWWW=
+AuthorCopyright=
+DefaultInPorts=MIDA0001000ELaunch Control
+DefaultOutPorts=MIDA00010022Bome MIDI Translator 1 Virtual Out
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=GHaPxnMgEqQXk+ENNJIFmIUaKOfNwKsSMK112mFeqWkEQX4w6beBC9OsWas8CbTxtHwerULpTJJw60i+Wri8T+AwOXiOas4T70kQvxOU/pRkl+/wBUiS55Z/dC/yF+HiyZSFXRbwFkJXxuBC19s7C646VpRBSIw+m/YxoJ5wrjU=
+SignedBy-1=Steve Caldwell

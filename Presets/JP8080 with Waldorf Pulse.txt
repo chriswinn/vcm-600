@@ -1,0 +1,24 @@
+Controlling the Pulse with the JP-8080
+
+With a suitable MIDI Mapper program (such as MIDI Translator) you can
+easily convert controllre messages to other controller messages in
+real tie. This allows you to, for instance, control most of the
+parameters of your Waldorf Pulse by tweaking the knobs of your JP-8080
+(if you happen to have both, as I do).
+
+There's currently no documentation suplied with the .bmtp file so here
+are some basic installation instructions. Use the File|Import Presets
+menu to load "JP8080 with Waldorf Pulse.bmtp". This will install my
+preset. Make sure you have selected MIDI mode 2 (with the standard
+settings) in the MIDI menu of the 8080 and make sure you have turned
+MIDI Thru on in MIDI Translator. That's it. I don't remember anymore
+what JP knobs did what (and I cannot check it at the moment) so just
+try what each knob does. However, I remember trying to keep the layout
+logical, envelopes correspond to envelopes and the pitch envelope on
+the JP adjusts the osc levels, to give you some examples. This is an
+early version of the preset file so not every knob may work. If you
+find any bugs, please contact me via e-mail:
+http://www.student.oulu.fi/%7Evtatila/mail.html
+
+More tips:
+http://www.student.oulu.fi/%7Evtatila/synthesizers.html

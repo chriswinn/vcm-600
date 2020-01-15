@@ -1,0 +1,106 @@
+; ------- Signed Project File: DO NOT MODIFY!
+; ------- Any modification in this file will invalidate the signature,
+; ------- so that it cannot be opened in MT Player anymore.
+;
+[Preset.0]
+Name=jump_up
+Active=0
+PresetSwitchIgnore=0
+Name0=F5 - preset jump-up
+Incoming0=MID1903A7F
+Outgoing0=Pres020007jump_dn
+Options0=Actv01Stop00OutO00
+Name1=F5 - preset jump-up
+Incoming1=MID1903A7F
+Outgoing1=KAM11000KSQ10001010
+Options1=Actv01Stop01OutO00
+Name2=F1 - Cut
+Incoming2=MID190367F
+Outgoing2=KAM10000KSQ10004011058258211
+Options2=Actv01Stop01OutO00
+Name3=F2 - Copy
+Incoming3=MID190377F
+Outgoing3=KAM10000KSQ10004011043243211
+Options3=Actv01Stop01OutO00
+Name4=F3 - Paste
+Incoming4=MID190387F
+Outgoing4=KAM10000KSQ10004011056256211
+Options4=Actv01Stop01OutO00
+Name5=F4 - Set/Delete Marker
+Incoming5=MID190397F
+Outgoing5=KAM10000KSQ100020DC2DC
+Options5=Actv01Stop01OutO00
+Name6=F6 -  Previous Marker
+Incoming6=MID1903B7F
+Outgoing6=KAM10000KSQ100020DB2DB
+Options6=Actv01Stop01OutO00
+Name7=F7 - Next Marker
+Incoming7=MID1903C7F
+Outgoing7=KAM10000KSQ100020DD2DD
+Options7=Actv01Stop01OutO00
+Name8=F8 - Continue Play from Stop Point
+Incoming8=MID1903D7F
+Outgoing8=KAM10000KSQ10004010020220210
+Options8=Actv01Stop01OutO00
+Name9=F4 - Redo
+Incoming9=MID190397F
+Outgoing9=KAM10000KSQ10004011059259211
+Options9=Actv00Stop01OutO00
+
+[Preset.1]
+Name=jump_dn
+Active=1
+PresetSwitchIgnore=0
+Name0=F5 - preset jump-down
+Incoming0=MID1903A00
+Outgoing0=Pres020007jump_up
+Options0=Actv01Stop00OutO00
+Name1=F5 - preset jump-down
+Incoming1=MID1903A00
+Outgoing1=KAM12100KSQ10001010
+Options1=Actv01Stop01OutO00
+Name2=F1 - Cut
+Incoming2=MID190367F
+Outgoing2=KAM10000KSQ10004011058258211
+Options2=Actv01Stop01OutO00
+Name3=F2 - Copy
+Incoming3=MID190377F
+Outgoing3=KAM10000KSQ10004011043243211
+Options3=Actv01Stop01OutO00
+Name4=F3 - Paste
+Incoming4=MID190387F
+Outgoing4=KAM10000KSQ10004011056256211
+Options4=Actv01Stop01OutO00
+Name5=F4 - Set/Delete Marker
+Incoming5=MID190397F
+Outgoing5=KAM10000KSQ100020DC2DC
+Options5=Actv01Stop01OutO00
+Name6=F6 -  Previous Marker
+Incoming6=MID1903B7F
+Outgoing6=KAM10000KSQ100020DB2DB
+Options6=Actv01Stop01OutO00
+Name7=F7 - Next Marker
+Incoming7=MID1903C7F
+Outgoing7=KAM10000KSQ100020DD2DD
+Options7=Actv01Stop01OutO00
+Name8=F8 - Continue Play from Stop Point
+Incoming8=MID1903D7F
+Outgoing8=KAM10000KSQ10004010020220210
+Options8=Actv01Stop01OutO00
+Name9=F4 - Redo
+Incoming9=MID190397F
+Outgoing9=KAM10000KSQ10004011059259211
+Options9=Actv00Stop01OutO00
+
+[Project]
+Version=2
+Author=
+AuthorContact=
+Comments=
+DefaultInPorts=MIDA0001000AYamaha 01x
+DefaultOutPorts=MIDA0000
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=nZOH+K8sEYFV/pww80wD+6QhvRJS0MaEkTA/tYpzwozzJAzm4gFhUzV8H0cNrZQjfT9FWpna15aVuom6gz/lEOzQDGpjCNK7miRYzKQ/72PT23GBFRZra5g5RzRvv7B6pPicJ/1AQfvhqhvuGYezsMH8E82m+yeg470KusjhS58=
+SignedBy-1=Florian

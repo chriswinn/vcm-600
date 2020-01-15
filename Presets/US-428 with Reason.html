@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+<TITLE>Tascam US-428 as Reason controller</TITLE>
+</HEAD>
+
+
+<BODY TEXT="#333333" BGCOLOR="#FFFFFF" LINK="#666666" VLINK="#999999">
+
+<CENTER><H1>How to use the US-428 with other MIDI-Applications than Cubase</H1>
+by <A HREF="mailto:support@beatprisoner.com">Falke</A></CENTER>
+<P>
+<H4>The following is a description how to control <A HREF="http://www.propellerheads.se">Reason</A> with the <A HREF="http://www.tascam.com">Tascam</A> <A HREF="http://www.tascam.com/products/us428/index.cfm">US-428 USB-MIDI-Controller</A>.</H4>
+<BR>
+<P>
+
+<H3>Requirements</H3>
+<UL>
+<LI>MIDI Thruway (which you can get for free from <A HREF="http://www.technotoys.com">Technotoys</A>)
+<LI>Bome's Midi Translator V 1.30
+<LI><A HREF="http://members.nbci.com/MIDIOX/myoke.htm">MIDI Yoke</A> or <A HREF="http://members.nextra.at/hubwin//midi.html">Hubi's Loopback device</A> to create virtual, internal Midi-ports.
+<LI>The two import files with the presets for the Midi Translator (&quot;US-428 with Reason.bmtp&quot; and &quot;US-428 with Reason LEDs.bmtp&quot;).
+If you want to control another application than Reason, you just need the first file.
+</UL>
+
+<P>
+<H3>Instructions</H3>
+<UL>
+<LI>Install MIDI Yoke or HLD and create at least three virtual Midi ports.
+<LI>Install Midi Thruway. Execute and set the US-428 control port as the Input-port. Select your first <B>two</B> virtual Midi-ports as the outputs. Select all other available Midi ports as the input and make sure that there are not outputs assigned to this inputs. Save this preset under the file menue and name it i.e. "US-428-->LED". Keep care that your new preset is selected (preset button must have a dark border). Otherwise all this stuf won't work ! Don't close the application, just minimize it.
+<LI><B><FONT COLOR="#993333">IMPORTANT !</FONT></B> Make sure that the "Lock MIDI" menue point in Midi Thruway is checked ! Press the right mouse button on the minimized symbol in the taskbar and see if this is realy checked.
+<LI>Execute Bome's Midi Translator and import the preset file "US-428__Reason.bmtp". Set the first virtual Midi-port as the input and the third virtual Midi-port as the output. Select the "Mixer I Channel 1-8" preset and minimize the application. If you want to control an application other than Reason you have to write you own .bmtp-file. There is a short documentation included with the Midi Translator.
+<LI>Copy the "MidiTranslator.exe" file and rename the copy to whateveryouwant.exe
+<LI>Execute the renamed copy. Set the second virtual Midi-port as the Input and the US-428 control port as the output. You can save these setting under the file-export menue. Import the preset file "US-428__LEDs.bmtp". Select the "LED's" preset and minimize the application.
+<LI>Execute Reason and set your first mixer to channel 16 and if you want a second mixer to channel 15 in the hardware interface (midi in device) of Reason. Select the third virtual midi-port as the input channel for the bus you've selected. You have to do this in the MIDI preferences page.
+<LI>Now you can use the transport buttons on your US-428. The sequencer will start, stop, ff, rewind and record. With the data wheel you can control the tempo of the sequencer. If you press the "locate left/right" buttons the sequencer will jump to the left/right locator. The faders will control the first eight mixer sliders. The mute buttons will call the mute not the solo function. The aux4 buttons requests all fader positions. The fn-switches are having the following functions: 1=Maximize/restore Rack, 2=Maximize/restore Sequencer, 3=Metronom click on/off
+</UL>
+<P>
+
+<H3>Notes</H3>
+<UL>
+<LI>The settings for the two Midi Translator instances and for MIDI Thruway will be saved automaticly. Therefore it would be a could idea to put this three apps in you startup-/autostart folder. Make sure that your US-428 is on and connected via USB when you start your computer then. Otherwise the apps won't find the ports and the settings will be changed.
+<LI>If you don't need the switching of the status LED's at the US-428 you don't have to start the second instance of the Midi Translator and also won't need the MIDI Thruway software.
+<LI>To control the mixer channels 9-14 and the second mixer you have to switch to another preset in the Midi-Translator.
+<LI>Please make sure that, if you press the US-428 control buttons, Reason has the focus which means is not minimized or in the background. Otherwise the application which has the focus will receive the keystroke commands for the sequencer. This can result in a loss of data in your other application. There is a workaround available. You can define a keystroke to your apps shortcut. After that you insert this keystroke as the first keystroke in the Midi Translator command. This makes sure that your apps always will get the focus first and after that it will receive the command key.
+<LI>The slider and and mute buttons will also work if Reason does'nt have the focus.
+<LI>The ASGN button will request all of the US-428 fader positions and will send them to Reason.
+<LI>The NULL button will reset the mixer I or II (depends on the preset you've selected). The faders will get an value of zero, all EQ's will be switched of and values set to zero.
+<LI>The LED's for the mute function won't switch permanently. They will just glow while the button is pressed. Nevertheless the mixer channel in Reason will mute permanently.
+<LI>The solo function and the EQ does'nt work because Midi Translator does'nt support dec/inc controller and toggle functions at the moment.
+<LI>I've contacted the developer of the Midi Translator and asked him for some improvements. Maybe we will see a new version of the software in the near future where we don't need to start MIDI Thruway and the second Translator instance.
+</UL>
+<P>
+
+</BODY>
+
+
+</HTML>
